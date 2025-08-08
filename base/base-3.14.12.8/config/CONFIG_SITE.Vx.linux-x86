@@ -1,0 +1,5 @@
+#
+# This file contains overrides for Vx builds
+
+-include $(EPICS_BASE)/config/CONFIG_SITE.Vx.Linux
+
