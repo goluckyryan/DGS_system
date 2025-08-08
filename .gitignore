@@ -1,2 +1,4 @@
 *.bin
 receiver/tcp_receiver
+*.o
+*.so

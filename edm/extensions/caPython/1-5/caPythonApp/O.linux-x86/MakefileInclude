@@ -1,0 +1,121 @@
+#Do not modify this file.
+#This file is created during the build.
+
+ifneq ($(strip $(camodule_SRCS_$(OS_CLASS))),)
+camodule_SRCS+=$(subst -nil-,,$(camodule_SRCS_$(OS_CLASS)))
+else
+ifdef camodule_SRCS_DEFAULT
+camodule_SRCS+=$(camodule_SRCS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_RCS_$(OS_CLASS))),)
+camodule_RCS+=$(subst -nil-,,$(camodule_RCS_$(OS_CLASS)))
+else
+ifdef camodule_RCS_DEFAULT
+camodule_RCS+=$(camodule_RCS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_OBJS_$(OS_CLASS))),)
+camodule_OBJS+=$(subst -nil-,,$(camodule_OBJS_$(OS_CLASS)))
+else
+ifdef camodule_OBJS_DEFAULT
+camodule_OBJS+=$(camodule_OBJS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_LDFLAGS_$(OS_CLASS))),)
+camodule_LDFLAGS+=$(subst -nil-,,$(camodule_LDFLAGS_$(OS_CLASS)))
+else
+ifdef camodule_LDFLAGS_DEFAULT
+camodule_LDFLAGS+=$(camodule_LDFLAGS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_OBJLIBS_$(OS_CLASS))),)
+camodule_OBJLIBS+=$(subst -nil-,,$(camodule_OBJLIBS_$(OS_CLASS)))
+else
+ifdef camodule_OBJLIBS_DEFAULT
+camodule_OBJLIBS+=$(camodule_OBJLIBS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_LDOBJS_$(OS_CLASS))),)
+camodule_LDOBJS+=$(subst -nil-,,$(camodule_LDOBJS_$(OS_CLASS)))
+else
+ifdef camodule_LDOBJS_DEFAULT
+camodule_LDOBJS+=$(camodule_LDOBJS_DEFAULT)
+endif
+endif
+camodule_LDLIBS+=$(camodule_LIBS)
+ifneq ($(strip $(camodule_LIBS_$(OS_CLASS))),)
+camodule_LDLIBS+=$(subst -nil-,,$(camodule_LIBS_$(OS_CLASS)))
+else
+ifdef camodule_LIBS_DEFAULT
+camodule_LDLIBS+=$(camodule_LIBS_DEFAULT)
+endif
+endif
+ifneq ($(strip $(camodule_SYS_LIBS_$(OS_CLASS))),)
+camodule_SYS_LIBS+=$(subst -nil-,,$(camodule_SYS_LIBS_$(OS_CLASS)))
+else
+ifdef camodule_SYS_LIBS_DEFAULT
+camodule_SYS_LIBS+=$(camodule_SYS_LIBS_DEFAULT)
+endif
+endif
+camodule_OBJS+=$(addsuffix $(OBJ),$(basename $(camodule_SRCS)))
+
+ifeq ($(filter camodule,$(TESTPROD) $(PROD)),camodule)
+ifeq (,$(strip $(camodule_OBJS) $(PRODUCT_OBJS)))
+camodule_OBJS+=camodule$(OBJ)
+endif
+camodule_RESS+=$(addsuffix $(RES),$(basename $(camodule_RCS)))
+camodule_OBJSNAME+=$(addsuffix $(OBJ),$(basename $(camodule_OBJS)))
+camodule_DEPLIBS=$(foreach lib, $(camodule_LDLIBS),\
+ $(firstword $(wildcard $(addsuffix /$(LIB_PREFIX)$(lib).*,\
+ $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS)))\
+ $(addsuffix /$(LIB_PREFIX)$(lib)$(LIB_SUFFIX),\
+ $(firstword $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS))/)))
+camodule$(EXE): $(camodule_OBJSNAME) $(camodule_RESS) $(camodule_DEPLIBS)
+endif
+
+ifeq ($(filter camodule,$(LIBRARY)),camodule)
+ifneq ($(filter camodule,$(LOADABLE_LIBRARY)),camodule)
+ifneq (,$(strip $(camodule_OBJS) $(LIBRARY_OBJS)))
+BUILD_LIBRARY += camodule
+endif
+camodule_RESS+=$(addsuffix $(RES),$(basename $(camodule_RCS)))
+camodule_OBJSNAME+=$(addsuffix $(OBJ),$(basename $(camodule_OBJS)))
+camodule_DEPLIBS=$(foreach lib, $(camodule_LDLIBS),\
+ $(firstword $(wildcard $(addsuffix /$(LIB_PREFIX)$(lib).*,\
+ $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS)))\
+ $(addsuffix /$(LIB_PREFIX)$(lib)$(LIB_SUFFIX),\
+ $(firstword $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS))/)))
+camodule_DLL_DEPLIBS=$(foreach lib, $(camodule_DLL_LIBS),\
+ $(firstword $(wildcard $(addsuffix /$(LIB_PREFIX)$(lib).*,\
+ $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS)))\
+ $(addsuffix /$(LIB_PREFIX)$(lib)$(LIB_SUFFIX),\
+ $(firstword $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS))/)))
+$(LIB_PREFIX)camodule$(LIB_SUFFIX):$(camodule_OBJSNAME) $(camodule_RESS)
+$(LIB_PREFIX)camodule$(LIB_SUFFIX):$(camodule_DEPLIBS)
+$(LIB_PREFIX)camodule$(SHRLIB_SUFFIX):$(camodule_OBJSNAME) $(camodule_RESS)
+$(LIB_PREFIX)camodule$(SHRLIB_SUFFIX):$(camodule_DEPLIBS)
+$(LIB_PREFIX)camodule$(SHRLIB_SUFFIX):$(camodule_DLL_DEPLIBS)
+endif
+endif
+ifeq ($(filter camodule,$(LOADABLE_LIBRARY)),camodule)
+ifneq (,$(strip $(camodule_OBJS) $(LIBRARY_OBJS)))
+LOADABLE_BUILD_LIBRARY += camodule
+endif
+camodule_RESS+=$(addsuffix $(RES),$(basename $(camodule_RCS)))
+camodule_OBJSNAME+=$(addsuffix $(OBJ),$(basename $(camodule_OBJS)))
+camodule_DEPLIBS=$(foreach lib, $(camodule_LDLIBS),\
+ $(firstword $(wildcard $(addsuffix /$(LIB_PREFIX)$(lib).*,\
+ $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS)))\
+ $(addsuffix /$(LIB_PREFIX)$(lib)$(LIB_SUFFIX),\
+ $(firstword $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS))/)))
+camodule_DLL_DEPLIBS=$(foreach lib, $(camodule_DLL_LIBS),\
+ $(firstword $(wildcard $(addsuffix /$(LIB_PREFIX)$(lib).*,\
+ $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS)))\
+ $(addsuffix /$(LIB_PREFIX)$(lib)$(LIB_SUFFIX),\
+ $(firstword $($(lib)_DIR) $(SHRLIB_SEARCH_DIRS))/)))
+$(LOADABLE_SHRLIB_PREFIX)camodule$(LOADABLE_SHRLIB_SUFFIX):$(camodule_OBJSNAME) $(camodule_RESS)
+$(LOADABLE_SHRLIB_PREFIX)camodule$(LOADABLE_SHRLIB_SUFFIX):$(camodule_DEPLIBS)
+$(LOADABLE_SHRLIB_PREFIX)camodule$(LOADABLE_SHRLIB_SUFFIX):$(camodule_DLL_DEPLIBS)
+endif
+

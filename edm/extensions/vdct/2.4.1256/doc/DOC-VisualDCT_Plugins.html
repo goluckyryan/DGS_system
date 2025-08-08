@@ -1,0 +1,663 @@
+<html xmlns:d="urn:schemas-cosylab-com:Document">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>VisualDCT Plugins</title>
+<style>.title { color: #CE2B25; font-size: 200% }
+h1 { color: #003c8c; text-align: left; margin-top: 2em; margin-bottom: 1em; font-family: Verdana, Arial, Helvetica; TEXT-DECORATION: none; FONT-WEIGHT: normal;}
+h2 { color: #CE2B25; text-align: left; font-family: Verdana, Arial, Helvetica; TEXT-DECORATION: none; FONT-WEIGHT: normal;}
+h3 { color: #003c8c; text-align: left; font-family: Verdana, Arial, Helvetica; TEXT-DECORATION: none; FONT-WEIGHT: normal;}
+h4 { color: #003c8c; text-align: left; font-family: Verdana, Arial, Helvetica; TEXT-DECORATION: none; FONT-WEIGHT: normal;}
+h1.toc {
+  color: #003c8c;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  FONT-WEIGHT: bold;
+}
+h2.toc {
+  color: #003c8c;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 4%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+h3.toc {
+  color: #003c8c;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 7%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+h4.toc {
+  color: #003c8c;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 1%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+body { margin-left: 5%; margin-right: 5% }
+p { font-family: Verdana, Arial, Helvetica }
+p.table { text-align: left }
+p.figure { text-align: center }
+p { text-align: justify }
+p.comment { color: red; margin-left: 10%; margin-right: 10% }
+ol { font-family: verdana,sans-serif; margin-left: 5%; margin-right: 5% }
+ul { font-family: verdana,sans-serif; margin-left: 5%; margin-right: 5% }
+pre { background: #F0F0F0 }
+table { width: 100% }
+th { 
+  padding: 0.1cm;
+  background: #CACAD4; 
+  text-align: center; 
+  border-style: solid; 
+  border-width: 0.02cm 
+}
+th.header { background: #D0D0D0 }
+td { padding: 0.1cm; border-style: solid; border-width: 0.02cm }
+tr.reviewAccepted { background: #D0FFD0 }
+tr.reviewRejected { background: #FFD0D0 }
+tr.retirement { background: black; color: white }
+span.menu { color: white; background: #787996; font-family: tahoma; font-size: 80% }
+span.gui {
+  border-left-width: 0.025cm;
+  border-top-width: 0.025cm;
+  border-right-width: 0.04cm;
+  border-bottom-width: 0.04cm;
+  border-style: solid;
+  font-family: tahoma;
+  font-size: 80%
+}
+span.keystroke {            
+  border-style: groove;
+  border-color: #E0E0E0;
+  font-family: tahoma;
+  font-size: 70%
+}
+span.emphasis {
+  font-style: italic
+}
+span.bold {
+  font-weight: bold          
+}
+tt.filename { font-family: tahoma }
+tt.keyword { font-weight: bold }
+tt.command { font-family: tahoma; font-weight: bold }
+
+.description 
+{
+  text-align: center
+}
+
+p.warning
+{
+  background-color: #E0E0E0;
+}
+
+p.warning table tr td
+{
+  border-width: 0.02cm; 
+  border-color: red;
+}
+
+p.notice
+{
+  background-color: #F0F0F0;
+}
+
+p.notice table tr td
+{
+  border-style: none;
+}
+</style>
+</head>
+<body>
+<p class="table">
+<table>
+<tr>
+<th class="title" colspan="2">VisualDCT Plugins</th>
+</tr>
+<tr>
+<th class="projectInfo">Project:</th><td>VisualDCT&nbsp;</td>
+</tr>
+<tr>
+<th class="projectInfo">Classification:</th><td>User's Documentation</td>
+</tr>
+<tr>
+<th class="projectInfo">Identification:</th><td><tt>CSL-DOC-02-XX</tt></td>
+</tr>
+<tr>
+<th colspan="2">Copyright &copy; 2002 by Cosylab Ltd. All Rights Reserved.</th>
+</tr>
+</table>
+</p>
+<h2>Document History</h2>
+<p class="table">
+<table>
+<tr>
+<th>Revision</th><th>Date</th><th>Author</th><th>Section</th><th>Modification</th>
+</tr>
+<tr>
+<td rowspan="2">1.0</td><td rowspan="2">2002-09-21</td><td rowspan="2"><a href="mailto:sunil.sah@cosylab.com">Sunil Sah</a></td>
+</tr>
+<tr>
+<td>all</td><td>Created.</td>
+</tr>
+</table>
+</p>
+<h2>Scope</h2>
+<p>
+<scope xmlns="urn:schemas-cosylab-com:Document">
+This document contains information on writing plugins for VisualDCT and their installation.
+</scope>
+</p>
+<h2>Confidentiality</h2>
+<p>
+          This document is classified as a <b>public document</b>.
+          Redistribution and use, with or without modification, are permitted provided that:
+          <ol>
+<li>the copyright notice is retained</li>
+<li>a reference to the original document is made in case of modifications</li>
+<li>this document may not be distributed for profit except as explicitly permitted by valid licenses.</li>
+</ol>
+</p>
+<h2>
+<a name="Audience">Audience</a>
+</h2>
+<p>
+<audience xmlns="urn:schemas-cosylab-com:Document">
+The audience of this document are the users of VisualDCT who wish to create or use its plugins.
+</audience>
+</p>
+<h2>References</h2>
+<p class="table">
+<table>
+<tr>
+<th>ID</th><th>Author</th><th>Reference</th><th>Revision</th><th>Date</th><th>Publisher</th>
+</tr>
+<tr>
+<td><a name="visualdct">1</a></td><td>Matej Sekoranja</td><td><a href="http://visualdct.cosylab.com/">VisualDCT Project</a></td><td></td><td>2002</td><td>Cosylab, Ltd.</td>
+</tr>
+</table>
+</p>
+<h2>
+<a name="toc">Table of Contents</a>
+</h2>
+<a href="#Introduction">
+<h1 class="toc">1. Introduction</h1>
+</a><a href="#Writing_plugins">
+<h1 class="toc">2. Writing plugins</h1>
+</a><a href="#Plugin_interface">
+<h2 class="toc">2.1. Plugin interface</h2>
+</a><a href="#Example">
+<h2 class="toc">2.2. Example</h2>
+</a><a href="#Special_plugins">
+<h2 class="toc">2.3. Special plugins</h2>
+</a><a href="#Plugin_package">
+<h1 class="toc">3. Plugin package</h1>
+</a><a href="#Plugin_information">
+<h2 class="toc">3.1. Plugin information</h2>
+</a><a href="#Plugin_Manager">
+<h1 class="toc">4. Plugin Manager</h1>
+</a><a href="#Plugin_table">
+<h2 class="toc">4.1. Plugin table</h2>
+</a><a href="#Plugin_management">
+<h2 class="toc">4.2. Plugin management</h2>
+</a><a href="#Installing_new_plugins">
+<h3 class="toc">4.2.1. Installing new plugins</h3>
+</a><a href="#Starting_and_stopping_plugins">
+<h3 class="toc">4.2.2. Starting and stopping plugins</h3>
+</a><a href="#Autostart_plugins">
+<h3 class="toc">4.2.3. Autostart plugins</h3>
+</a><a href="#Uninstalling_plugins">
+<h3 class="toc">4.2.4. Uninstalling plugins</h3>
+</a><a href="#Handling_multiple_plugins">
+<h3 class="toc">4.2.5. Handling multiple plugins</h3>
+</a>
+<h2>How to Read this Document</h2>
+<p>
+       This document's meta-information (authors, revision history, table of contents, ...) can be found above.
+       What follows below is the body of the document.
+       The body is composed of several sections, which may be further composed of subsections.
+     </p>
+<p>
+       Typographical styles are used to denote entities of different kinds.
+       For a full list of entities and their respective typographic conventions, please refer to the <a href="../../Management/Documentation/XML_Documentation.xml#xmlContentStyles">Styles section of the XML Documentation</a> document.
+     </p>
+<p>
+       When viewing the document in a non-printed form, it is possible to submit comments regarding a given section to the document's owner.
+       This is achieved by clicking the mail icon next to the section title.
+       For this to work, your mail must be configured to properly handle the <tt>mailto</tt> URLs.
+     </p>
+
+
+<a name="Introduction" href="#toc">
+<h1>1. &nbsp;Introduction</h1>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+This document is divided into three sections.
+The first describes how to create a VisualDCT plugin.
+The second explains how to include the parameters of the plugin and the information that is required by VisualDCT.
+The last section is about Plugin Manager, which can be used to install and manipulate the plugins within VisualDCT.
+</p>
+
+
+
+<a name="Writing_plugins" href="#toc">
+<h1>2. &nbsp;Writing plugins</h1>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+For the resource to be used as a VisualDCT plugin, it must contain a class that implements the <tt xmlns="" class="identifier">Plugin</tt> <tt xmlns="" class="keyword"> interface</tt>.
+Descriptions of specific methods are given below, followed by an example.
+</p>
+
+<a name="Plugin_interface" href="#toc">
+<h2>2.1. &nbsp;Plugin interface</h2>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+<tt xmlns="" class="identifier">Plugin</tt> <tt xmlns="" class="keyword"> interface</tt> contains the following methods:
+</p>
+
+<ul xmlns="urn:schemas-cosylab-com:Document">
+
+<li>
+<tt xmlns="" class="keyword">public void</tt> <tt xmlns="" class="identifier"> start()</tt>: This method will be called at the time the plugin is started.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public void</tt> <tt xmlns="" class="identifier"> stop()</tt>: This method will be called when the plugin is stopped.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public void</tt> <tt xmlns="" class="identifier"> destroy()</tt>: This method will be called when the plugin is to be destroyed.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public</tt> <tt xmlns="" class="identifier"> String getAuthor()</tt>: This method should return the <tt xmlns="" class="identifier">String</tt> containing the name and/or e-mail address of the plugin author.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public</tt> <tt xmlns="" class="identifier"> String getDescription()</tt>: This method should return the <tt xmlns="" class="identifier">String</tt> containing a short description of the plugin.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public</tt> <tt xmlns="" class="identifier"> String getName()</tt>: This method should return the <tt xmlns="" class="identifier">String</tt> containing the name of the plugin.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public</tt> <tt xmlns="" class="identifier"> String getVersion()</tt>: This method should return the <tt xmlns="" class="identifier">String</tt> containing the plugin version number.
+</li>
+
+<li>
+<tt xmlns="" class="keyword">public void</tt> <tt xmlns="" class="identifier"> init(Properties properties, PluginContext context)</tt>: This method is called when the plugin is initiated.
+The parameter <tt xmlns="" class="identifier">properties</tt> contains the parameters of the plugin, while the <tt xmlns="" class="identifier">context</tt> enables access to information on runtime environment.
+</li>
+
+</ul>
+
+
+
+<a name="Example" href="#toc">
+<h2>2.2. &nbsp;Example</h2>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+This is an example of a plugin.
+When it is initiated, it checks the version of VisualDCT using the parameter <tt xmlns="" class="identifier">context</tt>, and manipulates with its parameters using <tt xmlns="" class="identifier">properties</tt>.
+</p>
+
+
+<pre language="java">
+
+import java.util.*;
+import com.cosylab.vdct.plugin.*;
+
+public class SimplePlugin implements Plugin
+{
+
+int interval = 0;
+
+public void start()
+{
+	System.out.println("SimplePlugin was started.");
+}
+
+public void stop()
+{
+	System.out.println("SimplePlugin was stopped.");
+}
+
+public void destroy()
+{
+	System.out.println("SimplePlugin was destroyed.");
+}
+
+public String getAuthor()
+{
+	return "sunil.sah@cosylab.com";
+}
+	
+public String getDescription()
+{
+	return "A simple plugin implementation.";
+}
+	
+public String getName()
+{
+	return "SimplePlugin";
+}
+	
+public String getVersion()
+{
+	return "1.0";
+}
+
+public void init(Properties properties, PluginContext context)
+{
+	// check for required version of VisualDCT
+	if(context.getVersion().compareTo("2.1") &lt; 0)
+	{
+		System.out.println("SimplePlugin requires VisualDCT v2.1 or newer version.");
+		throw new Exception();
+	}
+
+	// read a property
+	String property = properties.get("interval").toString();
+	if(property != null)
+		interval = Integer.parseInt(property);
+
+	// set a new property, the time when SimplePlugin was last initiated
+	properties.put("lastrun", new Date().toString());
+}
+
+};
+
+
+</pre>
+<p class="description">
+<b>Listing 1:</b> Example of a plugin</p>
+
+
+
+
+<a name="Special_plugins" href="#toc">
+<h2>2.3. &nbsp;Special plugins</h2>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+There are currently three special types of plugins in VisualDCT:
+
+<ul>
+<li>com.cosylab.vdct.plugin.LinkTypeConfigPlugin</li>
+<li>com.cosylab.vdct.plugin.DebugPlugin</li>
+<li>com.cosylab.vdct.plugin.ExportPlugin</li>
+</ul>
+
+</p>
+
+
+
+
+
+<a name="Plugin_package" href="#toc">
+<h1>3. &nbsp;Plugin package</h1>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+VisualDCT plugins are distributed as Java Archive (<tt xmlns="" class="filename">jar</tt>) files.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+The <tt xmlns="" class="filename">jar</tt> file must include the following two files:
+<ul>
+
+<li>
+Java <tt xmlns="" class="filename">class</tt> file with the plugin implementation.
+</li>
+
+<li>
+<tt xmlns="" class="filename">.vdctplugins.xml</tt> file with the plugin information.
+</li>
+
+</ul>
+
+</p>
+
+<a name="Plugin_information" href="#toc">
+<h2>3.1. &nbsp;Plugin information</h2>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+The <tt xmlns="" class="filename">.vdctplugins.xml</tt> file includes the name of the plugin class, its autostart switch and optionally the parameters.
+It may contain information on multiple plugins.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+This in an example of <tt xmlns="" class="filename">xml</tt> file for the class named SimplePlugin.
+It will be started automatically by default, and has one parameter, <tt xmlns="" class="identifier">interval</tt>, set to 1000.
+</p>
+
+
+<pre language="xml">
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;!DOCTYPE plugins SYSTEM 'com.cosylab.vdct:plugins'&gt;
+
+&lt;plugins&gt;
+	&lt;plugin class="SimplePlugin" autostart="true"&gt;
+		&lt;param name="interval" value="1000" /&gt;
+	&lt;/plugin&gt;
+&lt;/plugins&gt;
+
+</pre>
+
+
+
+
+
+
+<a name="Plugin_Manager" href="#toc">
+<h1>4. &nbsp;Plugin Manager</h1>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+Plugin Manager is used for VisualDCT plugin management.
+It can be accessed by <span xmlns="" class="menu">&nbsp;&nbsp;Plugins&nbsp;&nbsp;</span>-<span xmlns="" class="menu">&nbsp;&nbsp;Plugin Manager...&nbsp;&nbsp;</span>.
+</p>
+
+<a name="Plugin_table" href="#toc">
+<h2>4.1. &nbsp;Plugin table</h2>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+Plugin table contains a list of currently installed plugins.
+The information of a plugin is divided into several columns:
+</p>
+
+<ol xmlns="urn:schemas-cosylab-com:Document">
+
+<li>
+The <span xmlns="" class="bold">Autostart</span> column displays a checkbox indicating whether or not the plugin will automatically be started at the time the VisualDCT is started.
+See <a xmlns="" href="#Autostart_plugins">Autostart plugins
+          (4.2.3.)
+        </a> section for more information.
+</li>
+
+<li>
+The <span xmlns="" class="bold">Status</span> column displays the state of a plugin.
+It can be one of the following:
+
+<ul>
+<li>
+<span xmlns="" class="bold">Not loaded</span>: The plugin has not been loaded.
+</li>
+
+<li>
+<span xmlns="" class="bold">Loaded</span>: The plugin has been loaded.
+</li>
+
+<li>
+<span xmlns="" class="bold">Invalid</span>: The plugin could not have been initialized due to an error.
+</li>
+
+<li>
+<span xmlns="" class="bold">Initialized</span>: The plugin was initialized, but it has not been started.
+</li>
+
+<li>
+<span xmlns="" class="bold">Started</span>: The plugin was initialized and started.
+</li>
+
+<li>
+<span xmlns="" class="bold">Stopped</span>: The plugin was started, but it is currently stopped.
+</li>
+
+</ul>
+
+</li>
+
+<li>
+The <span xmlns="" class="bold">Name</span> column displays the plugin name.
+</li>
+
+<li>
+The <span xmlns="" class="bold">Version</span> column displays the current plugin's version number.
+</li>
+
+<li>
+The <span xmlns="" class="bold">Description</span> column displays a short description of the plugin.
+</li>
+
+<li>
+The <span xmlns="" class="bold">Author</span> column displays the e-mail address of the plugin's creator.
+</li>
+
+</ol>
+
+
+<p class="figure">
+<img onclick="window.open('DOC-VisualDCT_Plugins/plugin_manager.png', '', 'menubar=0,status=0,toolbar=0,width=640,height=480,resizable=1');" src="DOC-VisualDCT_Plugins/plugin_manager.png"><p class="description">
+<b>Figure 1:</b> Plugin Manager</p>
+</p>
+
+
+
+
+<a name="Plugin_management" href="#toc">
+<h2>4.2. &nbsp;Plugin management</h2>
+</a>
+
+<a name="Installing_new_plugins" href="#toc">
+<h3>4.2.1. &nbsp;Installing new plugins</h3>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+A new plugin can be installed by clicking on a <span xmlns="" class="gui">&nbsp;&nbsp;Install...&nbsp;&nbsp;</span> button, and then selecting the plugin's <tt xmlns="" class="filename">jar</tt> file.
+The <tt xmlns="" class="filename">jar</tt> must contain a <tt xmlns="" class="filename">.vdctplugins.xml</tt> file with the required information about the new plugin.
+</p>
+
+
+<p class="notice">
+<table>
+<tr>
+<td align="center"><img src="../../Common/Documentation/images/Notice.gif"></td><td width="100%">
+The <tt class="filename">jar</tt> with the new plugin must be added to the classpath before it can be installed within the VisualDCT.
+</td>
+</tr>
+</table>
+</p>
+
+
+
+
+<a name="Starting_and_stopping_plugins" href="#toc">
+<h3>4.2.2. &nbsp;Starting and stopping plugins</h3>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+To start or stop a specific plugin it must first be selected.
+To select a plugin in the table, move with the mouse cursor over it and press the left mouse button.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+When the plugin is selected, click on the <span xmlns="" class="gui">&nbsp;&nbsp;Start&nbsp;&nbsp;</span> button to start it, or the <span xmlns="" class="gui">&nbsp;&nbsp;Stop&nbsp;&nbsp;</span> button to stop it.
+</p>
+
+
+
+<a name="Autostart_plugins" href="#toc">
+<h3>4.2.3. &nbsp;Autostart plugins</h3>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+Each plugin has an autostart switch.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+When VisualDCT is started, all installed plugins are initiated.
+Then, all plugins that have autostart switch enabled are automatically started.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+To change the autostart switch of a plugin, move the mouse cursor over its checkbox in the <span xmlns="" class="bold">Autostart</span> column, and press the left mouse button.
+The checkbox indicates the current status.
+</p>
+
+
+
+<a name="Uninstalling_plugins" href="#toc">
+<h3>4.2.4. &nbsp;Uninstalling plugins</h3>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+To uninstall a plugin, select it in the table and press the <span xmlns="" class="gui">&nbsp;&nbsp;Uninstall&nbsp;&nbsp;</span> button.
+This will permanently uninstall the plugin.
+If you wish to restore the previous state, you have to re-install the plugin with the install command.
+</p>
+
+
+
+<a name="Handling_multiple_plugins" href="#toc">
+<h3>4.2.5. &nbsp;Handling multiple plugins</h3>
+</a>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+To perform an action on several plugins at once, these plugins must all be selected.
+</p>
+
+<p xmlns="urn:schemas-cosylab-com:Document">
+To select a series of plugins, move the mouse cursor over the first one in the table, press and hold the left mouse button, drag the mouse to the last plugin, and release the button.
+To select specific plugins, hold down the <span xmlns="" class="keystroke">&nbsp;&nbsp;Ctrl&nbsp;&nbsp;</span> key, and click on them one after another.
+</p>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<p align="center">
+<table background="../../Common/Documentation/images/Cosylab.png" width="100%" border="0">
+<tr height="25px">
+<td></td>
+</tr>
+</table>
+</p>
+</body>
+</html>

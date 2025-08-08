@@ -1,0 +1,91 @@
+#
+# filename: CaDisplay.py
+# created : 07/16/01
+# author  : Geoff Savage
+#
+# Make creating Guis that use channel access easier?
+#
+"""
+CaDisplay Help
+#
+CaDisplay Overview
+"""
+
+from CaChannel import *
+from D0Gui import D0Gui
+import D0GuiDefaults
+from DevMonFrame import *
+import string
+
+class CaDisplay:
+    #
+    # parent = enclosing widget, usually a frame
+    # names = sequence containing the device names
+    # row_titles = 
+    # attribs = sequence containing the device attributes
+    # column_titles = one for the names column and one for each attribute
+    # sep = separator of pvname = name + sep + attrib
+    #
+    def __init__(self, parent, names, attribs, sep='/'):
+        self.df_d = {}  # dictionary holding the DevFrame objects
+        self.parent = parent
+        self.devNames = names
+        self.devAttribs = attribs
+        self.sep = sep
+
+    # Layout the display.
+    def createDataArea(self, da=None):
+        da = self.parent
+        # Insert the column titles
+        df = DevFrame(da, '')
+        for i in range(1, len(self.devAttribs)):
+            df.textItemAdd(str(self.devAttribs[i]))
+        df.pack()
+        for n in self.devNames:
+            df = DevFrame(da, n)
+            self.df_d[n] = df
+            for a in self.devAttribs:
+                df.floatSevrItemAdd(pvName=n+self.sep+a, pvMode=1, canPlot=1)
+            df.pack()
+
+    def finishInit(self):
+        for n in self.df_d:
+            self.df_d[n].pvConnect()        
+
+
+if __name__ == '__main__':
+
+    class CaDisplayTest(D0Gui):
+        def __init__(self, title, doc):
+            self.display = []
+            D0Gui.__init__(self, title, doc)
+            self.setAboutVersion('0.0')
+            self.setAboutContact('DZero Controls Group')
+            self.setAppName('CaDisplayTest')
+
+        def createDataArea(self, da):
+            pvnames1 = ('CTL_PROC_00', 'CTL_PROC_07')
+            pvattribs = ('CPU', 'MEM', 'FD')
+            titles = ('Device',) + pvattribs
+            self.display.append(CaDisplay(da, pvnames1, pvattribs))
+            pvnames2 = ('CTL_PROC_16', 'CTL_PROC_36')
+            pvattribs = ('CPU', 'MEM')
+            titles = ('Device', ) + pvattribs
+            self.display.append(CaDisplay(da, pvnames2, pvattribs))
+            for d in self.display:
+                d.createDataArea(da)
+
+        def finishInit(self):
+            for d in self.display:
+                d.finishInit()
+
+        def poll(self):
+            ca.poll()
+            self.after(100, self.poll)
+
+    c = CaDisplayTest('CaDisplayTest', __doc__)
+    c.poll()
+    c.mainloop()
+
+
+
