@@ -1,0 +1,4944 @@
+record(longout,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_HI")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_HI")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_MID")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_MID")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_LOW")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_LOW")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"1st word of Frame 17")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"2nd word of Frame 17")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"3rd word of Frame 17")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"4th word of Frame 17")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"5th word of Frame 17")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_ENCODER_SOURCE_SELECT")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ENCODER_SOURCE_SELECT")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"allows use of TS as enco")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MYRIAD_TRIG_DELAY")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MYRIAD_TRIG_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied to MyRIAD ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MYRIAD_OVERLAP_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MYRIAD_OVERLAP_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Controls operation of My")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON7_FILL_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FILL_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Controls operation of sy")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_ENCODER_TEST")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ENCODER_TEST")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CPLD testing register")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_USER_PACKAGE_DATA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_USER_PACKAGE_DATA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"user package data")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TDC_TRIG_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TDC_TRIG_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects which trigger sa")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_ALGO_MUX_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_ALGO_MUX_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Select trigger modes for")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_A")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_A")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_B")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_B")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_C")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_C")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_D")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_D")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_E")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_E")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_F")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_F")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_G")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_G")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_H")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_H")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_L")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_L")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_L")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_L")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_L")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_L")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_L")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_L")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_A")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_A")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_B")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_B")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_C")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_C")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_D")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_D")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_E")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_E")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_F")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_F")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_G")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_G")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_H")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_H")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_L")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_L")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay for local triggers")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CPLD_EXTRA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_EXTRA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Controls revision D sum ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SSI_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SSI_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"controls operation of SS")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SSI_ENCODE_TIME")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SSI_ENCODE_TIME")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SSI synchronization time")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_R")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_R")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_U")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_U")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_R")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_R")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_U")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_U")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_R")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_R")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_U")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_U")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_R")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_R")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_U")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_U")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_COINC_TRIG_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_COINC_TRIG_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_COINC_OVERLAP_CONTROL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_COINC_OVERLAP_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_R")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_R")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_U")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_U")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_LINK_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"mask register for which ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_LINK_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"mask register for which ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_UNUSED_2C8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_UNUSED_2C8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_UNUSED_2CC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_UNUSED_2CC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ED")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ID")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ND")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ED")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ID")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ND")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ED")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ID")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ND")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PB")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_INPUT_LINK_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_INPUT_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"mask out unused links")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LED")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LED")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"select front panel LED f")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CLK_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CLK_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"overall clock control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_AUX_IO_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"AUX I/O direction")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TARGET_WHEEL_AUX_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TARGET_WHEEL_AUX_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows routing of RS-485")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIGGER_WIDTH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_WIDTH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Sets width of Trigger pu")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_TPOWER")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_TPOWER")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_RPOWER")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_RPOWER")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_LOCAL_LE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LOCAL_LE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to enable lo")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_LINE_LE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LINE_LE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to reconfigu")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LVDS_PREEMPHASIS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LVDS_PREEMPHASIS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to configure")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LINK_LRU_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_LRU_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Manual controls to extra")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CTL1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CTL2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_DIAG_PIN_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DIAG_PIN_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects groups of signal")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TRIG_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Overall trigger selectio")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MASTER_FIFO_RESETS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MASTER_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Bitmask of FIFOs to rese")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MASTER_COUNTER_RESETS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MASTER_COUNTER_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Bitmask of Counters to r")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_PLANE_THRESHOLD")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_PLANE_THRESHOLD")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON2_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON3_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON4_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON5_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON6_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON8_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN_FIFO_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_FIFO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific FIFO in")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_REMOTE_MULTIPLCITY_CONTROL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_MULTIPLCITY_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SUM_OF_X_THRESH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SUM_OF_X_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane multiplicity thr")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SUM_OF_Y_THRESH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SUM_OF_Y_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane multiplicity thr")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LINK_L_PROPAGATION_CONTROL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_L_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Command propagation cont")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LINK_R_PROPAGATION_CONTROL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_R_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"External Trigger Collect")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LINK_U_PROPAGATION_CONTROL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_U_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"External Trigger Collect")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_RATE_COUNTER_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RATE_COUNTER_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Select mode of trigger r")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_PULSED_CTL1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_PULSED_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Setting bits in this reg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_PULSED_CTL2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_PULSED_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Setting bits in this reg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_NIM1_DELAY")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_NIM1_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"NIM IN 1 delay control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_NIM2_DELAY")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_NIM2_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"NIM IN 2 delay control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FIFO_RESETS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Resets to all the monito")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CPLD_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FS_SOURCE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_SOURCE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FS_MULT_THRESH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_MULT_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DEN_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DEN_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REN_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REN_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SYNC_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SYNC_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 47..32 o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 31..16 o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 15..0 of")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MSTR_MACH_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MSTR_MACH_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Snapshot of current stat")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_INPUT_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_INPUT_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"reads back state of aux ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_STAT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_STAT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Miscellaneous status bit")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticF_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticF")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticG_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticG")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_LRU_MACH_STAT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_LRU_MACH_STAT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Additional engineering d")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_STAT2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_STAT2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Additional Miscellaneous")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_DEPTH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_DEPTH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Number of words in MON_F")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CODE_DATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CODE_DATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Code modification date")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CODE_REVISION_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CODE_REVISION")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"PCB/Firmware Revision Nu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Collected Empty & Full f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Collected Empty & Full f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_OTHER_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_OTHER_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Empty and full flags of ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SYSTEM_THROTTLE_MAP_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SYSTEM_THROTTLE_MAP")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Bitmap of Router throttl")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reports monitor FIFO 7 s")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SUM_CONN_BUF_MON_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SUM_CONN_BUF_MON")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Monitors SUM connector")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_12_CMD_CNT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_12_CMD_CNT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Count of internal Frame ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_14_CMD_CNT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_14_CMD_CNT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Count of internal trigge")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_16_CMD_CNT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_16_CMD_CNT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Count of System Synchron")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_CMD_CNT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_CMD_CNT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Count of internal Frame ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_HI_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_HI")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_MID_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_MID")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_STARTING_TIMESTAMP_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_STARTING_TIMESTAMP_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Timestamp to go to on Im")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"1st word of Frame 17")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"2nd word of Frame 17")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"3rd word of Frame 17")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"4th word of Frame 17")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FRAME_17_DATA_5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FRAME_17_DATA_5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"5th word of Frame 17")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_ENCODER_SOURCE_SELECT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ENCODER_SOURCE_SELECT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"allows use of TS as enco")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MYRIAD_TRIG_DELAY_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MYRIAD_TRIG_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied to MyRIAD ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MYRIAD_OVERLAP_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MYRIAD_OVERLAP_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Controls operation of My")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FILL_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FILL_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Controls operation of sy")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_ENCODER_TEST_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ENCODER_TEST")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CPLD testing register")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_USER_PACKAGE_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_USER_PACKAGE_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"user package data")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TDC_TRIG_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TDC_TRIG_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects which trigger sa")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_ALGO_MUX_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_ALGO_MUX_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Select trigger modes for")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_D_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_D")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_E_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_E")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_F_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_F")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_G_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_G")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_PRESCALE_H_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_PRESCALE_H")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Prescale control for alg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_L_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_L")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_L_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_L")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_L_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_L")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_L_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_L")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_D_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_D")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_E_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_E")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_F_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_F")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_G_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_G")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_VETO_SELECT_H_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_VETO_SELECT_H")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto enables per trigger")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_L_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_L")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay for local triggers")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CPLD_EXTRA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_EXTRA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Controls revision D sum ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SSI_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SSI_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"controls operation of SS")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SSI_ENCODE_TIME_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SSI_ENCODE_TIME")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SSI synchronization time")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LATCHED_TS_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LATCHED_TS_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"for IOC readout assistan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LATCHED_TS_MID_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LATCHED_TS_MID")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"for IOC readout assistan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LATCHED_TS_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LATCHED_TS_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"for IOC readout assistan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_R_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_R")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_OVERLAP_CTL_U_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_OVERLAP_CTL_U")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"controls operation of re")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_R_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_R")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_TS_OFFSET_U_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_TS_OFFSET_U")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"timestamp offset for rem")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_R_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_R")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DIG_OFFSET_U_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DIG_OFFSET_U")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_R_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_R")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIG_DELAY_U_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIG_DELAY_U")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_COINC_TRIG_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_COINC_TRIG_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"secondary ts offset for ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_COINC_OVERLAP_CONTROL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_COINC_OVERLAP_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_R_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_R")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCAL_TRIG_DELAY_U_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCAL_TRIG_DELAY_U")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Delay applied toremote t")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_LINK_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"mask register for which ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_LINK_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"mask register for which ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_UNUSED_2C8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_UNUSED_2C8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_UNUSED_2CC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_UNUSED_2CC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_AD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_BD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_CD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_DD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_EC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ED_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_FD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_GD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_HD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_IC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ID_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_JD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_KD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_LD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_MD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_NC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_ND_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_OD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_VETO_RAM_PD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_VETO_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Veto lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_AD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_BD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_CD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_DD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_EC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ED_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_FD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_GD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_HD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_IC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ID_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_JD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_KD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_LD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_MD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_NC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_ND_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_OD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RAM_PD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"TRIG lookup from target ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_AD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_AD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_BD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_BD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_CD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_CD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_DD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_DD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_EC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_EC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ED_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ED")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_FD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_FD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_GD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_GD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_HD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_HD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_IC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_IC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ID_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ID")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_JD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_JD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_KD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_KD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_LD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_LD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_MD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_MD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_NC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_NC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_ND_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_ND")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_OD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_OD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SWEEP_RAM_PD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SWEEP_RAM_PD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SWEEP lookup from target")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_INPUT_LINK_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_INPUT_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"mask out unused links")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LED_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LED")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"select front panel LED f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CLK_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CLK_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"overall clock control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_IO_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"AUX I/O direction")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TARGET_WHEEL_AUX_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TARGET_WHEEL_AUX_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows routing of RS-485")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIGGER_WIDTH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIGGER_WIDTH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Sets width of Trigger pu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_TPOWER_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_TPOWER")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_RPOWER_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_RPOWER")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_LOCAL_LE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LOCAL_LE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to enable lo")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_LINE_LE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LINE_LE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to reconfigu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LVDS_PREEMPHASIS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LVDS_PREEMPHASIS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to configure")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_LRU_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_LRU_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Manual controls to extra")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CTL1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CTL2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DIAG_PIN_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DIAG_PIN_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects groups of signal")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Overall trigger selectio")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MASTER_FIFO_RESETS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MASTER_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Bitmask of FIFOs to rese")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MASTER_COUNTER_RESETS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MASTER_COUNTER_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Bitmask of Counters to r")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_TRIGGER_PLANE_THRESHOLD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_TRIGGER_PLANE_THRESHOLD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON2_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON3_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON4_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON5_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON6_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON8_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN_FIFO_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_FIFO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific FIFO in")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REMOTE_MULTIPLCITY_CONTROL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REMOTE_MULTIPLCITY_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SUM_OF_X_THRESH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SUM_OF_X_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane multiplicity thr")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SUM_OF_Y_THRESH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SUM_OF_Y_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane multiplicity thr")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_L_PROPAGATION_CONTROL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_L_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Command propagation cont")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_R_PROPAGATION_CONTROL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_R_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"External Trigger Collect")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_U_PROPAGATION_CONTROL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_U_PROPAGATION_CONTROL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"External Trigger Collect")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RATE_COUNTER_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RATE_COUNTER_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Select mode of trigger r")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_NIM1_DELAY_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_NIM1_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"NIM IN 1 delay control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_NIM2_DELAY_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_NIM2_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"NIM IN 2 delay control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FIFO_RESETS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Resets to all the monito")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_1_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_1_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_1_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_1_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_2_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_2_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_2_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_2_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_3_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_3_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_3_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_3_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_4_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_4_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_4_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_4_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_5_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_5_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_5_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_5_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_6_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_6_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_6_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_6_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_7_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_7_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_7_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_7_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_8_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_8_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TRIG_RATE_COUNTER_8_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TRIG_RATE_COUNTER_8_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_1_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_1_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_1_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_1_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_2_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_2_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_2_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_2_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_3_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_3_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_3_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_3_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_4_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_4_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_4_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_4_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_5_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_5_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_5_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_5_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_6_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_6_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_6_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_6_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_7_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_7_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_7_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_7_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_8_LOW_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_8_LOW")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_RAW_TRIG_RATE_COUNTER_8_HIGH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_RAW_TRIG_RATE_COUNTER_8_HIGH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_A_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_A_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_B_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_B_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_C_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_C_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_D_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_D_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CPLD_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FS_MULT_THRESH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_MULT_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CPLD_MULT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MULT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_fpga_status_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_fpga_status")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Status of VME fpga")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_fpga_version_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_fpga_version")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"VME FPGA VERSION/REVISIO")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_full_code_revision_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_full_code_revision")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"fuller form of code revi")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_code_date_VME_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_code_date_VME")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"code_date_VME")
+}
+#-------------------------------------------------------
+

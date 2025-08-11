@@ -1,4 +1,17 @@
 *.bin
-receiver/tcp_receiver
 *.o
 *.so
+
+#EPICS compiled stuff
+base/base-3.14.12.8/bin
+base/base-3.14.12.8/configure/O.linux-x86_64
+base/base-3.14.12.8/db
+base/base-3.14.12.8/dbd
+base/base-3.14.12.8/html
+base/base-3.14.12.8/include
+base/base-3.14.12.8/lib
+base/base-3.14.12.8/src
+base/base-3.14.12.8/templates
+
+edm/logs
+receiver/tcp_receiver

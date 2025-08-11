@@ -1,0 +1,387 @@
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_address")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_address")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_address_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_address")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_long_address")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_long_address")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_long_address_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_long_address")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_value")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_value")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_value_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_value")
+   field(SCAN, "I/O Intr")
+}
+
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_value_read_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_value_read")
+}
+
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_write_addr")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_write_addr")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_write_addr_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_write_addr")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_read_addr")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_read_addr")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_read_addr_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_read_addr")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_write_long_addr")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_write_long_addr")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_write_long_addr_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_write_long_addr")
+   field(SCAN, "I/O Intr")
+}
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_read_long_addr")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_read_long_addr")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_read_long_addr_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_read_long_addr")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+
+record(longout, "VME$(CRATE):$(BOARD):dbg_card_number")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_card_number")
+}
+
+record(longin, "VME$(CRATE):$(BOARD):dbg_card_number_RBV")
+{
+   field(PINI, "1")
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))dbg_card_number")
+   field(SCAN, "I/O Intr")
+}
+
+
+
+##20240221 :  JTA: removing PVs associated with old Java programming of flash.
+
+
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_program")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_program")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_program_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_program")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_board")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_board")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_board_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_board")
+##	   field(SCAN, "I/O Intr")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_erase")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_erase")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_erase_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_erase")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_verify")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_verify")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_verify_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_verify")
+##	   field(SCAN, ".5 second")
+##	}
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_read")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_read")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_read_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_read")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	
+## record(longout, "VME$(CRATE):$(BOARD):fpga_data_len")
+## {
+##    field(DTYP, "asynInt32")
+##    field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_data_len")
+## }
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_data_len_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_data_len")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	record(waveform, "VME$(CRATE):$(BOARD):fpga_data")
+##	{
+##	    field(PINI, "YES")
+##	    field(DTYP, "asynInt8ArrayOut")
+##	    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_data")
+##	    field(FTVL, "UCHAR")
+##	    field(NELM, "10000000")
+##	}
+##	
+##	record(waveform, "VME$(CRATE):$(BOARD):fpga_datarb")
+##	{
+##	    field(PINI, "YES")
+##	    field(DTYP, "asynInt8ArrayOut")
+##	    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_datarb")
+##	    field(FTVL, "UCHAR")
+##	    field(NELM, "10000000")
+##	}
+##	
+##	record(waveform, "VME$(CRATE):$(BOARD):fpga_data_RBV")
+##	{
+##	    field(PINI, "YES")
+##	    field(DTYP, "asynInt8ArrayIn")
+##	    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_data")
+##	    field(FTVL, "UCHAR")
+##	    field(NELM, "10000000")
+##	    field(SCAN, "I/O Intr")
+##	}
+##	
+##	record(waveform, "VME$(CRATE):$(BOARD):fpga_datarb_RBV")
+##	{
+##	    field(PINI, "YES")
+##	    field(DTYP, "asynInt8ArrayIn")
+##	    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_datarb")
+##	    field(FTVL, "UCHAR")
+##	    field(NELM, "10000000")
+##	    field(SCAN, "I/O Intr")
+##	}
+##	
+##	
+##	record(waveform, "VME$(CRATE):$(BOARD):fpga_message_RBV")
+##	{
+##	    field(DTYP, "asynOctetRead")
+##	    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_message")
+##	    field(FTVL, "CHAR")
+##	    field(NELM, "256")
+##	    field(SCAN, "1 second")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_startsend")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_startsend")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_startsend_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_startsend")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_blocksize")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_blocksize")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_blocksize_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_blocksize")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_updatewave")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_updatewave")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_updatewave_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_updatewave")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):fpga_updatewave2")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_updatewave2")
+##	}
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_updatewave2_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_updatewave2")
+##	   field(SCAN, ".5 second")
+##	}
+##	
+##	
+##	
+##	
+##	
+## record(longin, "VME$(CRATE):$(BOARD):fpga_verifyok_RBV")
+## {
+##    field(PINI, "1")
+##    field(DTYP, "asynInt32")
+##    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_verifyok")
+##    field(SCAN, ".5 second")
+## }
+## record(longin, "VME$(CRATE):$(BOARD):fpga_fail_addr_RBV")
+## {
+##    field(PINI, "1")
+##    field(DTYP, "asynInt32")
+##    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_fail_addr")
+##    field(SCAN, ".5 second")
+## }
+## record(longin, "VME$(CRATE):$(BOARD):fpga_fail_filedata_RBV")
+## {
+##    field(PINI, "1")
+##    field(DTYP, "asynInt32")
+##    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_fail_filedata")
+##    field(SCAN, ".5 second")
+## }
+## record(longin, "VME$(CRATE):$(BOARD):fpga_fail_flashdata_RBV")
+## {
+##    field(PINI, "1")
+##    field(DTYP, "asynInt32")
+##    field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_fail_flashdata")
+##    field(SCAN, ".5 second")
+## }
+
+##	
+##	record(longin, "VME$(CRATE):$(BOARD):fpga_runcounter_RBV")
+##	{
+##	   field(PINI, "1")
+##	   field(DTYP, "asynInt32")
+##	   field(INP,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))fpga_runcounter")
+##	   field(SCAN, "I/O Intr")
+##	}
+##	
+##	
+##	
+##	
+##	record(longout, "VME$(CRATE):$(BOARD):rebootcrate")
+##	{
+##	   field(DTYP, "asynInt32")
+##	   field(OUT,  "@asyn($(BOARD),$(ADDR),$(TIMEOUT))rebootcrate")
+##	}
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+# the ports here are defined for use in Digital Microball
+#
+#       DGS     : 5064/5065
+#       DFMA    : 5068/5069
+#       Xarray  : 5072/5073
+#       G-wing  : 5074/5075
+#       F-wing/microball  : 5078/5079
+#
+putenv("EPICS_CA_SERVER_PORT = 5072")
+putenv("EPICS_CA_REPEATER_PORT = 5073")
+putenv("EPICS_CA_CONN_TMO = 40")
+putenv("EPICS_CA_BEACON_PERIOD = 2")
+
+
+startup = "/DGS_system/ioc/boot"
+#putenv("EPICS_TS_NTP_INET=192.168.203.32")
+putenv("EPICS_TS_NTP_INET=192.168.203.122")
+putenv("EPICS_TIMEZONE=CUS::360:031302:110602")
+putenv("EPICS_TS_MIN_WEST=360")
+putenv("ARCH=vxWorks-ppc604_long")
+putenv("IOC=boot")
+top = "/DGS_system/ioc"
+putenv("TOP=/DGS_system/ioc")
+topbin = "/DGS_system/ioc/bin/vxWorks-ppc604_long"
+
+

@@ -1,0 +1,471 @@
+
+record(ai, "DAQC$(CRATE)_CV_CRATENUM") { field(VAL, "$(CRATE)") }	
+
+#=============================================================================
+## PVs used by inLoop
+#=============================================================================
+
+#inLoop drives four PVs that provide counts indicative of activity.
+record(ai, "DAQC$(CRATE)_CV_InLoop1") { field(DESC, "InLoop1") }	##MBtyes/sec read
+record(ai, "DAQC$(CRATE)_CV_InLoop2") { field(DESC, "InLoop2") }	##Type F buffers raw count
+record(ai, "DAQC$(CRATE)_CV_InLoop3") { field(DESC, "InLoop3") }	##Number of VME transfers (count, not rate)
+record(ai, "DAQC$(CRATE)_CV_InLoop4") { field(DESC, "InLoop4") }	##Result of last transfer
+
+## 20220920: JTA: added another set of PVs for the initial scan of the boards (devGVME.c)
+## to fill with the board TYPE number (e.g. ANL Master Digitizer, ANL Slave Digitizer, master trigger, router trigger, etc.)
+## These are NUMERIC values that we will use the the mbbi PV type to decode.
+## 	"GRETINA Router Trigger",	//1		--the '1' comes from bits 11:8 of the code_revision register
+## 	"GRETINA Master Trigger",	//2		--the '2' comes from bits 11:8 of the code_revision register
+## 	"LBNL Digitizer",			//3		--arbitrary placeholder assigned by JTA
+## 	"DGS Master Trigger",		//4		--the '4' comes from bits 11:8 of the code_revision register
+## 	"Unknown",					//5
+## 	"DGS Router Trigger",		//6		--the '6' comes from bits 11:8 of the code_revision register
+## 	"Unknown",					//7
+## 	"MyRIAD",					//8		--arbitrary placeholder assigned by JTA
+## 	"Unknown",					//9
+## 	"Unknown",					//10
+## 	"Unknown",					//11
+## 	"ANL Master Digitizer",		//0xC : 12	 - low 16 bits of code_revision should be 4XYZ (4:digitizer X:master/slave Y:major rev Z:minor ## 	rev)
+## 	"ANL Slave Digitizer",		//0xD : 13	 - low 16 bits of code_revision should be 4XYZ (4:digitizer X:master/slave Y:major rev Z:minor ## 	rev)
+## 	"Majorana Master Digitizer",//14		- Majorana digitizers read FXYZ (F: Majorana digitizer, X:master/slave Y:major rev Z:minor rev)
+## 	"Majorana Slave Digitizer",	//15		- Majorana digitizers read FXYZ (F: Majorana digitizer, X:master/slave Y:major rev Z:minor rev)
+
+record(mbbi, "DAQC$(CRATE)_BoardType0")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+
+record(mbbi, "DAQC$(CRATE)_BoardType1")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+record(mbbi, "DAQC$(CRATE)_BoardType2")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+record(mbbi, "DAQC$(CRATE)_BoardType3")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+record(mbbi, "DAQC$(CRATE)_BoardType4")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+record(mbbi, "DAQC$(CRATE)_BoardType5")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+record(mbbi, "DAQC$(CRATE)_BoardType6")
+{
+field(ZRST,"0?")
+field(ZRVL,"0")
+field(ONST,"GRT")
+field(ONVL,"1")
+field(TWST,"GMT")
+field(TWVL,"2")
+field(THST,"GD")
+field(THVL,"3")
+field(FRST,"DMT")
+field(FRVL,"4")
+field(FVST,"5?")
+field(FVVL,"5")
+field(SXST,"DRT")
+field(SXVL,"6")
+field(SVST,"7?")
+field(SVVL,"7")
+field(EIST,"MYR")
+field(EIVL,"8")
+field(NIST,"9?")
+field(NIVL,"9")
+field(TEST,"10?")
+field(TEVL,"10")
+field(ELST,"11?")
+field(ELVL,"11")
+field(TVST,"AMD")
+field(TVVL,"12")
+field(TTST,"ASD")
+field(TTVL,"13")
+field(FTST,"14?")
+field(FTVL,"14")
+field(FFST,"15?")
+field(FFVL,"15")
+}
+
+
+#=============================================================================
+## PVs used by outLoop
+#=============================================================================
+record(ai, "DAQC$(CRATE)_CV_BuffersAvail") {
+  field(DESC, "buffers available")
+}
+
+record(ai, "DAQC$(CRATE)_CV_NumSendBuffers") {
+  field(DESC, "num send buffers")
+}
+
+## status from outloop
+record(ai, "DAQC$(CRATE)_CV_OutLoop0") {  field(DESC, "OutLoop0")}	##Data lost from board #0
+record(ai, "DAQC$(CRATE)_CV_OutLoop1") {  field(DESC, "OutLoop1")}	##Data lost from board #1
+record(ai, "DAQC$(CRATE)_CV_OutLoop2") {  field(DESC, "OutLoop2")}	##Data lost from board #2
+record(ai, "DAQC$(CRATE)_CV_OutLoop3") {  field(DESC, "OutLoop3")}	##Data lost from board #3
+record(ai, "DAQC$(CRATE)_CV_OutLoop4") {  field(DESC, "OutLoop4")}	##Data lost from board #4
+record(ai, "DAQC$(CRATE)_CV_OutLoop5") {  field(DESC, "OutLoop5")}	##Data lost from board #5
+record(ai, "DAQC$(CRATE)_CV_OutLoop6") {  field(DESC, "OutLoop6")}	##Data lost from board #6
+
+record(ai, "DAQC$(CRATE)_OL_DataRate0") { field(DESC, "outLoopDataRate0") }		##kBytes/sec processed from board #0
+record(ai, "DAQC$(CRATE)_OL_DataRate1") { field(DESC, "outLoopDataRate1") }		##kBytes/sec processed from board #1
+record(ai, "DAQC$(CRATE)_OL_DataRate2") { field(DESC, "outLoopDataRate2") }		##kBytes/sec processed from board #2
+record(ai, "DAQC$(CRATE)_OL_DataRate3") { field(DESC, "outLoopDataRate3") }		##kBytes/sec processed from board #3
+record(ai, "DAQC$(CRATE)_OL_DataRate4") { field(DESC, "outLoopDataRate4") }		##kBytes/sec processed from board #4
+record(ai, "DAQC$(CRATE)_OL_DataRate5") { field(DESC, "outLoopDataRate5") }		##kBytes/sec processed from board #5
+record(ai, "DAQC$(CRATE)_OL_DataRate6") { field(DESC, "outLoopDataRate6") }		##kBytes/sec processed from board #6
+
+record(ai, "DAQC$(CRATE)_OL_Data0") { field(DESC, "outLoopData0") }		##Total data in MBytes processed from board #0
+record(ai, "DAQC$(CRATE)_OL_Data1") { field(DESC, "outLoopData1") }		##Total data in MBytes processed from board #1
+record(ai, "DAQC$(CRATE)_OL_Data2") { field(DESC, "outLoopData2") }		##Total data in MBytes processed from board #2
+record(ai, "DAQC$(CRATE)_OL_Data3") { field(DESC, "outLoopData3") }		##Total data in MBytes processed from board #3
+record(ai, "DAQC$(CRATE)_OL_Data4") { field(DESC, "outLoopData4") }		##Total data in MBytes processed from board #4
+record(ai, "DAQC$(CRATE)_OL_Data5") { field(DESC, "outLoopData5") }		##Total data in MBytes processed from board #5
+record(ai, "DAQC$(CRATE)_OL_Data6") { field(DESC, "outLoopData6") }		##Total data in MBytes processed from board #6
+
+record(ai, "DAQC$(CRATE)_OL_NumFreeBuffers") { field(DESC, "outLoopNumFreeBuffers") }
+record(ai, "DAQC$(CRATE)_OL_NumWrittenBuffers") { field(DESC, "outLoopNumWrittenBuffers") }
+record(ai, "DAQC$(CRATE)_OL_NumSendBuffers") { field(DESC, "outLoopNumSendBuffers") }
+record(ai, "DAQC$(CRATE)_OL_TotalBufsWritten") { field(DESC, "outLoopTotalBufsWritten") }
+record(ai, "DAQC$(CRATE)_OL_TotalFBufsWritten") { field(DESC, "outLoopTotalFBufsWritten") }
+record(ai, "DAQC$(CRATE)_OL_TotalBufsLost") { field(DESC, "outLoopTotalBufsLost") }
+record(ai, "DAQC$(CRATE)_OL_BufLostPerecnt") { field(DESC, "outLoopBufLostPerecnt") }
+
+record(ai, "DAQC$(CRATE)_CV_SendRate") {
+  field(DESC, "KB/Sec output")
+  field(SCAN, "1 second")
+  field(INP, "#C$(CRATE) S13 @")		##not understood 20230330
+  field(SMOO, "0.9")
+  field(PREC, "1")
+}
+
+record(waveform, "DAQC$(CRATE)_CV_Trace") {
+  field(DESC, "raw trace display")
+  field(DTYP, "Soft Channel")
+  field(NELM, "1024")
+  field(FTVL, "SHORT")
+}
+
+record(longin, "DAQC$(CRATE)_CV_TraceLen") {
+  field(HOPR, "1024")
+  field(LOPR, "-5")
+}
+
+record(longout, "DAQC$(CRATE)_CS_TraceBd") {
+  field(DESC, "Board to get trace from")
+  field(HOPR, "15")
+  field(LOPR, "0")
+}
+
+record(longout, "DAQC$(CRATE)_CS_TraceChan") {
+  field(DESC, "Chan to get trace from")
+  field(HOPR, "9")
+  field(LOPR, "0")
+}
+
+record(bo, "DAQC$(CRATE)_CS_TraceHorns") {
+  field(DESC, "show/hide Trace Triggers")
+  field(ZNAM, "Hide")
+  field(ONAM, "Show")
+  
+}
+
+record(ao, "DAQC$(CRATE)_OL_HeaderCheckEnable") {
+	field(DESC, "outLoopHeaderCheckEnable")
+	field(DOL, "1")
+}
+
+record(ao, "DAQC$(CRATE)_OL_TimestampCheckEnable") {
+	field(DESC, "outLoopTimestampCheckEnable")
+	field(DOL, "1")
+}
+
+record(ao, "DAQC$(CRATE)_OL_DeepCheckEnable") {
+	field(DESC, "outLoopDeepCheckEnable")
+	field(DOL, "1")
+}
+
+record(ao, "DAQC$(CRATE)_OL_HeaderSummaryEnable") {
+	field(DESC, "outLoopHeaderSummaryEnable")
+	field(DOL, "0")
+}
+
+record(ao, "DAQC$(CRATE)_OL_HeaderSummaryPrescale") {
+	field(DESC, "outLoopHeaderSummaryPrescale")
+	field(DOL, "4096")
+}
+
+record(ao, "DAQC$(CRATE)_OL_HeaderSummaryEventPrescale") {
+	field(DESC, "outLoopHeaderSummaryEventPrescale")
+	field(DOL, "256")
+}
+
+#=============================================================================
+## PVs used by MiniSender
+#=============================================================================
+record(bi, "DAQC$(CRATE)_CV_SenderRunning") {
+  field(DESC, "Status: Sender on")
+  field(ZNAM, "Stopped")
+  field(ONAM, "Running")
+}
+
+#=============================================================================
+## PVs used as process-to-process communication between inLoop, outLoop and/or Minisender.
+#=============================================================================
+## this is the PV that inLoop uses to tell outLoop that inLoop is running.
+## a "DECL" in inLoop, a "DECLMON" in outLoop.
+## Meant for inter-process communication only, should not be on any screen or in any script.
+record(bi,"DAQC$(CRATE):inLoop_Running")
+{
+field(ONAM,"Running")
+field(ZNAM,"Stopped")
+field(DESC,"inLoop run status")
+}
+
+
+#=============================================================================
+## Dummy PVs that do not connect to scripts or screens but are referenced
+## by inLoop for boards that do not exist in crate.
+#=============================================================================
+
+## This is a DUMMY process variable referenced by inLoop for all unoccupied slots in the crate.
+record(bo, "VME$(CRATE):X:CS_Ena") 
+{
+  field(DESC, "Dummy board enable")
+  field(PINI, "YES")
+  field(DTYP, "Raw Soft Channel")
+  field(DOL, "0")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+}
+
+## This is a DUMMY process variable referenced by inLoop for all unoccupied slots in the crate.
+record(mbbo, "VME$(CRATE):X:FifoNum") {
+  field(DESC, "Readout Fifo Select")
+  field(DOL, "6")
+  field(PINI, "YES")
+  field(DTYP, "Raw Soft Channel")
+  field(ZRST,"MONFIFO 1")
+  field(ZRVL,"0")
+  field(ONST,"MONFIFO 2")
+  field(ONVL,"1")
+  field(TWST,"MONFIFO 3")
+  field(TWVL,"2")
+  field(THST,"MONFIFO 4")
+  field(THVL,"3")
+  field(FRST,"MONFIFO 5")
+  field(FRVL,"4")
+  field(FVST,"MONFIFO 6")
+  field(FVVL,"5")
+  field(SXST,"MAIN DATA FIFO")
+  field(SXVL,"6")
+  field(SVST,"MONFIFO 8")
+  field(SVVL,"7")
+  field(EIST,"CHAN A FIFO")
+  field(EIVL,"8")
+  field(NIST,"CHAN B FIFO")
+  field(NIVL,"9")
+  field(TEST,"CHAN C FIFO")
+  field(TEVL,"10")
+  field(ELST,"CHAN D FIFO")
+  field(ELVL,"11")
+  field(TVST,"CHAN E FIFO")
+  field(TVVL,"12")
+  field(TTST,"CHAN F FIFO")
+  field(TTVL,"13")
+  field(FTST,"CHAN G FIFO")
+  field(FTVL,"14")
+  field(FFST,"CHAN H FIFO")
+  field(FFVL,"15")
+}

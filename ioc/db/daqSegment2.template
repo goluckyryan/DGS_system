@@ -1,0 +1,67 @@
+#=============================================================================
+## PVs used by inLoop
+#=============================================================================
+## This PV serves as the Readout Enable for each board in a crate.
+## The $(CRATE)$(BOARD) is the same as all other PVs, translating into something like VMEnn:MDIG1: or
+## VMEnn:MTRG: or VMEnn:RTRn:.
+record(bo, "VME$(CRATE):$(BOARD):CS_Ena") 
+{
+  field(DESC, "Software board enable")
+  field(PINI, "YES")
+  field(DTYP, "Raw Soft Channel")
+  field(DOL, "0")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+}
+
+record(mbbo, "VME$(CRATE):$(BOARD):FifoNum") {
+  field(DESC, "Readout Fifo Select")
+  field(DOL, "6")
+  field(PINI, "YES")
+  field(DTYP, "Raw Soft Channel")
+  field(ZRST,"MONFIFO 1")
+  field(ZRVL,"0")
+  field(ONST,"MONFIFO 2")
+  field(ONVL,"1")
+  field(TWST,"MONFIFO 3")
+  field(TWVL,"2")
+  field(THST,"MONFIFO 4")
+  field(THVL,"3")
+  field(FRST,"MONFIFO 5")
+  field(FRVL,"4")
+  field(FVST,"MONFIFO 6")
+  field(FVVL,"5")
+  field(SXST,"MAIN DATA FIFO")
+  field(SXVL,"6")
+  field(SVST,"MONFIFO 8")
+  field(SVVL,"7")
+  field(EIST,"CHAN A FIFO")
+  field(EIVL,"8")
+  field(NIST,"CHAN B FIFO")
+  field(NIVL,"9")
+  field(TEST,"CHAN C FIFO")
+  field(TEVL,"10")
+  field(ELST,"CHAN D FIFO")
+  field(ELVL,"11")
+  field(TVST,"CHAN E FIFO")
+  field(TVVL,"12")
+  field(TTST,"CHAN F FIFO")
+  field(TTVL,"13")
+  field(FTST,"CHAN G FIFO")
+  field(FTVL,"14")
+  field(FFST,"CHAN H FIFO")
+  field(FFVL,"15")
+}
+
+#=============================================================================
+## PVs used by outLoop
+#=============================================================================
+
+#=============================================================================
+## PVs used by MiniSender
+#=============================================================================
+
+
+
+
+

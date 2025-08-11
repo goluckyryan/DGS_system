@@ -1,0 +1,26 @@
+#!/bin/bash -l
+
+source /DGS_system/.EPICSrc
+
+runEdm() {
+
+  export EDMBASE=${DGS_SYSTEM_DIR}/edm/extensions/dgs1/src/edm
+
+  export EDMOBJECTS=${EDMBASE}/setup
+  export EDMHELPFILES=${EDMBASE}/helpFiles
+  export EDM=${EDMBASE}/edmMain/O.linux-x86_64/edm
+  export EDMPVOBJECTS=${EDMBASE}/setup
+  export EDMFILES=${EDMBASE}/setup
+
+  export EDMDATAFILES=$EDMDATAFILES:${DGS_SYSTEM_DIR}/edm/screens
+  export EDMSCRIPTS=${DGS_SYSTEM_DIR}/edm/scripts
+  
+  if [ $# -eq 0 ]; then
+     $EDM -x -noedit runControl &
+  else
+     echo "----------------- enable editing"
+     $EDM -x runControl &
+  fi
+}
+
+runEdm $1

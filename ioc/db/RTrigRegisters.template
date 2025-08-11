@@ -1,0 +1,1390 @@
+record(longout,"VME$(CRATE):$(BOARD):reg_MON1_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON1_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON2_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON3_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON4_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON5_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON6_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON7_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON8_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN1_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN1_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN2_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN2_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN3_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN3_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN4_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN4_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN5_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN5_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN6_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN6_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN7_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN7_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN8_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN8_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_INPUT_LINK_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_INPUT_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"mask out unused links")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LED_REG")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LED_REG")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"select front panel LED f")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_A")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_A")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_B")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_B")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_C")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_C")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CLK_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CLK_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"overall clock control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_AUX_IO_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"AUX I/O direction")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_AUX_IO_DATA")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_DATA")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Manual Aux I/O data")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_AUX_INPUT_SELECT")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_INPUT_SELECT")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows routing of RS-485")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_AUX_COUNTDOWN")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_COUNTDOWN")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"test pattern control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_TPOWER")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_TPOWER")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_RPOWER")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_RPOWER")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_LOCAL_LE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LOCAL_LE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to enable lo")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SERDES_LINE_LE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LINE_LE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to reconfigu")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LVDS_PREEMPHASIS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LVDS_PREEMPHASIS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Allows user to configure")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_LINK_LRU_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_LRU_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Manual controls to extra")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CTL1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MISC_CTL2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_GENERIC_TEST_FIFO")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_GENERIC_TEST_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"For testing FIFO functio")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_DIAG_PIN_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DIAG_PIN_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects groups of signal")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FORCE_SYNC_REG")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FORCE_SYNC_REG")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Override data to bad lin")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SPARE_854")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_854")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Spare, unused")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_A")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_A")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_B")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_B")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_C")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_C")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_D")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_D")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_E")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_E")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_F")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_F")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_G")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_G")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_H")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_H")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_A")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_A")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_B")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_B")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_C")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_C")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_D")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_D")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_E")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_E")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_F")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_F")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_G")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_G")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_H")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_H")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_ANY_THROTTLE_WIDTH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ANY_THROTTLE_WIDTH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Width of throttle as ass")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_THROTTLE_LIMIT_TIME")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_THROTTLE_LIMIT_TIME")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Control delay before dig")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON1_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON1_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON2_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON3_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON4_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON5_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON6_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_MON8_FIFO_SEL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN_MON_FIFO_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_MON_FIFO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel-specific FIFO in")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CHAN_MON_FIFO_WE_CTL")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_MON_FIFO_WE_CTL")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel FIFO write contr")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_TSCATTER_DELAY")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TSCATTER_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Overlap time to distingu")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CLEAN_DIRTY")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CLEAN_DIRTY")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Router to master control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_PULSED_CTL1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_PULSED_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Setting bits in this reg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_PULSED_CTL2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_PULSED_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Setting bits in this reg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SPARE_8E8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_8E8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Unused spare")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_SPARE_8EC")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_8EC")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Unused spare")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FIFO_RESETS")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Resets to all the monito")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CPLD_MASK")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MASK")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FS_SOURCE")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_SOURCE")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_FS_MULT_THRESH")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_MULT_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"")
+}
+#-------------------------------------------------------
+
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DEN_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DEN_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_REN_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_REN_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SYNC_BUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SYNC_BUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Returns current status o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 47..32 o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 15..16 o")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TIMESTAMP_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TIMESTAMP_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back bits 15..0 of")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_STAT_REG_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_STAT_REG")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Miscellaneous status bit")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticB_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticB")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticD_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticD")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticF_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticF")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticG_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticG")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DiagnosticH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DiagnosticH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic counter regis")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_THROTTLE_STATUS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_THROTTLE_STATUS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Throttle status register")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CODE_DATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CODE_DATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Code modification date")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CODE_REVISION_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CODE_REVISION")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"PCB/Firmware Revision Nu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON1_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON1_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON2_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON3_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON4_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON5_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON6_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON8_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN1_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN1_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN2_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN2_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN3_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN3_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN4_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN4_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN5_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN5_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN6_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN6_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN7_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN7_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN8_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN8_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific monitor")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Collected Empty & Full f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN_FIFO_STATE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_FIFO_STATE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Collected Empty & Full f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_D_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_D")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_E_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_E")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_F_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_F")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_G_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_G")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LOCK_COUNTER_H_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LOCK_COUNTER_H")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"count of locks from link")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_INPUT_LINK_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_INPUT_LINK_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"mask out unused links")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LED_REG_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LED_REG")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"select front panel LED f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SKEW_CTL_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SKEW_CTL_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Link clock skew control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CLK_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CLK_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"overall clock control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_IO_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"AUX I/O direction")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_IO_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_IO_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Manual Aux I/O data")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_INPUT_SELECT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_INPUT_SELECT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows routing of RS-485")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_AUX_COUNTDOWN_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_AUX_COUNTDOWN")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"test pattern control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_TPOWER_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_TPOWER")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_RPOWER_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_RPOWER")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to power dow")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_LOCAL_LE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LOCAL_LE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to enable lo")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SERDES_LINE_LE_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SERDES_LINE_LE")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to reconfigu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LVDS_PREEMPHASIS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LVDS_PREEMPHASIS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Allows user to configure")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_LINK_LRU_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_LINK_LRU_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Manual controls to extra")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CTL1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MISC_CTL2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MISC_CTL2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Various miscellaneous co")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_GENERIC_TEST_FIFO_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_GENERIC_TEST_FIFO")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"For testing FIFO functio")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_DIAG_PIN_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_DIAG_PIN_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects groups of signal")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FORCE_SYNC_REG_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FORCE_SYNC_REG")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Override data to bad lin")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SPARE_854_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_854")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Spare, unused")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_D_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_D")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_E_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_E")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_F_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_F")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_G_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_G")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_X_PLANE_MAP_H_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_X_PLANE_MAP_H")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"X-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_A_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_A")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_B_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_B")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_C_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_C")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_D_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_D")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_E_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_E")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_F_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_F")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_G_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_G")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_Y_PLANE_MAP_H_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_Y_PLANE_MAP_H")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Y-plane map assignments ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_ANY_THROTTLE_WIDTH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ANY_THROTTLE_WIDTH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Width of throttle as ass")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_THROTTLE_LIMIT_TIME_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_THROTTLE_LIMIT_TIME")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Control delay before dig")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON1_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON1_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON2_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON2_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON3_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON3_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON4_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON4_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON5_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON5_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON6_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON6_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON7_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON7_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_MON8_FIFO_SEL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_MON8_FIFO_SEL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Board-wide Monitor FIFO ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN_MON_FIFO_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_MON_FIFO_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel-specific FIFO in")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CHAN_MON_FIFO_WE_CTL_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CHAN_MON_FIFO_WE_CTL")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel FIFO write contr")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_TSCATTER_DELAY_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_TSCATTER_DELAY")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Overlap time to distingu")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CLEAN_DIRTY_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CLEAN_DIRTY")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Router to master control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SPARE_8E8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_8E8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Unused spare")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_SPARE_8EC_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SPARE_8EC")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Unused spare")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FIFO_RESETS_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FIFO_RESETS")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Resets to all the monito")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_A_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_A_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_B_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_B_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_C_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_C_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CONN_D_DATA_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CONN_D_DATA")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CPLD_MASK_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MASK")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_FS_MULT_THRESH_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_FS_MULT_THRESH")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CPLD_MULT_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CPLD_MULT")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"")
+}
+#-------------------------------------------------------
+
