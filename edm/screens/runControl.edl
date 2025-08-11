@@ -1,0 +1,564 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2523
+y 80
+w 690
+h 260
+font "courier-medium-r-10.0"
+ctlFont "courier-medium-r-10.0"
+btnFont "courier-medium-r-10.0"
+fgColor index 0
+bgColor index 14
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 27
+w 267
+h 28
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 14
+bgAlarm
+value {
+  "DXA Main Controller"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 147
+y 80
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Trigger"
+numPvs 4
+numDsps 10
+displayFileName {
+  0 "NewTrigSummary.edl"
+  1 "NewTrigSummaryAndControl.edl"
+  2 "gen_Master.edl"
+  3 "genRouter.edl"
+  4 "genRouter.edl"
+  5 "genRouter.edl"
+  6 "genRouter.edl"
+  7 "genRouter.edl"
+  8 "xTrigLock2.edl"
+  9 "dgsTrigCntrl.edl"
+}
+menuLabel {
+  0 "Trig Summary"
+  1 "Trig Control"
+  2 "Master"
+  3 "Router 1"
+  4 "Router 2"
+  5 "Router 3"
+  6 "Router 4"
+  7 "Router 5"
+  8 "Old Trig Summary"
+  9 "Old Trig Control"
+}
+symbols {
+  0 "D=DXA"
+  1 "D=DXA"
+  2 "D=DXA,T=MTRG"
+  3 "T=RTR1,D=DXA"
+  4 "T=RTR2,D=DXA"
+  5 "T=RTR3,D=DXA"
+  6 "T=RTR4,D=DXA"
+  7 "T=RTR5,D=DXA"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 327
+y 80
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Global Control"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "genGlobal.edl"
+}
+symbols {
+  0 "D=DFMA"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 507
+y 80
+w 158
+h 36
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Terminals"
+numCmds 12
+commandLabel {
+  0 "SoftIOC"
+  1 "Trigger IOC"
+  2 "IOC 1"
+  3 "IOC 2"
+  4 "IOC 3"
+  5 "IOC 4"
+  6 "IOC 5"
+  7 "IOC 6"
+  8 "IOC 7"
+  9 "IOC 8"
+  10 "IOC 10"
+  11 "IOC 11"
+}
+command {
+  0 "$EDMSCRIPTS/terminals 13"
+  1 "$EDMSCRIPTS/terminals 2"
+  2 "$EDMSCRIPTS/terminals 3"
+  3 "$EDMSCRIPTS/terminals 4"
+  4 "$EDMSCRIPTS/terminals 5"
+  5 "$EDMSCRIPTS/terminals 6"
+  6 "$EDMSCRIPTS/terminals 7"
+  7 "$EDMSCRIPTS/terminals 8"
+  8 "$EDMSCRIPTS/terminals 9"
+  9 "$EDMSCRIPTS/terminals 10"
+  10 "$EDMSCRIPTS/terminals 11"
+  11 "$EDMSCRIPTS/terminals 12"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 327
+y 140
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "VME Status"
+numPvs 4
+numDsps 11
+displayFileName {
+  0 "iocStatus.edl"
+  1 "genVMEstats_4M_0S.edl"
+  2 "genVMEstats_4M_0S.edl"
+  3 "genVMEstats_4M_0S.edl"
+  4 "genVMEstats_4M_0S.edl"
+  5 "genVMEstats_4M_0S.edl"
+  6 "genVMEstats_4M_0S.edl"
+  7 "genVMEstats_4M_0S.edl"
+  8 "genVMEstats_4M_0S.edl"
+  9 "genVMEstats_4M_0S.edl"
+  10 "genVMEstats_4M_0S.edl"
+}
+menuLabel {
+  0 "VME Summary"
+  1 "VME 1"
+  2 "VME 2"
+  3 "VME 3"
+  4 "VME 4"
+  5 "VME 5"
+  6 "VME 6"
+  7 "VME 7"
+  8 "VME 8"
+  9 "VME 10"
+  10 "VME 11"
+}
+symbols {
+  1 "CR=1,DN=01,D=DFMA"
+  2 "CR=2,DN=02,D=DFMA"
+  3 "CR=3,DN=03,D=DFMA"
+  4 "CR=4,DN=04,D=DFMA"
+  5 "CR=5,DN=05,D=DFMA"
+  6 "CR=6,DN=06,D=DFMA"
+  7 "CR=7,DN=07,D=DFMA"
+  8 "CR=8,DN=08,D=DFMA"
+  9 "CR=10,DN=10,D=DFMA"
+  10 "CR=11,DN=11,D=DFMA"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 147
+y 200
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Count Rates"
+numPvs 4
+numDsps 8
+displayFileName {
+  0 "DSSD_front.edl"
+  1 "DSSD_back.edl"
+  2 "fp_xa_box.edl"
+  3 "DSSD_back.edl"
+  4 "fp_xa_box.edl"
+  5 "MiniTrigRateStripChart.edl"
+  6 "TrigRateStripChart.edl"
+  7 "DSSD_front_compact.edl"
+}
+menuLabel {
+  0 "DSSD front rates"
+  1 "DSSD back rates"
+  2 "focal plane, xarray, box rates"
+  5 "Mini DFMA Trigger Rate History"
+  6 "DFMA Trigger Rate History"
+  7 "DSSD front rate bar chart test"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 327
+y 200
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Live Time Stamps"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "X_LiveTS2.edl"
+}
+symbols {
+  0 "M=0, R=1, T=0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 148
+y 141
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Digitizers"
+numPvs 4
+numDsps 10
+displayFileName {
+  0 "genIOC_4M_0S.edl"
+  1 "genIOC_4M_0S.edl"
+  2 "genIOC_4M_0S.edl"
+  3 "genIOC_4M_0S.edl"
+  4 "genIOC_4M_0S.edl"
+  5 "genIOC_4M_0S.edl"
+  6 "genIOC_4M_0S.edl"
+  7 "genIOC_4M_0S.edl"
+  8 "genIOC_4M_0S.edl"
+  9 "genIOC_4M_0S.edl"
+}
+menuLabel {
+  0 "VME 1"
+  1 "VME 2"
+  2 "VME 3"
+  3 "VME 4"
+  4 "VME 5"
+  5 "VME 6"
+  6 "VME 7"
+  7 "VME 8"
+  8 "VME 10"
+  9 "VME 11"
+}
+symbols {
+  0 "D=DXA, DN=01, CR=1"
+  1 "D=DXA,DN=02,CR=2"
+  2 "D=DXA,DN=03,CR=3"
+  3 "D=DXA,DN=04,CR=4"
+  4 "D=DXA,DN=05,CR=5"
+  5 "D=DXA,DN=06,CR=6"
+  6 "D=DXA,DN=07,CR=7"
+  7 "D=DXA,DN=08,CR=8"
+  8 "D=DXA,DN=10,CR=10"
+  9 "D=DXA,DN=11,CR=11"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 507
+y 140
+w 158
+h 36
+fgColor index 25
+bgColor index 40
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Misc. Controls"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "DigEnable.edl"
+  1 "GeBGOmain.edl"
+  2 "debugScreen.edl"
+  3 "dub_detpvscrn.edl"
+}
+menuLabel {
+  0 "Digitizer Enable"
+  1 "Ge/BGO Module Control"
+  2 "Debug Screens"
+  3 "Detector PVs"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 508
+y 200
+w 158
+h 36
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "Scripts"
+numCmds 10
+commandLabel {
+  0 "Setup All"
+  1 "----------------------------"
+  2 "Relock DAQ System"
+  3 "Reload Triggering Parameters"
+  4 "Reload Digitizer Parameters"
+  5 "----------------------------"
+  6 "V TIMESTAMP TRIGGER SETUP V"
+  7 "----------------------------"
+  8 "Digitizer set 1.5kHz TS disc rate"
+  9 "Digitizer return to normal disc"
+}
+command {
+  0 "$EDMSCRIPTS/ExperimenterRunScript"
+  1 "$EDMSCRIPTS/blank.sh"
+  2 "$EDMSCRIPTS/serdes_link_setup.sh"
+  3 "$EDMSCRIPTS/trigger_algo_setup"
+  4 "$EDMSCRIPTS/dig_setup"
+  5 "$EDMSCRIPTS/blank.sh"
+  6 "$EDMSCRIPTS/blank.sh"
+  7 "$EDMSCRIPTS/blank.sh"
+  8 "$EDMSCRIPTS/set_all_dig_1500Hz.sh"
+  9 "$EDMSCRIPTS/set_all_dig_normal.sh"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 9
+w 126
+h 183
+lineColor index 31
+fillColor index 25
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 11
+y 23
+w 120
+h 28
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 14
+bgAlarm
+value {
+  "Run Control"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 50
+w 100
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 14
+bgAlarm
+value {
+  "Start/Stop"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 21
+y 120
+w 100
+h 58
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 21
+y 120
+w 100
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 14
+bgAlarm
+value {
+  "Save/NoSave"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 21
+y 148
+w 100
+h 30
+fgColor index 14
+onColor index 15
+offColor index 17
+inconsistentColor index 30
+topShadowColor index 31
+botShadowColor index 31
+controlPv "Online_CS_SaveData"
+onLabel "Save"
+offLabel "NoSave"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 21
+y 84
+w 100
+h 30
+fgColor index 14
+onColor index 15
+offColor index 20
+inconsistentColor index 30
+topShadowColor index 31
+botShadowColor index 31
+controlPv "Online_CS_StartStop"
+onLabel "Started"
+offLabel "Stopped"
+labelType "literal"
+3d
+font "helvetica-bold-r-14.0"
+objType "controls"
+endObjectProperties
+
