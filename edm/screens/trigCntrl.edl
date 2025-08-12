@@ -3,13 +3,13 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1709
-y 79
+x 2660
+y 556
 w 1700
 h 900
-font "courier-medium-r-10.0"
-ctlFont "courier-medium-r-10.0"
-btnFont "courier-medium-r-10.0"
+font "helvetica-medium-r-10.0"
+ctlFont "helvetica-medium-r-10.0"
+btnFont "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 55
 textColor index 14
@@ -26,11 +26,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1028
 y 62
-w 144
-h 21
+w 142
+h 22
 font "helvetica-medium-r-18.0"
 fontAlign "center"
 fgColor index 14
@@ -47,11 +47,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 124
 y -22
-w 244
-h 16
+w 249
+h 17
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 21
@@ -68,11 +68,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 504
 y 393
-w 100
-h 36
+w 101
+h 42
 font "helvetica-bold-r-10.0"
 fontAlign "center"
 fgColor index 21
@@ -90,7 +90,7 @@ endObjectProperties
 object shellCmdClass
 beginObjectProperties
 major 4
-minor 2
+minor 3
 release 0
 x 607
 y 398
@@ -115,7 +115,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 104
 y 794
@@ -127,7 +127,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:CLEAR_RATE_COUNTERS"
+controlPv "VME$(VME):MTRG:CLEAR_RATE_COUNTERS"
 onLabel "R"
 offLabel "S"
 buttonType "push"
@@ -141,11 +141,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 78
 y 765
-w 96
-h 28
+w 97
+h 32
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -161,7 +161,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 193
 y 794
@@ -173,8 +173,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:Trigger_rate_counter_mode"
-indicatorPv "VME99:MTRG:Trigger_rate_counter_mode"
+controlPv "VME$(VME):MTRG:Trigger_rate_counter_mode"
+indicatorPv "VME$(VME):MTRG:Trigger_rate_counter_mode"
 onLabel "R"
 offLabel "S"
 3d
@@ -187,11 +187,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 189
 y 777
-w 109
-h 14
+w 107
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -206,7 +206,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 562
 y 790
@@ -218,7 +218,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:CLEAR_DIAG_COUNTERS"
+controlPv "VME$(VME):MTRG:CLEAR_DIAG_COUNTERS"
 onLabel "R"
 offLabel "S"
 buttonType "push"
@@ -232,11 +232,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 485
 y 760
-w 109
-h 28
+w 106
+h 32
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -253,11 +253,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 424
 y 509
-w 118
-h 21
+w 117
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -286,11 +286,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 441
 y 733
-w 98
-h 16
+w 99
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -306,11 +306,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 441
 y 706
-w 98
-h 16
+w 99
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -326,11 +326,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 380
 y 681
-w 159
-h 16
+w 156
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -346,11 +346,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 470
 y 656
-w 69
-h 16
+w 71
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -366,11 +366,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 456
 y 626
-w 83
-h 16
+w 85
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -386,11 +386,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 461
 y 598
-w 78
-h 16
+w 80
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -406,11 +406,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 465
 y 571
-w 74
-h 16
+w 75
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -426,11 +426,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 448
 y 546
-w 91
-h 16
+w 88
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -450,11 +450,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 982
 y 94
-w 30
-h 14
+w 33
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -491,11 +491,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 908
 y 117
-w 49
-h 14
+w 46
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -532,11 +532,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 907
 y 147
-w 49
-h 14
+w 46
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -553,11 +553,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 908
 y 176
-w 64
-h 28
+w 62
+h 32
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -575,11 +575,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 907
 y 209
-w 64
-h 28
+w 62
+h 32
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -636,7 +636,7 @@ endObjectProperties
 object shellCmdClass
 beginObjectProperties
 major 4
-minor 2
+minor 3
 release 0
 x 1303
 y 180
@@ -666,11 +666,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1313
 y 160
-w 75
-h 16
+w 76
+h 17
 font "helvetica-bold-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -685,7 +685,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1332
 y 244
@@ -709,11 +709,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1305
 y 224
-w 82
-h 14
+w 79
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -730,11 +730,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1059
 y 94
-w 30
-h 14
+w 33
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -847,7 +847,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1081
 y 245
@@ -871,11 +871,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1141
 y 94
-w 30
-h 14
+w 33
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -931,7 +931,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1166
 y 245
@@ -955,11 +955,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1221
 y 94
-w 30
-h 14
+w 33
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1072,7 +1072,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1246
 y 245
@@ -1096,11 +1096,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 934
 y 249
-w 55
-h 14
+w 54
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -1116,7 +1116,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 991
 y 245
@@ -1139,13 +1139,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 546
 y 546
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticA_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticA_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1163,13 +1163,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 546
 y 573
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticB_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticB_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1187,13 +1187,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 546
 y 600
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticC_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticC_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1211,13 +1211,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 546
 y 626
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticD_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticD_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1235,13 +1235,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 547
 y 656
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticE_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticE_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1259,13 +1259,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 547
 y 709
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticG_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticG_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1283,13 +1283,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 547
 y 682
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticE_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticE_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1307,13 +1307,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 547
 y 736
 w 60
 h 16
-controlPv "VME99:MTRG:reg_DiagnosticH_RBV"
+controlPv "VME$(VME):MTRG:reg_DiagnosticH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fgColor index 14
@@ -1332,11 +1332,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 165
 y 496
-w 111
-h 21
+w 110
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1352,11 +1352,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 149
 y 522
-w 35
-h 21
+w 38
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1372,11 +1372,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 628
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1392,11 +1392,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 549
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1412,11 +1412,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 575
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1432,11 +1432,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 654
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1452,11 +1452,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 707
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1472,11 +1472,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 734
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1492,11 +1492,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 681
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1512,11 +1512,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 66
 y 601
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1544,13 +1544,13 @@ beginGroup
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 550
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_1_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_1_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1568,13 +1568,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 576
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_2_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_2_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1592,13 +1592,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 602
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_3_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_3_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1616,13 +1616,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 628
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_4_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_4_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1640,13 +1640,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 655
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_5_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_5_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1664,13 +1664,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 681
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_6_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_6_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1688,13 +1688,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 707
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_7_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_7_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1712,13 +1712,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 165
 y 734
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_8_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_8_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1741,11 +1741,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 270
 y 526
-w 82
-h 21
+w 78
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -1760,13 +1760,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 551
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_1_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_1_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1784,13 +1784,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 577
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_2_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_2_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1808,13 +1808,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 603
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_3_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_3_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1832,13 +1832,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 629
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_4_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_4_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1856,13 +1856,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 656
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_5_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_5_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1880,13 +1880,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 682
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_6_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_6_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1904,13 +1904,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 708
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_7_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_7_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1928,13 +1928,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 321
 y 735
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_8_LOW_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_8_LOW_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1952,13 +1952,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 551
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_1_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_1_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -1976,13 +1976,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 577
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_2_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_2_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2000,13 +2000,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 603
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_3_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_3_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2024,13 +2024,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 629
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_4_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_4_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2048,13 +2048,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 656
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_5_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_5_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2072,13 +2072,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 682
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_6_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_6_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2096,13 +2096,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 708
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_7_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_7_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2120,13 +2120,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 253
 y 735
 w 65
 h 20
-controlPv "VME99:MTRG:reg_TRIG_RATE_COUNTER_8_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_RATE_COUNTER_8_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2144,13 +2144,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 550
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_1_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_1_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2168,13 +2168,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 576
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_2_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_2_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2192,13 +2192,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 602
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_3_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_3_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2216,13 +2216,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 628
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_4_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_4_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2240,13 +2240,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 655
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_5_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_5_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2264,13 +2264,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 681
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_6_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_6_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2288,13 +2288,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 707
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_7_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_7_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2312,13 +2312,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 97
 y 734
 w 65
 h 20
-controlPv "VME99:MTRG:reg_RAW_TRIG_RATE_COUNTER_8_HIGH_RBV"
+controlPv "VME$(VME):MTRG:reg_RAW_TRIG_RATE_COUNTER_8_HIGH_RBV"
 format "decimal"
 font "helvetica-medium-r-14.0"
 fontAlign "right"
@@ -2337,11 +2337,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 712
 y 1
-w 240
-h 27
+w 242
+h 29
 font "helvetica-bold-i-24.0"
 fgColor index 78
 bgColor index 0
@@ -2367,7 +2367,7 @@ bgColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_MON_SEL"
+controlPv "VME$(VME):MTRG:TRIG_MON_SEL"
 font "helvetica-medium-r-14.0"
 endObjectProperties
 
@@ -2375,7 +2375,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1175
 y 406
@@ -2387,7 +2387,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:SYSMON_ENABLE"
+controlPv "VME$(VME):MTRG:SYSMON_ENABLE"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2399,11 +2399,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 999
 y 409
-w 170
-h 16
+w 173
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 20
 bgColor index 0
@@ -2419,10 +2419,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1117
 y 347
-w 79
+w 81
 h 24
 font "helvetica-medium-r-10.0"
 fgColor index 20
@@ -2440,11 +2440,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 209
 y 344
-w 69
-h 14
+w 72
+h 16
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -2460,11 +2460,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 97
 y 365
-w 117
-h 16
+w 118
+h 17
 font "helvetica-bold-r-14.0"
 fgColor index 22
 bgColor index 0
@@ -2504,11 +2504,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 479
 y 340
 w 29
-h 30
+h 33
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 25
@@ -2527,11 +2527,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 50
 y 75
-w 135
-h 21
+w 133
+h 22
 font "helvetica-medium-r-18.0"
 fontAlign "center"
 fgColor index 14
@@ -2547,7 +2547,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 192
@@ -2559,8 +2559,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_D_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_D_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_D_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_D_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2571,7 +2571,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 148
@@ -2583,8 +2583,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_B_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_B_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_B_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_B_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2595,7 +2595,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 170
@@ -2607,8 +2607,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_C_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_C_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_C_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_C_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2619,7 +2619,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 214
@@ -2631,8 +2631,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_E_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_E_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_E_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_E_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2643,7 +2643,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 236
@@ -2655,8 +2655,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_F_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_F_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_F_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_F_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2667,7 +2667,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 258
@@ -2679,8 +2679,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_G_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_G_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_G_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_G_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2691,7 +2691,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 280
@@ -2703,8 +2703,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_H_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_H_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_H_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_H_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2715,7 +2715,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 79
 y 126
@@ -2727,8 +2727,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:TRIG_A_PRESCALE_ENBL"
-indicatorPv "VME99:MTRG:TRIG_A_PRESCALE_ENBL_RBV"
+controlPv "VME$(VME):MTRG:TRIG_A_PRESCALE_ENBL"
+indicatorPv "VME$(VME):MTRG:TRIG_A_PRESCALE_ENBL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -2740,11 +2740,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 126
 y 103
-w 40
-h 14
+w 42
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -2779,11 +2779,11 @@ x 114
 y 275
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_H_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_H_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2797,11 +2797,11 @@ x 154
 y 253
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_G_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_G_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2815,11 +2815,11 @@ x 114
 y 231
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_F_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_F_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2833,11 +2833,11 @@ x 114
 y 187
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_D_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_D_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2851,11 +2851,11 @@ x 154
 y 209
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_E_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_E_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2869,11 +2869,11 @@ x 154
 y 165
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_C_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_C_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2887,11 +2887,11 @@ x 114
 y 143
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_B_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_B_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 1
 endObjectProperties
 
@@ -2905,11 +2905,11 @@ x 154
 y 121
 w 40
 h 30
-controlPv "VME99:MTRG:TRIG_A_PRESCALE_FACTOR"
+controlPv "VME$(VME):MTRG:TRIG_A_PRESCALE_FACTOR"
 fgColor index 25
 bgColor index 2
 fill
-font "lucidabright-medium-r-8.0"
+font "helvetica-medium-r-10.0"
 lineWidth 0
 endObjectProperties
 
@@ -3022,11 +3022,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 73
 y 102
-w 33
-h 14
+w 34
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -3200,11 +3200,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 200
 y 460
-w 191
-h 27
+w 192
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -3221,11 +3221,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1036
 y 652
-w 157
-h 27
+w 159
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -3258,11 +3258,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1214
 y 43
-w 185
-h 27
+w 189
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -3311,11 +3311,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 899
 y 294
-w 148
-h 54
+w 147
+h 58
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -3486,7 +3486,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 299
 y 381
@@ -3498,8 +3498,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ENBL_NIM_VETO"
-indicatorPv "VME$(MC):MTRG:ENBL_NIM_VETO_RBV"
+controlPv "VME$(VME):MTRG:ENBL_NIM_VETO"
+indicatorPv "VME$(VME):MTRG:ENBL_NIM_VETO_RBV"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -3512,7 +3512,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 299
 y 421
@@ -3524,8 +3524,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO"
-indicatorPv "VME$(MC):MTRG:EN_RAM_VETO_RBV"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO"
+indicatorPv "VME$(VME):MTRG:EN_RAM_VETO_RBV"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -3538,7 +3538,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 299
 y 401
@@ -3550,8 +3550,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ENBL_THROTTLE_VETO"
-indicatorPv "VME$(MC):MTRG:ENBL_THROTTLE_VETO_RBV"
+controlPv "VME$(VME):MTRG:ENBL_THROTTLE_VETO"
+indicatorPv "VME$(VME):MTRG:ENBL_THROTTLE_VETO_RBV"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -3564,7 +3564,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 299
 y 361
@@ -3576,8 +3576,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ENBL_MON7_VETO"
-indicatorPv "VME$(MC):MTRG:ENBL_MON7_VETO_RBV"
+controlPv "VME$(VME):MTRG:ENBL_MON7_VETO"
+indicatorPv "VME$(VME):MTRG:ENBL_MON7_VETO_RBV"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -3591,11 +3591,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 224
 y 364
-w 37
-h 14
+w 36
+h 16
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -3611,11 +3611,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 224
 y 384
-w 41
-h 14
+w 37
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -3632,11 +3632,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 224
 y 423
-w 66
-h 14
+w 65
+h 16
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -3652,11 +3652,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 224
 y 403
-w 67
-h 14
+w 68
+h 16
 font "helvetica-bold-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -3775,11 +3775,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 319
 y 21
-w 202
-h 27
+w 204
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -3796,11 +3796,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 282
 y 218
-w 68
-h 14
+w 72
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -3817,11 +3817,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 310
 y 240
 w 40
-h 14
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -3838,11 +3838,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 308
 y 262
-w 42
-h 14
+w 41
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -3859,11 +3859,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 268
 y 284
-w 82
-h 14
+w 81
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -3879,7 +3879,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 280
@@ -3891,8 +3891,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_H"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_H_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_H"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_H_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -3903,7 +3903,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 258
@@ -3915,8 +3915,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_G"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_G_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_G"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_G_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -3927,7 +3927,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 236
@@ -3939,8 +3939,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_F"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_F_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_F"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_F_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -3951,7 +3951,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 192
@@ -3963,8 +3963,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_D"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_D_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_D"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_D_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -3975,7 +3975,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 214
@@ -3987,8 +3987,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_E"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_E_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_E"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_E_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -3999,7 +3999,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 170
@@ -4011,8 +4011,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_C"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_C_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_C"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_C_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4023,7 +4023,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 148
@@ -4035,8 +4035,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_B"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_B_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_B"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_B_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4047,7 +4047,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 379
 y 126
@@ -4059,8 +4059,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_THROTTLE_VETO_A"
-indicatorPv "VME99:MTRG:EN_THROTTLE_VETO_A_RBV"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_A"
+indicatorPv "VME$(VME):MTRG:EN_THROTTLE_VETO_A_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4072,11 +4072,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 378
 y 101
-w 29
-h 20
+w 27
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 14
@@ -4094,11 +4094,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 240
 y 105
-w 49
-h 14
+w 47
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4114,7 +4114,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 290
 y 100
@@ -4126,7 +4126,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_TRIG_RAM_AUX"
+controlPv "VME$(VME):MTRG:EN_TRIG_RAM_AUX"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4138,11 +4138,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 240
 y 81
-w 44
-h 14
+w 42
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4158,7 +4158,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 290
 y 76
@@ -4170,7 +4170,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_NIM_AUX"
+controlPv "VME$(VME):MTRG:EN_NIM_AUX"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4181,7 +4181,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 126
@@ -4193,7 +4193,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_A"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_A"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4208,7 +4208,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 148
@@ -4220,7 +4220,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_B"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_B"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4235,7 +4235,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 170
@@ -4247,7 +4247,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_C"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_C"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4262,7 +4262,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 192
@@ -4274,7 +4274,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_D"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_D"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4289,7 +4289,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 214
@@ -4301,7 +4301,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_E"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_E"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4316,7 +4316,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 236
@@ -4328,7 +4328,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_F"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_F"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4343,7 +4343,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 258
@@ -4355,7 +4355,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_G"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_G"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4370,7 +4370,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 404
 y 280
@@ -4382,7 +4382,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_NIM_VETO_H"
+controlPv "VME$(VME):MTRG:EN_NIM_VETO_H"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4397,7 +4397,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 280
@@ -4409,7 +4409,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_MYRIAD_LINK_U"
+controlPv "VME$(VME):MTRG:EN_MYRIAD_LINK_U"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4420,7 +4420,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 258
@@ -4432,7 +4432,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_LINK_R"
+controlPv "VME$(VME):MTRG:EN_LINK_R"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4443,7 +4443,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 236
@@ -4455,7 +4455,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_LINK_L"
+controlPv "VME$(VME):MTRG:EN_LINK_L"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4466,7 +4466,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 214
@@ -4478,7 +4478,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_ALGO5"
+controlPv "VME$(VME):MTRG:EN_ALGO5"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4489,7 +4489,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 192
@@ -4501,7 +4501,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_SUM_XY"
+controlPv "VME$(VME):MTRG:EN_SUM_XY"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4512,7 +4512,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 170
@@ -4524,7 +4524,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_SUM_Y"
+controlPv "VME$(VME):MTRG:EN_SUM_Y"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4535,7 +4535,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 148
@@ -4547,7 +4547,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_SUM_X"
+controlPv "VME$(VME):MTRG:EN_SUM_X"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4558,7 +4558,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 354
 y 126
@@ -4570,7 +4570,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_MAN_AUX"
+controlPv "VME$(VME):MTRG:EN_MAN_AUX"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -4582,11 +4582,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 352
 y 102
 w 23
-h 20
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 14
@@ -4603,7 +4603,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 299
 y 341
@@ -4615,7 +4615,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:SOFTWARE_VETO"
+controlPv "VME$(VME):MTRG:SOFTWARE_VETO"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -4653,11 +4653,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 368
 y 304
 w 34
-h 20
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 20
@@ -4675,11 +4675,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 416
 y 102
-w 64
-h 20
+w 66
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 14
@@ -4769,11 +4769,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 303
 y 196
-w 47
-h 14
+w 46
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4790,11 +4790,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 311
 y 174
-w 39
-h 14
+w 38
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4811,11 +4811,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 311
 y 152
-w 39
-h 14
+w 38
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4832,11 +4832,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 265
 y 130
-w 85
-h 14
+w 82
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4864,7 +4864,7 @@ selectColor index 42
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:ALGO_5_SELECT"
+controlPv "VME$(VME):MTRG:ALGO_5_SELECT"
 font "helvetica-medium-r-8.0"
 visInvert
 visMin "-5"
@@ -4968,11 +4968,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 765
 y 373
 w 40
-h 14
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -4989,11 +4989,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 763
 y 395
-w 42
-h 14
+w 41
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5010,11 +5010,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 723
 y 417
-w 82
-h 14
+w 81
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5031,11 +5031,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 834
 y 255
-w 26
-h 20
+w 25
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 14
@@ -5053,11 +5053,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 803
 y 255
-w 26
-h 20
+w 25
+h 22
 font "helvetica-bold-r-8.0"
 fontAlign "center"
 fgColor index 14
@@ -5075,11 +5075,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 759
 y 350
-w 47
-h 14
+w 46
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5096,11 +5096,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 767
 y 328
-w 39
-h 14
+w 38
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5117,11 +5117,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 767
 y 306
-w 39
-h 14
+w 38
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5138,11 +5138,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 721
 y 284
-w 85
-h 14
+w 82
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -5164,7 +5164,7 @@ x 786
 y 192
 w 53
 h 35
-controlPv "VME99:MTRG:COINC_OVERLAP_DELAY"
+controlPv "VME$(VME):MTRG:COINC_OVERLAP_DELAY"
 displayMode "decimal"
 fgColor index 25
 bgColor index 2
@@ -5178,13 +5178,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 800
 y 230
 w 60
 h 25
-controlPv "VME99:MTRG:COINC_OVERLAP_DELAY_RBV"
+controlPv "VME$(VME):MTRG:COINC_OVERLAP_DELAY_RBV"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 16
@@ -5256,11 +5256,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 670
 y 336
 w 39
-h 24
+h 28
 font "helvetica-bold-r-10.0"
 fontAlign "center"
 fgColor index 18
@@ -5290,7 +5290,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 573
 y 258
@@ -5302,8 +5302,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_R_PROPAGATE_F5"
-indicatorPv "VME99:MTRG:LINK_R_PROPAGATE_F5_RBV"
+controlPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F5"
+indicatorPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F5_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5314,7 +5314,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 621
 y 258
@@ -5326,8 +5326,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_R_PROPAGATE_F7"
-indicatorPv "VME99:MTRG:LINK_R_PROPAGATE_F7_RBV"
+controlPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F7"
+indicatorPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F7_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5338,7 +5338,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 597
 y 258
@@ -5350,8 +5350,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_R_PROPAGATE_F6"
-indicatorPv "VME99:MTRG:LINK_R_PROPAGATE_F6_RBV"
+controlPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F6"
+indicatorPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F6_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5362,7 +5362,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 548
 y 258
@@ -5374,8 +5374,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_R_PROPAGATE_F4"
-indicatorPv "VME99:MTRG:LINK_R_PROPAGATE_F4_RBV"
+controlPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F4"
+indicatorPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F4_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5386,7 +5386,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 524
 y 258
@@ -5398,8 +5398,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_R_PROPAGATE_F3"
-indicatorPv "VME99:MTRG:LINK_R_PROPAGATE_F3_RBV"
+controlPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F3"
+indicatorPv "VME$(VME):MTRG:LINK_R_PROPAGATE_F3_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5411,11 +5411,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 597
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5431,11 +5431,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 573
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5451,11 +5451,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 621
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5471,11 +5471,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 547
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5491,11 +5491,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 523
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5511,11 +5511,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 501
 y 215
 w 17
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 14
 bgColor index 0
@@ -5531,11 +5531,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 505
 y 308
-w 141
-h 16
+w 142
+h 17
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -5551,7 +5551,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 573
 y 236
@@ -5563,8 +5563,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F5"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F5_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F5"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F5_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5575,7 +5575,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 500
 y 236
@@ -5587,8 +5587,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F1"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F1_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F1"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F1_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5599,7 +5599,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 621
 y 236
@@ -5611,8 +5611,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F7"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F7_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F7"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F7_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5623,7 +5623,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 597
 y 236
@@ -5635,8 +5635,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F6"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F6_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F6"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F6_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5647,7 +5647,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 548
 y 236
@@ -5659,8 +5659,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F4"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F4_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F4"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F4_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5671,7 +5671,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 524
 y 236
@@ -5683,8 +5683,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_L_PROPAGATE_F3"
-indicatorPv "VME99:MTRG:LINK_L_PROPAGATE_F3_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F3"
+indicatorPv "VME$(VME):MTRG:LINK_L_PROPAGATE_F3_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5695,7 +5695,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 621
 y 280
@@ -5707,8 +5707,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_PROPAGATE_F7"
-indicatorPv "VME99:MTRG:LINK_U_PROPAGATE_F7_RBV"
+controlPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F7"
+indicatorPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F7_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5719,7 +5719,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 597
 y 280
@@ -5731,8 +5731,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_PROPAGATE_F6"
-indicatorPv "VME99:MTRG:LINK_U_PROPAGATE_F6_RBV"
+controlPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F6"
+indicatorPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F6_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5743,7 +5743,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 573
 y 280
@@ -5755,8 +5755,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_PROPAGATE_F5"
-indicatorPv "VME99:MTRG:LINK_U_PROPAGATE_F5_RBV"
+controlPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F5"
+indicatorPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F5_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5767,7 +5767,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 548
 y 280
@@ -5779,8 +5779,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_PROPAGATE_F4"
-indicatorPv "VME99:MTRG:LINK_U_PROPAGATE_F4_RBV"
+controlPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F4"
+indicatorPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F4_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5791,7 +5791,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 524
 y 280
@@ -5803,8 +5803,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_PROPAGATE_F3"
-indicatorPv "VME99:MTRG:LINK_U_PROPAGATE_F3_RBV"
+controlPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F3"
+indicatorPv "VME$(VME):MTRG:LINK_U_PROPAGATE_F3_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -5832,7 +5832,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 126
@@ -5844,7 +5844,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_A"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_A"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5859,7 +5859,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 126
@@ -5871,7 +5871,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_A"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_A"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5886,7 +5886,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 148
@@ -5898,7 +5898,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_B"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_B"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5913,7 +5913,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 148
@@ -5925,7 +5925,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_B"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_B"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5940,7 +5940,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 170
@@ -5952,7 +5952,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_C"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_C"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5967,7 +5967,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 170
@@ -5979,7 +5979,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_C"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_C"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -5994,7 +5994,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 192
@@ -6006,7 +6006,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_D"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_D"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6021,7 +6021,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 192
@@ -6033,7 +6033,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_D"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_D"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6048,7 +6048,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 214
@@ -6060,7 +6060,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_E"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_E"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6075,7 +6075,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 214
@@ -6087,7 +6087,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_E"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_E"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6102,7 +6102,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 236
@@ -6114,7 +6114,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_F"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_F"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6129,7 +6129,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 236
@@ -6141,7 +6141,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_F"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_F"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6156,7 +6156,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 258
@@ -6168,7 +6168,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_G"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_G"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6183,7 +6183,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 258
@@ -6195,7 +6195,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_G"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_G"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6210,7 +6210,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 434
 y 280
@@ -6222,7 +6222,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_RAM_VETO_H"
+controlPv "VME$(VME):MTRG:EN_RAM_VETO_H"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6237,7 +6237,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 464
 y 280
@@ -6249,7 +6249,7 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:EN_THROTTLE_VETO_H"
+controlPv "VME$(VME):MTRG:EN_THROTTLE_VETO_H"
 onLabel "On"
 offLabel "Off"
 labelType "literal"
@@ -6269,11 +6269,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 998
 y 504
 w 10
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6289,11 +6289,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 972
 y 504
-w 12
-h 21
+w 14
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6309,11 +6309,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 948
 y 504
-w 13
-h 21
+w 14
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6341,7 +6341,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 555
@@ -6364,7 +6364,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 555
@@ -6387,7 +6387,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 555
@@ -6410,7 +6410,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 555
@@ -6433,7 +6433,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 555
@@ -6456,7 +6456,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 555
@@ -6479,7 +6479,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 555
@@ -6502,7 +6502,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 555
@@ -6530,11 +6530,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 864
 y 627
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6550,11 +6550,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 864
 y 603
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6570,11 +6570,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 864
 y 580
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6590,11 +6590,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 864
 y 556
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6610,11 +6610,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 887
 y 532
-w 49
-h 21
+w 47
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -6642,7 +6642,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 625
@@ -6665,7 +6665,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 625
@@ -6688,7 +6688,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 625
@@ -6711,7 +6711,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 625
@@ -6734,7 +6734,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 625
@@ -6757,7 +6757,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 625
@@ -6780,7 +6780,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 625
@@ -6803,7 +6803,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 625
@@ -6843,7 +6843,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 579
@@ -6866,7 +6866,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 579
@@ -6889,7 +6889,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 579
@@ -6912,7 +6912,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 579
@@ -6935,7 +6935,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 579
@@ -6958,7 +6958,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 579
@@ -6981,7 +6981,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 579
@@ -7004,7 +7004,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 579
@@ -7044,7 +7044,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 602
@@ -7067,7 +7067,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 602
@@ -7090,7 +7090,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 602
@@ -7113,7 +7113,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 602
@@ -7136,7 +7136,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 602
@@ -7159,7 +7159,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 602
@@ -7182,7 +7182,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 602
@@ -7205,7 +7205,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 602
@@ -7232,7 +7232,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 942
 y 531
@@ -7244,7 +7244,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_U"
+controlPv "VME$(VME):MTRG:ILM_U"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7255,7 +7255,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 990
 y 531
@@ -7267,7 +7267,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_L"
+controlPv "VME$(VME):MTRG:ILM_L"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7278,7 +7278,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 966
 y 531
@@ -7290,7 +7290,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_R"
+controlPv "VME$(VME):MTRG:ILM_R"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7315,11 +7315,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1118
 y 464
-w 13
-h 21
+w 14
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7335,11 +7335,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1191
 y 464
-w 12
-h 21
+w 13
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7355,11 +7355,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1167
 y 464
 w 13
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7375,11 +7375,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1095
 y 464
-w 11
-h 21
+w 13
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7395,11 +7395,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1044
 y 464
-w 14
-h 21
+w 15
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7415,11 +7415,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1021
 y 464
-w 13
-h 21
+w 14
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7435,11 +7435,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1071
 y 464
 w 11
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7455,11 +7455,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1141
 y 464
 w 14
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -7491,7 +7491,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 531
@@ -7503,7 +7503,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_H"
+controlPv "VME$(VME):MTRG:ILM_H"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7514,7 +7514,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 531
@@ -7526,7 +7526,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_F"
+controlPv "VME$(VME):MTRG:ILM_F"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7537,7 +7537,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 531
@@ -7549,7 +7549,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_D"
+controlPv "VME$(VME):MTRG:ILM_D"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7560,7 +7560,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 531
@@ -7572,7 +7572,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_E"
+controlPv "VME$(VME):MTRG:ILM_E"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7583,7 +7583,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 531
@@ -7595,7 +7595,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_G"
+controlPv "VME$(VME):MTRG:ILM_G"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7606,7 +7606,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 531
@@ -7618,7 +7618,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_A"
+controlPv "VME$(VME):MTRG:ILM_A"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7629,7 +7629,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 531
@@ -7641,7 +7641,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_B"
+controlPv "VME$(VME):MTRG:ILM_B"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7652,7 +7652,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 531
@@ -7664,7 +7664,7 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ILM_C"
+controlPv "VME$(VME):MTRG:ILM_C"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7680,11 +7680,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1218
 y 489
-w 81
-h 14
+w 84
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -7701,11 +7701,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1218
 y 509
-w 81
-h 14
+w 84
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -7721,7 +7721,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 485
@@ -7733,7 +7733,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_H"
+controlPv "VME$(VME):MTRG:XLM_H"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7744,7 +7744,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 485
@@ -7756,7 +7756,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_F"
+controlPv "VME$(VME):MTRG:XLM_F"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7767,7 +7767,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 485
@@ -7779,7 +7779,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_D"
+controlPv "VME$(VME):MTRG:XLM_D"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7790,7 +7790,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 485
@@ -7802,7 +7802,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_E"
+controlPv "VME$(VME):MTRG:XLM_E"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7813,7 +7813,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 485
@@ -7825,7 +7825,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_G"
+controlPv "VME$(VME):MTRG:XLM_G"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7836,7 +7836,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 485
@@ -7848,7 +7848,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_A"
+controlPv "VME$(VME):MTRG:XLM_A"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7859,7 +7859,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 485
@@ -7871,7 +7871,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_B"
+controlPv "VME$(VME):MTRG:XLM_B"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7882,7 +7882,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 485
@@ -7894,7 +7894,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:XLM_C"
+controlPv "VME$(VME):MTRG:XLM_C"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -7943,11 +7943,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 578
 y 108
-w 167
-h 16
+w 170
+h 17
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -7963,13 +7963,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 700
 y 132
 w 60
 h 25
-controlPv "VME99:MTRG:reg_SUM_OF_X_THRESH_RBV"
+controlPv "VME$(VME):MTRG:reg_SUM_OF_X_THRESH_RBV"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 16
@@ -7988,13 +7988,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 701
 y 165
 w 60
 h 25
-controlPv "VME99:MTRG:reg_SUM_OF_Y_THRESH_RBV"
+controlPv "VME$(VME):MTRG:reg_SUM_OF_Y_THRESH_RBV"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 16
@@ -8019,7 +8019,7 @@ x 622
 y 130
 w 70
 h 35
-controlPv "VME99:MTRG:reg_SUM_OF_X_THRESH"
+controlPv "VME$(VME):MTRG:reg_SUM_OF_X_THRESH"
 displayMode "decimal"
 fgColor index 25
 bgColor index 2
@@ -8039,7 +8039,7 @@ x 622
 y 161
 w 70
 h 35
-controlPv "VME99:MTRG:reg_SUM_OF_Y_THRESH"
+controlPv "VME$(VME):MTRG:reg_SUM_OF_Y_THRESH"
 displayMode "decimal"
 fgColor index 25
 bgColor index 2
@@ -8054,11 +8054,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 531
 y 139
-w 79
-h 16
+w 78
+h 17
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -8075,11 +8075,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 534
 y 172
 w 78
-h 16
+h 17
 font "helvetica-medium-r-14.0"
 fontAlign "right"
 fgColor index 14
@@ -8136,7 +8136,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 810
 y 280
@@ -8148,7 +8148,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A1"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A1"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8159,7 +8159,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 809
 y 413
@@ -8171,7 +8171,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A8"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A8"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8182,7 +8182,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 809
 y 391
@@ -8194,7 +8194,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A7"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A7"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8205,7 +8205,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 809
 y 369
@@ -8217,7 +8217,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A6"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A6"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8228,7 +8228,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 810
 y 346
@@ -8240,7 +8240,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A4"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A4"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8251,7 +8251,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 810
 y 324
@@ -8263,7 +8263,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A3"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A3"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8274,7 +8274,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 810
 y 302
@@ -8286,7 +8286,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_A2"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_A2"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8314,7 +8314,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 838
 y 280
@@ -8326,7 +8326,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B1"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B1"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8337,7 +8337,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 837
 y 413
@@ -8349,7 +8349,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B8"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B8"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8360,7 +8360,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 837
 y 391
@@ -8372,7 +8372,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B7"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B7"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8383,7 +8383,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 837
 y 369
@@ -8395,7 +8395,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B6"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B6"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8406,7 +8406,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 838
 y 346
@@ -8418,7 +8418,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B4"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B4"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8429,7 +8429,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 838
 y 324
@@ -8441,7 +8441,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B3"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B3"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8452,7 +8452,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 838
 y 302
@@ -8464,7 +8464,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:COINC_TRIG_MASK_B2"
+controlPv "VME$(VME):MTRG:COINC_TRIG_MASK_B2"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8655,11 +8655,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 783
 y 164
-w 101
-h 14
+w 103
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -8675,7 +8675,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1175
 y 380
@@ -8687,7 +8687,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:SKIP_TDC_DATA"
+controlPv "VME$(VME):MTRG:SKIP_TDC_DATA"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8699,11 +8699,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1056
 y 383
-w 111
-h 16
+w 113
+h 17
 font "helvetica-medium-r-14.0"
 fgColor index 20
 bgColor index 0
@@ -8718,13 +8718,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 979
 y 350
 w 90
 h 25
-controlPv "VME99:MTRG:reg_MON7_FIFO_DEPTH_RBV"
+controlPv "VME$(VME):MTRG:reg_MON7_FIFO_DEPTH_RBV"
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 16
@@ -8744,11 +8744,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 766
 y 728
-w 106
-h 21
+w 102
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -8764,11 +8764,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 660
 y 695
-w 89
-h 14
+w 87
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -8783,7 +8783,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 633
@@ -8795,8 +8795,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:LINK_L_STRINGENT"
-indicatorPv "VME$(MC):MTRG:LINK_L_STRINGENT_RBV"
+controlPv "VME$(VME):MTRG:LINK_L_STRINGENT"
+indicatorPv "VME$(VME):MTRG:LINK_L_STRINGENT_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8807,7 +8807,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 653
@@ -8819,8 +8819,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:LINK_R_STRINGENT"
-indicatorPv "VME$(MC):MTRG:LINK_R_STRINGENT"
+controlPv "VME$(VME):MTRG:LINK_R_STRINGENT"
+indicatorPv "VME$(VME):MTRG:LINK_R_STRINGENT"
 3d
 font "helvetica-medium-r-18.0"
 objType "controls"
@@ -8830,7 +8830,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 673
@@ -8842,8 +8842,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:IMP_SYNC"
-indicatorPv "VME$(MC):MTRG:IMP_SYNC_RBV"
+controlPv "VME$(VME):MTRG:IMP_SYNC"
+indicatorPv "VME$(VME):MTRG:IMP_SYNC_RBV"
 3d
 font "helvetica-medium-r-18.0"
 objType "controls"
@@ -8854,11 +8854,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 662
 y 626
-w 87
-h 14
+w 85
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -8874,11 +8874,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 661
 y 643
-w 88
-h 14
+w 87
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -8894,11 +8894,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 661
 y 660
-w 88
-h 14
+w 87
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -8913,7 +8913,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 693
@@ -8925,8 +8925,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:IMP_SYNC_IS_THE_WRONG_PV"
-indicatorPv "VME$(MC):MTRG:IMP_SYNC_RBV_IS_THE_WRONG_PV"
+controlPv "VME$(VME):MTRG:IMP_SYNC_IS_THE_WRONG_PV"
+indicatorPv "VME$(VME):MTRG:IMP_SYNC_RBV_IS_THE_WRONG_PV"
 onLabel "R"
 offLabel "S"
 3d
@@ -8939,11 +8939,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 697
 y 677
-w 52
-h 14
+w 50
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -8958,7 +8958,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 573
@@ -8970,8 +8970,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:LOCK_RETRY"
-indicatorPv "VME$(MC):MTRG:LOCK_RETRY_RBV"
+controlPv "VME$(VME):MTRG:LOCK_RETRY"
+indicatorPv "VME$(VME):MTRG:LOCK_RETRY_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -8982,7 +8982,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 593
@@ -8994,8 +8994,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:LOCK_ACK"
-indicatorPv "VME$(MC):MTRG:LOCK_ACK_RBV"
+controlPv "VME$(VME):MTRG:LOCK_ACK"
+indicatorPv "VME$(VME):MTRG:LOCK_ACK_RBV"
 3d
 font "helvetica-medium-r-18.0"
 objType "controls"
@@ -9005,7 +9005,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 754
 y 613
@@ -9017,8 +9017,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:RESET_LINK_INIT"
-indicatorPv "VME$(MC):MTRG:RESET_LINK_INIT"
+controlPv "VME$(VME):MTRG:RESET_LINK_INIT"
+indicatorPv "VME$(VME):MTRG:RESET_LINK_INIT"
 3d
 font "helvetica-medium-r-18.0"
 objType "controls"
@@ -9029,11 +9029,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 689
 y 575
-w 60
-h 14
+w 58
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9049,11 +9049,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 696
 y 592
-w 53
-h 14
+w 49
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9069,11 +9069,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 700
 y 609
-w 49
-h 14
+w 48
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9088,7 +9088,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 774
 y 633
@@ -9112,7 +9112,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 774
 y 693
@@ -9136,7 +9136,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 774
 y 573
@@ -9161,7 +9161,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 774
 y 593
@@ -9185,7 +9185,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 774
 y 613
@@ -9208,7 +9208,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 794
 y 633
@@ -9232,7 +9232,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 794
 y 693
@@ -9256,7 +9256,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 794
 y 573
@@ -9281,7 +9281,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 794
 y 593
@@ -9305,7 +9305,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 794
 y 613
@@ -9328,7 +9328,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 814
 y 633
@@ -9352,7 +9352,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 814
 y 693
@@ -9376,7 +9376,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 814
 y 573
@@ -9401,7 +9401,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 814
 y 593
@@ -9425,7 +9425,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 814
 y 613
@@ -9448,7 +9448,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 834
 y 633
@@ -9472,7 +9472,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 834
 y 693
@@ -9496,7 +9496,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 834
 y 573
@@ -9521,7 +9521,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 834
 y 593
@@ -9545,7 +9545,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 834
 y 613
@@ -9588,11 +9588,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 735
 y 474
 w 32
-h 14
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9608,11 +9608,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 689
 y 554
-w 51
-h 14
+w 50
+h 16
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -9629,11 +9629,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 696
 y 494
-w 46
-h 14
+w 43
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9649,11 +9649,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 780
 y 474
 w 7
-h 14
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9669,11 +9669,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 800
 y 474
 w 7
-h 14
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9689,11 +9689,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 820
 y 474
 w 7
-h 14
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9709,11 +9709,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 839
 y 474
 w 7
-h 14
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -9734,7 +9734,7 @@ x 754
 y 493
 w 18
 h 18
-controlPv "VME$(MC):MTRG:reg_MISC_STAT_RBV"
+controlPv "VME$(VME):MTRG:reg_MISC_STAT_RBV"
 lineColor index 14
 onColor index 15
 offColor index 11
@@ -9752,7 +9752,7 @@ x 754
 y 513
 w 18
 h 18
-controlPv "VME$(MC):MTRG:reg_MISC_STAT_RBV"
+controlPv "VME$(VME):MTRG:reg_MISC_STAT_RBV"
 lineColor index 14
 onColor index 20
 offColor index 11
@@ -9770,7 +9770,7 @@ x 754
 y 553
 w 18
 h 18
-controlPv "VME$(MC):MTRG:reg_MISC_STAT_RBV"
+controlPv "VME$(VME):MTRG:reg_MISC_STAT_RBV"
 lineColor index 14
 onColor index 35
 offColor index 11
@@ -10049,11 +10049,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 790
 y 458
-w 36
-h 14
+w 37
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -10068,7 +10068,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 896
 y 405
@@ -10080,7 +10080,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-indicatorPv "VME$(MC):MTRG:Mon_7_FIFO_Empty_RBV"
+indicatorPv "VME$(VME):MTRG:Mon_7_FIFO_Empty_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10091,7 +10091,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 916
 y 405
@@ -10103,7 +10103,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-indicatorPv "VME$(MC):MTRG:Mon_7_FIFO_Almost_Empty_RBV"
+indicatorPv "VME$(VME):MTRG:Mon_7_FIFO_Almost_Empty_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10114,7 +10114,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 936
 y 405
@@ -10126,7 +10126,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-indicatorPv "VME$(MC):MTRG:Mon_7_FIFO_Almost_Full_RBV"
+indicatorPv "VME$(VME):MTRG:Mon_7_FIFO_Almost_Full_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10137,7 +10137,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 955
 y 405
@@ -10149,7 +10149,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-indicatorPv "VME$(MC):MTRG:Mon_7_FIFO_Full_RBV"
+indicatorPv "VME$(VME):MTRG:Mon_7_FIFO_Full_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10160,7 +10160,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 949
 y 351
@@ -10172,7 +10172,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_FIFO_RESETS"
+controlPv "VME$(VME):MTRG:reg_FIFO_RESETS"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10185,10 +10185,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 902
 y 353
-w 33
+w 35
 h 12
 font "helvetica-medium-r-10.0"
 fgColor index 20
@@ -10204,7 +10204,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1511
 y 135
@@ -10245,7 +10245,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1511
 y 163
@@ -10274,7 +10274,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1511
 y 79
@@ -10289,9 +10289,9 @@ buttonLabel "Wheel Maps"
 numPvs 4
 numDsps 3
 displayFileName {
-  0 "Trigger/WheelMap.edl"
-  1 "Trigger/WheelMap.edl"
-  2 "Trigger/WheelMap.edl"
+  0 "trigWheelMap.edl"
+  1 "trigWheelMap.edl"
+  2 "trigWheelMap.edl"
 }
 menuLabel {
   0 "VETO"
@@ -10312,7 +10312,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1471
 y 107
@@ -10327,7 +10327,7 @@ buttonLabel "Wheel RAM Control"
 numPvs 4
 numDsps 1
 displayFileName {
-  0 "Trigger/AuxIO_Ctl.edl"
+  0 "trigWheelRAMCntrl.edl"
 }
 setPosition {
   0 "parentWindow"
@@ -10338,7 +10338,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1511
 y 192
@@ -10367,7 +10367,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1468
 y 220
@@ -10393,7 +10393,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1510
 y 250
@@ -10422,7 +10422,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1513
 y 278
@@ -10443,7 +10443,7 @@ setPosition {
   0 "parentWindow"
 }
 symbols {
-  0 "T=MTRG, D=VME99, CRATE=99"
+  0 "T=MTRG, D=VME$(VME), CRATE=99"
 }
 endObjectProperties
 
@@ -10468,11 +10468,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1494
 y 18
 w 93
-h 42
+h 44
 font "helvetica-bold-i-18.0"
 fontAlign "center"
 fgColor index 25
@@ -10489,7 +10489,7 @@ endObjectProperties
 object relatedDisplayClass
 beginObjectProperties
 major 4
-minor 2
+minor 4
 release 0
 x 1434
 y 306
@@ -10516,11 +10516,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 899
 y 389
-w 70
-h 14
+w 68
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "center"
 fgColor index 14
@@ -10582,7 +10582,7 @@ x 1402
 y 630
 w 50
 h 35
-controlPv "VME99:MTRG:reg_NIM1_DELAY"
+controlPv "VME$(VME):MTRG:reg_NIM1_DELAY"
 displayMode "decimal"
 fgColor index 25
 bgColor index 2
@@ -10596,7 +10596,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1343
 y 637
@@ -10608,7 +10608,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_NIM1_DELAY"
+controlPv "VME$(VME):MTRG:EN_NIM1_DELAY"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10630,7 +10630,7 @@ bgColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:NIMSrc1"
+controlPv "VME$(VME):MTRG:NIMSrc1"
 font "helvetica-medium-r-18.0"
 endObjectProperties
 
@@ -10639,11 +10639,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1493
 y 599
-w 125
-h 21
+w 119
+h 22
 font "helvetica-medium-r-18.0"
 fontAlign "center"
 fgColor index 14
@@ -10660,11 +10660,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1474
 y 630
 w 50
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -10690,7 +10690,7 @@ bgColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:NIMSrc2"
+controlPv "VME$(VME):MTRG:NIMSrc2"
 font "helvetica-medium-r-18.0"
 endObjectProperties
 
@@ -10699,11 +10699,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1472
 y 698
 w 50
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -10729,9 +10729,9 @@ bgColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:NIM1_SubSelect"
+controlPv "VME$(VME):MTRG:NIM1_SubSelect"
 font "helvetica-medium-r-18.0"
-visPv "VME99:MTRG:NIMSrc1_RBV"
+visPv "VME$(VME):MTRG:NIMSrc1_RBV"
 visMin "0"
 visMax "1"
 endObjectProperties
@@ -10751,9 +10751,9 @@ bgColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:NIM2_SubSelect"
+controlPv "VME$(VME):MTRG:NIM2_SubSelect"
 font "helvetica-medium-r-18.0"
-visPv "VME99:MTRG:NIMSrc2_RBV"
+visPv "VME$(VME):MTRG:NIMSrc2_RBV"
 visMin "0"
 visMax "1"
 endObjectProperties
@@ -10763,11 +10763,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1376
 y 560
-w 280
-h 27
+w 279
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -10784,11 +10784,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1330
 y 598
-w 103
-h 21
+w 101
+h 22
 font "helvetica-medium-r-18.0"
 fontAlign "center"
 fgColor index 14
@@ -10805,11 +10805,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1338
 y 662
-w 33
-h 14
+w 34
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -10826,11 +10826,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1407
 y 666
 w 34
-h 14
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -10852,7 +10852,7 @@ x 1404
 y 691
 w 50
 h 35
-controlPv "VME99:MTRG:reg_NIM2_DELAY"
+controlPv "VME$(VME):MTRG:reg_NIM2_DELAY"
 displayMode "decimal"
 fgColor index 25
 bgColor index 2
@@ -10866,7 +10866,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1345
 y 698
@@ -10878,7 +10878,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:EN_NIM2_DELAY"
+controlPv "VME$(VME):MTRG:EN_NIM2_DELAY"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -10890,11 +10890,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1340
 y 723
-w 33
-h 14
+w 34
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -10911,11 +10911,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1404
 y 728
 w 34
-h 14
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -10955,7 +10955,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1651
 y 379
@@ -10967,8 +10967,8 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:IMP_SYNC"
-indicatorPv "VME99:MTRG:IMP_SYNC"
+controlPv "VME$(VME):MTRG:IMP_SYNC"
+indicatorPv "VME$(VME):MTRG:IMP_SYNC"
 onLabel "R"
 offLabel "S"
 3d
@@ -10981,11 +10981,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1631
 y 361
-w 52
-h 14
+w 50
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -11000,7 +11000,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1527
 y 428
@@ -11012,8 +11012,8 @@ offColor index 0
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:ClkSrc"
-indicatorPv "VME$(MC):MTRG:ClkSrc_RBV"
+controlPv "VME$(VME):MTRG:ClkSrc"
+indicatorPv "VME$(VME):MTRG:ClkSrc_RBV"
 onLabel "LINK"
 offLabel "LOCAL"
 3d
@@ -11028,11 +11028,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1528
 y 394
 w 50
-h 32
+h 34
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -11049,7 +11049,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1527
 y 450
@@ -11076,7 +11076,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1527
 y 472
@@ -11103,7 +11103,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1527
 y 494
@@ -11130,7 +11130,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1527
 y 516
@@ -11157,7 +11157,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1652
 y 449
@@ -11183,7 +11183,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1652
 y 471
@@ -11209,7 +11209,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1652
 y 493
@@ -11235,7 +11235,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1652
 y 515
@@ -11262,11 +11262,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1419
 y 402
-w 89
-h 21
+w 91
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11282,11 +11282,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1331
 y 449
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11302,11 +11302,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1355
 y 426
-w 49
-h 21
+w 47
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11322,11 +11322,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1331
 y 471
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11342,11 +11342,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1331
 y 494
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11362,11 +11362,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1331
 y 516
 w 70
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -11381,7 +11381,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1590
 y 515
@@ -11405,7 +11405,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1590
 y 493
@@ -11429,7 +11429,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1590
 y 471
@@ -11453,7 +11453,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1590
 y 449
@@ -11478,10 +11478,10 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1589
 y 422
-w 80
+w 78
 h 24
 font "helvetica-medium-r-10.0"
 fontAlign "center"
@@ -11499,7 +11499,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1461
 y 514
@@ -11526,7 +11526,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1461
 y 492
@@ -11553,7 +11553,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1461
 y 470
@@ -11580,7 +11580,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1461
 y 448
@@ -11607,13 +11607,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1461
 y 426
 w 60
 h 25
-controlPv "VME$(MC):MTRG:reg_TIMESTAMP_B_RBV"
+controlPv "VME$(VME):MTRG:reg_TIMESTAMP_B_RBV"
 format "hex"
 font "helvetica-medium-r-14.0"
 fontAlign "center"
@@ -11634,7 +11634,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1409
 y 514
@@ -11661,7 +11661,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1409
 y 492
@@ -11688,7 +11688,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1409
 y 470
@@ -11715,7 +11715,7 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1409
 y 448
@@ -11742,13 +11742,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1409
 y 426
 w 60
 h 25
-controlPv "VME$(MC):MTRG:reg_TIMESTAMP_A_RBV"
+controlPv "VME$(VME):MTRG:reg_TIMESTAMP_A_RBV"
 format "hex"
 font "helvetica-medium-r-14.0"
 fontAlign "center"
@@ -11786,11 +11786,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1392
 y 364
-w 225
-h 27
+w 231
+h 29
 font "helvetica-bold-i-24.0"
 fontAlign "center"
 fgColor index 25
@@ -11823,11 +11823,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 832
 y 203
 w 34
-h 14
+h 16
 font "helvetica-bold-r-12.0"
 fontAlign "right"
 fgColor index 14
@@ -11855,7 +11855,7 @@ selectColor index 42
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LINK_U_IS_TRIGGER_TYPE"
+controlPv "VME$(VME):MTRG:LINK_U_IS_TRIGGER_TYPE"
 font "helvetica-medium-r-8.0"
 visInvert
 visMin "-5"
@@ -11866,7 +11866,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1015
 y 507
@@ -11878,7 +11878,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_H"
+controlPv "VME$(VME):MTRG:YLM_H"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -11889,7 +11889,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1063
 y 507
@@ -11901,7 +11901,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_F"
+controlPv "VME$(VME):MTRG:YLM_F"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -11912,7 +11912,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1112
 y 507
@@ -11924,7 +11924,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_D"
+controlPv "VME$(VME):MTRG:YLM_D"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -11935,7 +11935,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1087
 y 507
@@ -11947,7 +11947,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_E"
+controlPv "VME$(VME):MTRG:YLM_E"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -11958,7 +11958,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1039
 y 507
@@ -11970,7 +11970,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_G"
+controlPv "VME$(VME):MTRG:YLM_G"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -11981,7 +11981,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1185
 y 507
@@ -11993,7 +11993,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_A"
+controlPv "VME$(VME):MTRG:YLM_A"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12004,7 +12004,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1160
 y 507
@@ -12016,7 +12016,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_B"
+controlPv "VME$(VME):MTRG:YLM_B"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12027,7 +12027,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1136
 y 507
@@ -12039,7 +12039,7 @@ offColor index 15
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME$(MC):MTRG:YLM_C"
+controlPv "VME$(VME):MTRG:YLM_C"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12050,7 +12050,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1395
 y 768
@@ -12062,8 +12062,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12076,7 +12076,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1443
 y 768
@@ -12089,7 +12089,7 @@ inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
 controlPv "MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12102,7 +12102,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1492
 y 768
@@ -12114,8 +12114,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12128,7 +12128,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1467
 y 768
@@ -12140,8 +12140,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12154,7 +12154,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1419
 y 768
@@ -12166,8 +12166,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12180,7 +12180,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1565
 y 768
@@ -12192,8 +12192,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12206,7 +12206,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1540
 y 768
@@ -12218,8 +12218,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12232,7 +12232,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1516
 y 768
@@ -12244,8 +12244,8 @@ offColor index 35
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL"
-indicatorPv "VME99:MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
+controlPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL"
+indicatorPv "VME$(VME):MTRG:reg_TRIG_ALGO_MUX_SEL_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12258,13 +12258,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1155
 y 773
 w 43
 h 14
-controlPv "VME99:MTRG:LRUCtl08.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl08.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12284,13 +12284,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1152
 y 791
 w 46
 h 14
-controlPv "VME99:MTRG:LRUCtl09.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl09.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12310,13 +12310,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1148
 y 809
 w 50
 h 14
-controlPv "VME99:MTRG:LRUCtl10.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl10.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12337,11 +12337,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1049
 y 697
 w 102
-h 21
+h 22
 font "helvetica-medium-r-18.0"
 fgColor index 14
 bgColor index 0
@@ -12357,11 +12357,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 1017
 y 822
-w 96
-h 14
+w 94
+h 16
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
@@ -12377,11 +12377,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 953
 y 753
-w 69
-h 13
+w 70
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 0
@@ -12397,11 +12397,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 971
 y 721
-w 48
-h 13
+w 49
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 0
@@ -12417,11 +12417,11 @@ object activeXTextClass
 beginObjectProperties
 major 4
 minor 1
-release 0
+release 1
 x 962
 y 738
-w 57
-h 13
+w 56
+h 12
 font "helvetica-medium-r-10.0"
 fgColor index 14
 bgColor index 0
@@ -12436,13 +12436,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1066
 y 773
 w 42
 h 14
-controlPv "VME99:MTRG:LRUCtl04.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl04.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12462,13 +12462,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1059
 y 789
 w 49
 h 14
-controlPv "VME99:MTRG:LRUCtl05.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl05.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12488,13 +12488,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 1054
 y 804
 w 54
 h 14
-controlPv "VME99:MTRG:LRUCtl06.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl06.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12514,13 +12514,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 917
 y 773
 w 95
 h 14
-controlPv "VME99:MTRG:LRUCtl00.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl00.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12540,13 +12540,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 917
 y 788
 w 95
 h 14
-controlPv "VME99:MTRG:LRUCtl01.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl01.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12566,13 +12566,13 @@ endObjectProperties
 object activeXTextDspClass:noedit
 beginObjectProperties
 major 4
-minor 4
+minor 7
 release 0
 x 917
 y 803
 w 95
 h 14
-controlPv "VME99:MTRG:LRUCtl02.DESC"
+controlPv "VME$(VME):MTRG:LRUCtl02.DESC"
 format "string"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -12605,7 +12605,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 806
@@ -12617,7 +12617,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl10"
+controlPv "VME$(VME):MTRG:LRUCtl10"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12628,7 +12628,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 789
@@ -12640,7 +12640,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl09"
+controlPv "VME$(VME):MTRG:LRUCtl09"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12652,7 +12652,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 772
@@ -12664,7 +12664,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl08"
+controlPv "VME$(VME):MTRG:LRUCtl08"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12675,7 +12675,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 824
@@ -12687,7 +12687,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:RST_LINKU_DCBAL"
+controlPv "VME$(VME):MTRG:RST_LINKU_DCBAL"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12698,7 +12698,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 754
@@ -12710,7 +12710,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LostLockRstU"
+controlPv "VME$(VME):MTRG:LostLockRstU"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12721,7 +12721,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 737
@@ -12733,7 +12733,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:U_LOST_LOCK_RBV"
+controlPv "VME$(VME):MTRG:U_LOST_LOCK_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12745,7 +12745,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1206
 y 720
@@ -12757,7 +12757,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:U_SM_LOCKED_RBV"
+controlPv "VME$(VME):MTRG:U_SM_LOCKED_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12785,7 +12785,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 819
@@ -12797,7 +12797,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:RST_LINKR_DCBAL"
+controlPv "VME$(VME):MTRG:RST_LINKR_DCBAL"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12808,7 +12808,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 753
@@ -12820,7 +12820,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LostLockRstR"
+controlPv "VME$(VME):MTRG:LostLockRstR"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12831,7 +12831,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 737
@@ -12843,7 +12843,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:R_LOST_LOCK_RBV"
+controlPv "VME$(VME):MTRG:R_LOST_LOCK_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12855,7 +12855,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 720
@@ -12867,7 +12867,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:R_SM_LOCKED_RBV"
+controlPv "VME$(VME):MTRG:R_SM_LOCKED_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12878,7 +12878,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 802
@@ -12890,7 +12890,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl06"
+controlPv "VME$(VME):MTRG:LRUCtl06"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12901,7 +12901,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 785
@@ -12913,7 +12913,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl05"
+controlPv "VME$(VME):MTRG:LRUCtl05"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12924,7 +12924,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1122
 y 769
@@ -12936,7 +12936,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl04"
+controlPv "VME$(VME):MTRG:LRUCtl04"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12964,7 +12964,7 @@ beginGroup
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 754
@@ -12976,7 +12976,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LostLockRstL"
+controlPv "VME$(VME):MTRG:LostLockRstL"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -12987,7 +12987,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 737
@@ -12999,7 +12999,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:L_LOST_LOCK_RBV"
+controlPv "VME$(VME):MTRG:L_LOST_LOCK_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -13011,7 +13011,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 720
@@ -13023,7 +13023,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:L_SM_LOCKED_RBV"
+controlPv "VME$(VME):MTRG:L_SM_LOCKED_RBV"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -13034,7 +13034,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 803
@@ -13046,7 +13046,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl02"
+controlPv "VME$(VME):MTRG:LRUCtl02"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -13057,7 +13057,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 787
@@ -13069,7 +13069,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl01"
+controlPv "VME$(VME):MTRG:LRUCtl01"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -13080,7 +13080,7 @@ endObjectProperties
 object activeButtonClass
 beginObjectProperties
 major 4
-minor 0
+minor 1
 release 0
 x 1026
 y 770
@@ -13092,7 +13092,7 @@ offColor index 3
 inconsistentColor index 14
 topShadowColor index 0
 botShadowColor index 14
-controlPv "VME99:MTRG:LRUCtl00"
+controlPv "VME$(VME):MTRG:LRUCtl00"
 labelType "literal"
 3d
 font "helvetica-medium-r-18.0"
@@ -13101,5 +13101,51 @@ endObjectProperties
 
 endGroup
 
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 745
+y 49
+w 83
+h 25
+controlPv "VME$(VME):MTRG:reg_CODE_DATE_RBV"
+format "hex"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 35
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 648
+y 47
+w 83
+h 25
+controlPv "VME$(VME):MTRG:reg_CODE_REVISION_RBV"
+format "hex"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 35
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
 endObjectProperties
 

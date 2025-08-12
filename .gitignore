@@ -15,3 +15,4 @@ base/base-3.14.12.8/templates
 
 edm/logs
 receiver/tcp_receiver
+*.*~

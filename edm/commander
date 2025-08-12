@@ -2,6 +2,10 @@
 
 source /DGS_system/.EPICSrc
 
+VMENUM=32
+
+macro="VME=${VMENUM}"
+
 runEdm() {
 
   export EDMBASE=${DGS_SYSTEM_DIR}/edm/extensions/dgs1/src/edm
@@ -16,10 +20,10 @@ runEdm() {
   export EDMSCRIPTS=${DGS_SYSTEM_DIR}/edm/scripts
   
   if [ $# -eq 0 ]; then
-     $EDM -x -noedit runControl &
+     $EDM -m ${macro} -x -noedit runControl &
   else
      echo "----------------- enable editing"
-     $EDM -x runControl &
+     $EDM -m ${macro} -x runControl &
   fi
 }
 

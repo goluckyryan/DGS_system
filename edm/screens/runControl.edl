@@ -37,7 +37,7 @@ fgColor index 15
 bgColor index 14
 bgAlarm
 value {
-  "DXA Main Controller"
+  "Main Controller"
 }
 endObjectProperties
 
@@ -69,7 +69,7 @@ displayFileName {
   6 "genRouter.edl"
   7 "genRouter.edl"
   8 "xTrigLock2.edl"
-  9 "dgsTrigCntrl.edl"
+  9 "trigCntrl.edl"
 }
 menuLabel {
   0 "Trig Summary"

@@ -1,0 +1,3611 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 8
+y 49
+w 1600
+h 1000
+font "courier-medium-r-10.0"
+ctlFont "courier-medium-r-10.0"
+btnFont "courier-medium-r-10.0"
+fgColor index 14
+bgColor index 55
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 203
+y 230
+w 50
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 203
+  1 252
+}
+yPoints {
+  0 234
+  1 234
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 449
+y 436
+w 78
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Address from TS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 482
+y 515
+w 104
+h 28
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Internal Counter"
+  "Frequency Select"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 173
+y 172
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:A_7_4_DIR"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 173
+y 203
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:A_3_0_DIR"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 173
+y 234
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:B_7_4_DIR"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 173
+y 265
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:B_3_0_DIR"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 25
+y 283
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 4
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 25
+  1 98
+}
+yPoints {
+  0 287
+  1 287
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 22
+y 170
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 4
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 22
+  1 95
+}
+yPoints {
+  0 174
+  1 174
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 16
+y 173
+w 9
+h 115
+lineColor index 14
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 4
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 21
+  1 21
+}
+yPoints {
+  0 173
+  1 287
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 22
+y 293
+w 119
+h 60
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Target Wheel"
+  "on bits 12:2"
+  "Bit 2: xtra"
+  "Bits 12:3 => encoder(9:0)"
+  "THIS PUTS LSbit AT TOP"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 112
+y 265
+w 36
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Bits 3:0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 227
+w 36
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Bits 7:4"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 99
+y 198
+w 42
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Bits 11:8"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 101
+y 166
+w 48
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Bits 15:12"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 141
+w 82
+h 24
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Bits 15:13 behind"
+  "front panel"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 89
+y 241
+w 75
+h 9
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 241
+w 74
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:B_7_4_DIR_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 90
+  1 163
+}
+yPoints {
+  0 245
+  1 245
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 89
+y 241
+w 74
+h 9
+lineColor index 25
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:B_7_4_DIR_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 163
+  1 90
+}
+yPoints {
+  0 245
+  1 245
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 273
+w 74
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:B_3_0_DIR_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 90
+  1 163
+}
+yPoints {
+  0 277
+  1 277
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 89
+y 273
+w 74
+h 9
+lineColor index 25
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:B_3_0_DIR_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 163
+  1 90
+}
+yPoints {
+  0 277
+  1 277
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 91
+y 211
+w 74
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:A_3_0_DIR_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 91
+  1 164
+}
+yPoints {
+  0 215
+  1 215
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 211
+w 74
+h 9
+lineColor index 25
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:A_3_0_DIR_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 164
+  1 91
+}
+yPoints {
+  0 215
+  1 215
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 89
+y 179
+w 74
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:A_7_4_DIR_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 89
+  1 162
+}
+yPoints {
+  0 183
+  1 183
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 179
+w 74
+h 9
+lineColor index 25
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:A_7_4_DIR_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 164
+  1 91
+}
+yPoints {
+  0 183
+  1 183
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 181
+y 330
+w 0
+h 397
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 181
+  1 181
+}
+yPoints {
+  0 727
+  1 330
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 529
+y 698
+w 0
+h 55
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 529
+  1 529
+}
+yPoints {
+  0 753
+  1 698
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 529
+y 751
+w 375
+h 0
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 904
+  1 529
+}
+yPoints {
+  0 751
+  1 751
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 551
+w 65
+h 141
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SLOW_CLOCK_SEL"
+font "helvetica-medium-r-10.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 104
+y 52
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:EncoderXtra_RBV"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 51
+y 33
+w 119
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Extra bit from Aux I/O"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1073
+y 16
+w 346
+h 27
+font "helvetica-medium-r-24.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "AUX I/O Control (Target Wheel)"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 871
+y 243
+w 134
+h 98
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SWEEP_RAM_ADDR_SRC"
+font "helvetica-medium-r-12.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 711
+y 580
+w 114
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Internal Counter"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 746
+y 527
+w 0
+h 0
+lineColor index 21
+fillColor index 0
+lineWidth 3
+numPoints 1
+xPoints {
+  0 746
+}
+yPoints {
+  0 527
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1069
+y 228
+w 2
+h 2
+lineColor index 21
+fillColor index 0
+lineWidth 3
+numPoints 0
+xPoints {
+}
+yPoints {
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 748
+y 93
+w 105
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Address from AUX I/O"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 166
+y 167
+w 39
+h 133
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 148
+y 301
+w 57
+h 24
+font "helvetica-bold-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Front Panel"
+  "AUX I/O"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 704
+y 216
+w 50
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 704
+  1 753
+}
+yPoints {
+  0 220
+  1 220
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 752
+y 108
+w 0
+h 313
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 752
+  1 752
+}
+yPoints {
+  0 421
+  1 108
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 150
+y 99
+w 63
+h 60
+font "helvetica-bold-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SET : input"
+  "OFF : output"
+  ""
+  "PER GROUP "
+  "OF 4 BITS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 867
+y 207
+w 145
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SOURCE OF SWEEP"
+  "RAM ADDRESS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 934
+y 574
+w 618
+h 168
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GENERAL INSTRUCTIONS:"
+  ""
+  "1) Select the source of the RAM address for each RAM using the main control."
+  ""
+  "2) If the RAM address is coming from the target wheel, all AUX I/O bits must be set as INPUTS."
+  ""
+  "3) If the RAM address is coming from the internal counter, the frequency is the rate at which each BIT"
+  "   of the RAMs is used.  Selecting 100kHz means that each of the 1000 or 1024 bits in the RAM is active"
+  "   for 10usec.  "
+  ""
+  "   3a) Setting the roll at 999 makes periods easier to work out in your head by making bits 1000-1023"
+  "       of the RAM unused (address from counter counter counts 997,998,999,0,1...)."
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1008
+y 503
+w 169
+h 98
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1177
+  1 1008
+}
+yPoints {
+  0 601
+  1 503
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 867
+y 637
+w 63
+h 88
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 930
+  1 867
+}
+yPoints {
+  0 637
+  1 725
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 902
+y 670
+w 30
+h 81
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 932
+  1 902
+}
+yPoints {
+  0 670
+  1 751
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 751
+y 102
+w 118
+h 11
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 751
+  1 868
+}
+yPoints {
+  0 107
+  1 107
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 885
+y 47
+w 127
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SOURCE OF TRIG"
+  "RAM ADDRESS"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 874
+y 89
+w 134
+h 98
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:TRIG_RAM_ADDR_SRC"
+font "helvetica-medium-r-12.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 880
+y 361
+w 132
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SOURCE OF VETO"
+  "RAM ADDRESS"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 869
+y 403
+w 134
+h 98
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:VETO_RAM_ADDR_SRC"
+font "helvetica-medium-r-12.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 751
+y 259
+w 118
+h 11
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 751
+  1 868
+}
+yPoints {
+  0 264
+  1 264
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 752
+y 417
+w 118
+h 11
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 752
+  1 869
+}
+yPoints {
+  0 422
+  1 422
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 766
+y 441
+w 103
+h 9
+lineColor index 18
+lineAlarm
+fill
+fillColor index 18
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 766
+  1 868
+}
+yPoints {
+  0 445
+  1 445
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 766
+y 279
+w 103
+h 9
+lineColor index 18
+lineAlarm
+fill
+fillColor index 18
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 766
+  1 868
+}
+yPoints {
+  0 283
+  1 283
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 766
+y 132
+w 0
+h 314
+lineColor index 18
+lineAlarm
+fill
+fillColor index 18
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 766
+  1 766
+}
+yPoints {
+  0 132
+  1 446
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 766
+y 126
+w 103
+h 9
+lineColor index 18
+lineAlarm
+fill
+fillColor index 18
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 766
+  1 868
+}
+yPoints {
+  0 130
+  1 130
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 781
+y 460
+w 88
+h 9
+lineColor index 27
+lineAlarm
+fill
+fillColor index 27
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 781
+  1 868
+}
+yPoints {
+  0 464
+  1 464
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 781
+y 298
+w 88
+h 9
+lineColor index 27
+lineAlarm
+fill
+fillColor index 27
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 781
+  1 868
+}
+yPoints {
+  0 302
+  1 302
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 781
+y 151
+w 0
+h 405
+lineColor index 26
+lineAlarm
+fill
+fillColor index 27
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 781
+  1 781
+}
+yPoints {
+  0 151
+  1 556
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 781
+y 145
+w 88
+h 9
+lineColor index 27
+lineAlarm
+fill
+fillColor index 27
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 781
+  1 868
+}
+yPoints {
+  0 149
+  1 149
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 532
+y 439
+w 235
+h 9
+lineColor index 18
+lineAlarm
+fill
+fillColor index 18
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 532
+  1 764
+}
+yPoints {
+  0 443
+  1 443
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 796
+y 484
+w 75
+h 9
+lineColor index 10
+lineAlarm
+fill
+fillColor index 10
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 796
+  1 870
+}
+yPoints {
+  0 488
+  1 488
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 796
+y 169
+w 75
+h 9
+lineColor index 10
+lineAlarm
+fill
+fillColor index 10
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 796
+  1 870
+}
+yPoints {
+  0 173
+  1 173
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 796
+y 322
+w 75
+h 9
+lineColor index 10
+lineAlarm
+fill
+fillColor index 10
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 796
+  1 870
+}
+yPoints {
+  0 326
+  1 326
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 717
+y 680
+w 144
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Counter rolls at 999 if set"
+  "Counter rolls at 1023 if off"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 779
+y 656
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 3
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:COUNTER_ROLL_999"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 786
+y 622
+w 12
+h 35
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 791
+  1 791
+}
+yPoints {
+  0 657
+  1 623
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 702
+y 556
+w 130
+h 67
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 566
+y 584
+w 135
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 566
+  1 701
+}
+yPoints {
+  0 588
+  1 588
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1267
+y 127
+w 108
+h 70
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "To Man/Aux trigger"
+  ""
+  "Must set EN RAM"
+  "on master trigger"
+  "GUI to use"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1184
+y 130
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1184
+  1 1257
+}
+yPoints {
+  0 134
+  1 134
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1081
+y 104
+w 103
+h 67
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1081
+y 104
+w 103
+h 67
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1095
+y 126
+w 72
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "TRIG RAM"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1008
+y 135
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1008
+  1 1081
+}
+yPoints {
+  0 139
+  1 139
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1449
+y 286
+w 100
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sweep Out option"
+  "for NIM OUT 2"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1182
+y 286
+w 140
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1182
+  1 1320
+}
+yPoints {
+  0 290
+  1 290
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1079
+y 259
+w 103
+h 67
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1079
+y 259
+w 103
+h 67
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1084
+y 281
+w 90
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SWEEP RAM"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1006
+y 291
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1006
+  1 1079
+}
+yPoints {
+  0 295
+  1 295
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1323
+y 278
+w 94
+h 108
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SweepMux"
+font "helvetica-medium-r-12.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1199
+y 307
+w 120
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1199
+  1 1317
+}
+yPoints {
+  0 311
+  1 311
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1419
+y 318
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1419
+  1 1492
+}
+yPoints {
+  0 322
+  1 322
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1241
+y 357
+w 54
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1241
+y 357
+w 54
+h 29
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1241
+y 357
+w 54
+h 29
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1243
+y 364
+w 50
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "EdgeDet"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1240
+y 325
+w 54
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1240
+y 325
+w 54
+h 29
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1240
+y 325
+w 54
+h 29
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1242
+y 332
+w 50
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "EdgeDet"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1214
+y 292
+w 0
+h 50
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 1214
+  1 1214
+}
+yPoints {
+  0 342
+  1 292
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1199
+y 310
+w 0
+h 80
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 1199
+  1 1199
+}
+yPoints {
+  0 390
+  1 310
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1199
+y 369
+w 40
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1199
+  1 1239
+}
+yPoints {
+  0 373
+  1 373
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1214
+y 336
+w 25
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1214
+  1 1239
+}
+yPoints {
+  0 340
+  1 340
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1151
+y 387
+w 50
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 1151
+  1 1200
+}
+yPoints {
+  0 391
+  1 391
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1206
+y 279
+w 82
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sweep from RAM"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1062
+y 385
+w 84
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Encoder Extra Bit"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1453
+y 336
+w 70
+h 35
+controlPv "VME$(VME):MTRG:Sweep_pw"
+displayMode "decimal"
+fgColor index 25
+bgColor index 2
+fill
+font "helvetica-medium-r-12.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1444
+y 374
+w 89
+h 42
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Pulse width"
+  "applied in"
+  "edge det modes"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1264
+y 439
+w 119
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "To veto logic (option)"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1181
+y 442
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1181
+  1 1254
+}
+yPoints {
+  0 446
+  1 446
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1079
+y 417
+w 103
+h 67
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1079
+y 417
+w 103
+h 67
+lineColor index 25
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1093
+y 439
+w 77
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "VETO RAM"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1005
+y 447
+w 74
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1005
+  1 1078
+}
+yPoints {
+  0 451
+  1 451
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1294
+y 366
+w 25
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1294
+  1 1319
+}
+yPoints {
+  0 370
+  1 370
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1294
+y 333
+w 25
+h 9
+lineColor index 14
+lineAlarm
+fill
+fillColor index 14
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+arrows "to"
+numPoints 2
+xPoints {
+  0 1294
+  1 1319
+}
+yPoints {
+  0 337
+  1 337
+}
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 648
+y 204
+w 70
+h 35
+controlPv "VME$(VME):MTRG:EncFilterTimePHYS"
+displayMode "decimal"
+fgColor index 25
+bgColor index 2
+fill
+font "helvetica-medium-r-12.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 634
+y 239
+w 109
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Encoder Filter Time"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 178
+y 729
+w 690
+h 0
+lineColor index 4
+lineAlarm
+fill
+fillColor index 4
+fillAlarm
+lineWidth 3
+lineStyle "dash"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 868
+  1 178
+}
+yPoints {
+  0 729
+  1 729
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 332
+y 299
+w 45
+h 92
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:AUXPolaritySelect"
+font "helvetica-medium-r-10.0"
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 319
+y 281
+w 93
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "5"
+value {
+  "Parallel Polarity"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 252
+y 193
+w 45
+h 92
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SSI_ENABLE"
+font "helvetica-medium-r-10.0"
+visInvert
+visMin "-5"
+visMax "5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 229
+y 173
+w 81
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Serial/Parallel"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 326
+y 5
+w 53
+h 216
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SSI_InputSelect"
+indicatorPv "VME$(VME):MTRG:SSI_InputSelect_RBV"
+font "helvetica-medium-r-10.0"
+visPv "VME$(VME):MTRG:SSI_ENABLE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 416
+y 79
+w 109
+h 24
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SSI Transaction Length"
+  "(# of bits)"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 429
+y 105
+w 70
+h 35
+controlPv "VME$(VME):MTRG:SSI_TransLen"
+displayMode "decimal"
+fgColor index 25
+bgColor index 2
+colorPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+fill
+font "helvetica-medium-r-12.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 433
+y 192
+w 72
+h 24
+font "helvetica-bold-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "0"
+visMax "1"
+value {
+  "SSI Receiver"
+  "State Machine"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 427
+y 184
+w 92
+h 43
+lineColor index 25
+fillColor index 0
+lineWidth 2
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 297
+y 200
+w 30
+h 9
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+numPoints 2
+xPoints {
+  0 297
+  1 326
+}
+yPoints {
+  0 204
+  1 204
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 467
+y 141
+w 0
+h 46
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visInvert
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 467
+  1 467
+}
+yPoints {
+  0 187
+  1 141
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 379
+y 205
+w 47
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE"
+visMin "0"
+visMax "1"
+closePolygon
+numPoints 2
+xPoints {
+  0 379
+  1 426
+}
+yPoints {
+  0 205
+  1 205
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 392
+y 5
+w 105
+h 24
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Choose SSI clock/data"
+  "pins of AUX interface"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 549
+y 95
+w 53
+h 216
+fgColor index 14
+bgColor index 40
+selectColor index 42
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME$(VME):MTRG:SSI_InputSelect"
+font "helvetica-medium-r-10.0"
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visInvert
+visMin "1"
+visMax "5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 612
+y 108
+w 86
+h 36
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Choose which bits"
+  "of SSI data form"
+  "encoder address"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 519
+y 206
+w 28
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "0"
+visMax "1"
+closePolygon
+numPoints 2
+xPoints {
+  0 519
+  1 547
+}
+yPoints {
+  0 206
+  1 206
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 604
+y 219
+w 112
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visInvert
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 604
+  1 716
+}
+yPoints {
+  0 219
+  1 219
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 619
+y 343
+w 104
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "User Manual Entry"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 643
+y 364
+w 70
+h 35
+controlPv "VME$(VME):MTRG:ENCODER_MANUAL_DATA"
+displayMode "decimal"
+fgColor index 25
+bgColor index 2
+fill
+font "helvetica-medium-r-12.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 797
+y 173
+w 0
+h 318
+lineColor index 8
+lineAlarm
+fill
+fillColor index 8
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 797
+  1 797
+}
+yPoints {
+  0 173
+  1 491
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 714
+y 375
+w 83
+h 9
+lineColor index 10
+lineAlarm
+fill
+fillColor index 10
+fillAlarm
+lineWidth 3
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 714
+  1 796
+}
+yPoints {
+  0 379
+  1 379
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 377
+y 330
+w 244
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 377
+  1 621
+}
+yPoints {
+  0 330
+  1 330
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 622
+y 233
+w 0
+h 97
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 622
+  1 622
+}
+yPoints {
+  0 330
+  1 233
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 622
+y 234
+w 26
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 622
+  1 648
+}
+yPoints {
+  0 234
+  1 234
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 296
+y 265
+w 17
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 296
+  1 313
+}
+yPoints {
+  0 265
+  1 265
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 310
+y 341
+w 23
+h 0
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 310
+  1 333
+}
+yPoints {
+  0 341
+  1 341
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 311
+y 266
+w 0
+h 73
+lineColor index 21
+lineAlarm
+fill
+fillColor index 21
+fillAlarm
+lineWidth 3
+visPv "VME$(VME):MTRG:SSI_ENABLE_RBV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 2
+xPoints {
+  0 311
+  1 311
+}
+yPoints {
+  0 339
+  1 266
+}
+endObjectProperties
+
