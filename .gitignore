@@ -13,6 +13,12 @@ base/base-3.14.12.8/lib
 base/base-3.14.12.8/src
 base/base-3.14.12.8/templates
 
+softIOC/bin
+softIOC/lib
+O.linux-x86_64
+O.Common
+softIOC/iocBoot/iocdgsSoftIOC/envPaths
+
 edm/logs
 receiver/tcp_receiver
 *.*~
