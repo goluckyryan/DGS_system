@@ -1,0 +1,2296 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 474
+y 198
+w 500
+h 500
+font "courier-medium-r-10.0"
+ctlFont "courier-medium-r-10.0"
+btnFont "courier-medium-r-10.0"
+fgColor index 0
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 14
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 310
+w 107
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Transmit Power"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 345
+w 102
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Receive Power"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 127
+y 47
+w 236
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "U  R  L  H  G  F  E  D  C  B  A"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 7
+w 98
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "$(D) $(T)"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 134
+y 254
+w 255
+h 44
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 184
+y 254
+w 119
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "Link Controls"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 305
+y 277
+w 13
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "D"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 377
+y 277
+w 12
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "A"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 353
+y 277
+w 13
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 280
+y 277
+w 11
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "E"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 232
+y 277
+w 14
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "G"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 207
+y 277
+w 13
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "H"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 256
+y 277
+w 11
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "F"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 328
+y 277
+w 14
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "C"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 184
+y 277
+w 10
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "L"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 159
+y 277
+w 12
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "R"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 134
+y 277
+w 13
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "U"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 80
+w 231
+h 21
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_F_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_E_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_D_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 298
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_C_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 319
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_B_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_U_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 151
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_R_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_L_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 193
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_H_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 214
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_G_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 80
+w 21
+h 21
+controlPv "VME32:$(T):LOCK_A_RBV"
+lineColor index 14
+onColor index 6
+offColor index 15
+numBits 1
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 110
+w 231
+h 21
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_F_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_E_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_D_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 298
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_C_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 319
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_B_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_U_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 151
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_R_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_L_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 193
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_H_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 214
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_G_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 110
+w 21
+h 21
+controlPv "VME32:$(T):DEN_A_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 140
+w 231
+h 21
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_F_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_E_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_D_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 298
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_C_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 319
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_B_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_U_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 151
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_R_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_L_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 193
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_H_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 214
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_G_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 140
+w 21
+h 21
+controlPv "VME32:$(T):REN_A_RBV"
+lineColor index 14
+onColor index 15
+offColor index 6
+numBits 1
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 170
+w 231
+h 21
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_F_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_E_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_D_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 298
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_C_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 319
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_B_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_U_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 151
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_R_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_L_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 193
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_H_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 214
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_G_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 170
+w 21
+h 21
+controlPv "VME32:$(T):SYNC_A_RBV"
+lineColor index 14
+onColor index 20
+offColor index 6
+numBits 1
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 85
+w 83
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Link Locked"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 114
+w 88
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Link Drv Ena"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 144
+w 90
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Link Rec Ena"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 172
+w 68
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Link Sync"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 221
+w 110
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Input Line Mask"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 337
+w 266
+h 22
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 203
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_H"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_U"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 251
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_F"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_D"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_E"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 227
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_G"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_L"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_R"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_A"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 348
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_B"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 337
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):RPwr_C"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 156
+y 379
+w 142
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "LVDS Pre-Emph"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 417
+w 55
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PrE_2"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 351
+y 445
+w 76
+h 22
+fgColor index 25
+bgColor index 55
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PEHLRU"
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 223
+y 416
+w 55
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PrE_1"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 201
+y 445
+w 76
+h 22
+fgColor index 25
+bgColor index 55
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PEEFG"
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 32
+y 398
+w 39
+h 42
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enable"
+  "Driver"
+  "ABCD"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 73
+y 416
+w 55
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PrE_0"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 51
+y 445
+w 76
+h 22
+fgColor index 25
+bgColor index 55
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):PEABCD"
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 215
+w 266
+h 22
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 203
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_H"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_U"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 251
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_F"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_D"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_E"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 227
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_G"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_L"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_R"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_A"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 348
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_B"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 215
+w 23
+h 22
+fgColor index 25
+onColor index 6
+offColor index 35
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):ILM_C"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 305
+w 266
+h 22
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 203
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_H"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_U"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 251
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_F"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_D"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_E"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 227
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_G"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_L"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_R"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_A"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 348
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_B"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 305
+w 23
+h 22
+fgColor index 25
+onColor index 35
+offColor index 6
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "VME32:$(T):TPwr_C"
+labelType "literal"
+3d
+font "helvetica-medium-r-18.0"
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 180
+y 399
+w 39
+h 42
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enable"
+  "Driver"
+  "EFG"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 397
+w 39
+h 42
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enable"
+  "Driver"
+  "HLRU"
+}
+autoSize
+endObjectProperties
+

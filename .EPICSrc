@@ -1,9 +1,12 @@
 
 export DGS_SYSTEM_DIR=/DGS_system
 
+export HOST_ARCH="linux-x84_64"
 
 #============ EPICS base
 EPICS_base=${DGS_SYSTEM_DIR}/base/base-3.14.12.8
+
+
 
 export EPICS_BASE=${EPICS_base}
 export PATH=$PATH:${EPICS_base}/bin/linux-x86_64

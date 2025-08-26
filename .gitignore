@@ -16,8 +16,12 @@ base/base-3.14.12.8/templates
 softIOC/bin
 softIOC/lib
 O.linux-x86_64
+O.linux-x86
 O.Common
 softIOC/iocBoot/iocdgsSoftIOC/envPaths
+
+edm/extensions/dgs1/bin
+edm/extensions/dgs1/lib
 
 edm/logs
 receiver/tcp_receiver

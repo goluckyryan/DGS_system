@@ -1,0 +1,5 @@
+#RELEASE Location of external products
+#
+
+EPICS_EXTENSIONS=$(TOP)
+EPICS_BASE=/DGS_system/base/base-3.14.12.8

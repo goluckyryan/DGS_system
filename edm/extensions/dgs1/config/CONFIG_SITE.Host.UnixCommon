@@ -1,0 +1,36 @@
+#
+# CONFIG_SITE.Host.UnixCommon
+#
+# Site Specific Configuration Information
+# Only the local epics system manager should modify this file
+
+
+# Override dependancy definitions
+# Needed for solaris 5.6 with EPICS base versions R3.13.1.1 and earlier
+# There are no lib*.a files in /usr/dt/lib for solaris 5.6 and 
+# base versions R3.13.1.1 and earlier looked for .a files as dependancies
+COND_PROD_DEPLIBS = $(foreach prod,$(PROD), $(foreach lib, $($(basename $(prod))_LIBS),$(firstword $(wildcard $(addsuffix /lib$(lib).*,$($(lib)_DIR) $(EPICS_BASE_LIB))))))
+PRODNAME_DEPLIBS = $(foreach lib,$(PRODNAME_LIBS),$(firstword $(wildcard $(addsuffix /lib$(lib).*,$($(lib)_DIR) $(EPICS_BASE_LIB)))))
+PROD_DEPLIBS = $(foreach lib,$(PROD_LIBS),$(firstword $(wildcard $(addsuffix /lib$(lib).*,$($(lib)_DIR) $(EPICS_BASE_LIB)))))
+USR_DEPLIBS = $(foreach lib,$(USR_LIBS),$(firstword $(wildcard $(addsuffix /lib$(lib).*,$($(lib)_DIR) $(EPICS_BASE_LIB)))))
+
+
+# java definitions
+CLASSPATH = -classpath $(INSTALL_JAVA)
+SOURCEPATH = -sourcepath ..
+JAVACCMD = $(subst \,/,$(JAVA_DIR)/bin/javac$(EXE) $(CLASSPATH) $(SOURCEPATH) $(JAVAC_FLAGS))
+JAVAHCMD = $(subst \,/,$(JAVA_DIR)/bin/javah$(EXE) -jni $(CLASSPATH) $(JAVAH_FLAGS))
+JARCMD = $(subst \,/,$(JAVA_DIR)/bin/jar$(EXE) $(JAR_OPTIONS) $(MANIFEST) $(JAR) $(JAR_INPUT))
+ 
+ZLIB_CFLAG = -DzLib
+ZLIB_PROD_LIB = z
+ZLIB = $(words $(notdir $(wildcard /usr/lib/libz.a /usr/lib/libz.so /lib/libz.a /lib/libz.so /usr/lib/libz.dylib)))
+ifneq ($(ZLIB), 0)
+ZLIB_FOUND = YES
+else
+z_DIR = $(EPICS_EXTENSIONS_LIB)
+endif
+
+PYTHON_DIR=/usr/lib/python2.2
+PYTHON_INCLUDE=/usr/include/python2.2
+

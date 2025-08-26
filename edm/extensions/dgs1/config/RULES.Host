@@ -1,0 +1,34 @@
+#RULES.Host
+
+ifdef BASE_3_14
+INSTALL_IDL                = $(INSTALL_LOCATION)/idllib
+DIRECTORY_TARGETS += $(INSTALL_IDL)
+else
+INSTALL_IDL                = $(INSTALL_BIN)
+endif
+
+ifneq ($(strip $(IDLS_$(ARCH_CLASS))),)
+IDLS += $(subst -nil-,,$(IDLS_$(ARCH_CLASS)))
+else
+ifdef IDLS_DEFAULT
+IDLS += $(IDLS_DEFAULT)
+endif
+endif
+
+INSTALL_IDLS =$(IDLS:%=$(INSTALL_IDL)/%)
+
+include $(EPICS_BASE)/config/RULES.Host
+
+buildInstall :: $(INSTALL_IDLS)
+
+ifdef BASE_3_14
+$(INSTALL_IDL)/%: %
+	@echo "Installing idl program $@"
+	@$(INSTALL_IDLFILE) -d -m 644 $< $(INSTALL_IDL)
+
+$(INSTALL_IDL)/%: ../%
+	@echo "Installing idl program $@"
+	@$(INSTALL_IDLFILE) -d -m 644 $< $(INSTALL_IDL)
+endif
+
+include $(TOP)/config/RULES_PYTHON
