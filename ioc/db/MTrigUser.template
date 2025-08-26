@@ -151,6 +151,24 @@ field(DESC,"pre emphasis setting")
 field(OUT,"@asynMask($(BOARD),0,0x00000018,3)reg_LVDS_PREEMPHASIS")
 }
 #-------------------------------------------------------
+record(mbbo,"VME$(CRATE):$(BOARD):FAST_TDC_ILA_CTL")
+{
+field(DTYP,"asynUInt32Digital")
+#  Source string : 0:allfine:0;1:raw31-16:1;2:diag2:2;3:pos/val/fine:3;
+	field(ZRST,"allfine")	field(ZRVL,"0")	field(ONST,"raw31-16")	field(ONVL,"1")	field(TWST,"diag2")	field(TWVL,"2")	field(THST,"pos/val/fine")	field(THVL,"3")	
+field(DESC,"fast tdc ila control")
+field(OUT,"@asynMask($(BOARD),0,0x00000018,3)reg_MISC_CTL2")
+}
+#-------------------------------------------------------
+record(mbbo,"VME$(CRATE):$(BOARD):TS_EDGE_FLAG_SEL")
+{
+field(DTYP,"asynUInt32Digital")
+#  Source string : 0:0.75Hz:7;1:6.0Hz:6;2:23.8Hz:5;3:95.4Hz:4;4:1.5kHz:3;5:48.4kHz:2;6:195kHz:1;7:OFF:0
+	field(ZRST,"0.75Hz")	field(ZRVL,"7")	field(ONST,"6.0Hz")	field(ONVL,"6")	field(TWST,"23.8Hz")	field(TWVL,"5")	field(THST,"95.4Hz")	field(THVL,"4")	field(FRST,"1.5kHz")	field(FRVL,"3")	field(FVST,"48.4kHz")	field(FVVL,"2")	field(SXST,"195kHz")	field(SXVL,"1")	field(SVST,"OFF")	field(SVVL,"0")	
+field(DESC,"selects timestamp edge")
+field(OUT,"@asynMask($(BOARD),0,0x000000E0,5)reg_MISC_CTL2")
+}
+#-------------------------------------------------------
 record(mbbo,"VME$(CRATE):$(BOARD):ILA1_MODE")
 {
 field(DTYP,"asynUInt32Digital")
@@ -413,6 +431,26 @@ field(DESC,"pre emphasis setting")
 field(INP,"@asynMask($(BOARD),0,0x00000018,3)reg_LVDS_PREEMPHASIS")
 }
 #-------------------------------------------------------
+record(mbbi,"VME$(CRATE):$(BOARD):FAST_TDC_ILA_CTL_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:allfine:0;1:raw31-16:1;2:diag2:2;3:pos/val/fine:3;
+	field(ZRST,"allfine")	field(ZRVL,"0")	field(ONST,"raw31-16")	field(ONVL,"1")	field(TWST,"diag2")	field(TWVL,"2")	field(THST,"pos/val/fine")	field(THVL,"3")	
+field(DESC,"fast tdc ila control")
+field(INP,"@asynMask($(BOARD),0,0x00000018,3)reg_MISC_CTL2")
+}
+#-------------------------------------------------------
+record(mbbi,"VME$(CRATE):$(BOARD):TS_EDGE_FLAG_SEL_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:0.75Hz:7;1:6.0Hz:6;2:23.8Hz:5;3:95.4Hz:4;4:1.5kHz:3;5:48.4kHz:2;6:195kHz:1;7:OFF:0
+	field(ZRST,"0.75Hz")	field(ZRVL,"7")	field(ONST,"6.0Hz")	field(ONVL,"6")	field(TWST,"23.8Hz")	field(TWVL,"5")	field(THST,"95.4Hz")	field(THVL,"4")	field(FRST,"1.5kHz")	field(FRVL,"3")	field(FVST,"48.4kHz")	field(FVVL,"2")	field(SXST,"195kHz")	field(SXVL,"1")	field(SVST,"OFF")	field(SVVL,"0")	
+field(DESC,"selects timestamp edge")
+field(INP,"@asynMask($(BOARD),0,0x000000E0,5)reg_MISC_CTL2")
+}
+#-------------------------------------------------------
 record(mbbi,"VME$(CRATE):$(BOARD):ILA1_MODE_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -614,6 +652,16 @@ field(DESC,"Selects which timestamp ")
 field(OUT,"@asynMask($(BOARD),0,0x00008000,1)reg_MYRIAD_OVERLAP_CTL")
 }
 #-------------------------------------------------------
+record(bo,"VME$(CRATE):$(BOARD):TS_SAMP_PHASE")
+{
+field(DOL,"0")
+field(DTYP,"asynUInt32Digital")
+#  Source string : 0:0;1:1;
+	field(ZNAM,"0")	field(ONAM,"1;")	
+field(DESC,"which 100mhz phase to us")
+field(OUT,"@asynMask($(BOARD),0,0x00000400,1)reg_MON7_FILL_CTL")
+}
+#-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):SYSMON_ENABLE")
 {
 field(DOL,"0")
@@ -630,7 +678,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:OFF;1:ON
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set only trigger info")
+field(DESC,"if set, ignores tdc, fil")
 field(OUT,"@asynMask($(BOARD),0,0x00008000,1)reg_MON7_FILL_CTL")
 }
 #-------------------------------------------------------
@@ -904,16 +952,6 @@ field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_A")
 }
 #-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_A")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_A")
-}
-#-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_A")
 {
 field(DOL,"0")
@@ -952,16 +990,6 @@ field(DTYP,"asynUInt32Digital")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_B")
-}
-#-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_B")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_B")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_B")
@@ -1004,16 +1032,6 @@ field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_C")
 }
 #-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_C")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_C")
-}
-#-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_C")
 {
 field(DOL,"0")
@@ -1052,16 +1070,6 @@ field(DTYP,"asynUInt32Digital")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_D")
-}
-#-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_D")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_D")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_D")
@@ -1104,16 +1112,6 @@ field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_E")
 }
 #-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_E")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_E")
-}
-#-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_E")
 {
 field(DOL,"0")
@@ -1152,16 +1150,6 @@ field(DTYP,"asynUInt32Digital")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_F")
-}
-#-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_F")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_F")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_F")
@@ -1204,16 +1192,6 @@ field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_G")
 }
 #-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_G")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_G")
-}
-#-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_G")
 {
 field(DOL,"0")
@@ -1252,16 +1230,6 @@ field(DTYP,"asynUInt32Digital")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(OUT,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_H")
-}
-#-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_H")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(OUT,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_H")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_H")
@@ -32400,7 +32368,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link E if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000010,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32410,7 +32378,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link F if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000020,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32420,7 +32388,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link G if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000040,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32430,7 +32398,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link H if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000080,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32440,7 +32408,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link L if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000100,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32450,7 +32418,7 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link R if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000200,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -32460,8 +32428,18 @@ field(DOL,"0")
 field(DTYP,"asynUInt32Digital")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link U if set")
 field(OUT,"@asynMask($(BOARD),0,0x00000400,1)reg_INPUT_LINK_MASK")
+}
+#-------------------------------------------------------
+record(bo,"VME$(CRATE):$(BOARD):EN_DATA_ALWAYS")
+{
+field(DOL,"0")
+field(DTYP,"asynUInt32Digital")
+#  Source string : 0:sync;1:TTCL
+	field(ZNAM,"sync")	field(ONAM,"TTCL")	
+field(DESC,"If set masked sends TTCL")
+field(OUT,"@asynMask($(BOARD),0,0x00000800,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):LED4")
@@ -33371,7 +33349,7 @@ field(DTYP,"asynUInt32Digital")
 #  Source string : 0:on Trig:0;1:Always:1
 	field(ZNAM,"on Trig:0")	field(ONAM,"Always:1")	
 field(DESC,"control frame2 updates")
-field(OUT,"@asynMask($(BOARD),0,0x00000080,1)reg_MISC_CTL2")
+field(OUT,"@asynMask($(BOARD),0,0x00000100,1)reg_MISC_CTL2")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_NIM1_DELAY")
@@ -33422,16 +33400,6 @@ field(DTYP,"asynUInt32Digital")
 	field(ZNAM,"Norm")	field(ONAM,"DCB")	
 field(DESC,"Link U TX DC Bal Enable")
 field(OUT,"@asynMask($(BOARD),0,0x00002000,1)reg_MISC_CTL2")
-}
-#-------------------------------------------------------
-record(bo,"VME$(CRATE):$(BOARD):CAPTURE_ALL_TDC")
-{
-field(DOL,"0")
-field(DTYP,"asynUInt32Digital")
-#  Source string : 0:Norm;1:All
-	field(ZNAM,"Norm")	field(ONAM,"All")	
-field(DESC,"Captures all TDC hits if")
-field(OUT,"@asynMask($(BOARD),0,0x00004000,1)reg_MISC_CTL2")
 }
 #-------------------------------------------------------
 record(bo,"VME$(CRATE):$(BOARD):EN_RTR_DCBAL")
@@ -35625,6 +35593,16 @@ field(DESC,"Selects which timestamp ")
 field(INP,"@asynMask($(BOARD),0,0x00008000,1)reg_MYRIAD_OVERLAP_CTL")
 }
 #-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):TS_SAMP_PHASE_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:0;1:1;
+	field(ZNAM,"0")	field(ONAM,"1;")	
+field(DESC,"which 100mhz phase to us")
+field(INP,"@asynMask($(BOARD),0,0x00000400,1)reg_MON7_FILL_CTL")
+}
+#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):SYSMON_ENABLE_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -35641,7 +35619,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:OFF;1:ON
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set only trigger info")
+field(DESC,"if set, ignores tdc, fil")
 field(INP,"@asynMask($(BOARD),0,0x00008000,1)reg_MON7_FILL_CTL")
 }
 #-------------------------------------------------------
@@ -35915,16 +35893,6 @@ field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_A")
 }
 #-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_A_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_A")
-}
-#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_A_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -35963,16 +35931,6 @@ field(SCAN,"1 second")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_B")
-}
-#-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_B_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_B")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_B_RBV")
@@ -36015,16 +35973,6 @@ field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_C")
 }
 #-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_C_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_C")
-}
-#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_C_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -36063,16 +36011,6 @@ field(SCAN,"1 second")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_D")
-}
-#-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_D_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_D")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_D_RBV")
@@ -36115,16 +36053,6 @@ field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_E")
 }
 #-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_E_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_E")
-}
-#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_E_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -36163,16 +36091,6 @@ field(SCAN,"1 second")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_F")
-}
-#-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_F_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_F")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_F_RBV")
@@ -36215,16 +36133,6 @@ field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_G")
 }
 #-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_G_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_G")
-}
-#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_G_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -36263,16 +36171,6 @@ field(SCAN,"1 second")
 	field(ZNAM,"OFF")	field(ONAM,"ON")	
 field(DESC,"if set throttle can veto")
 field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_TRIG_VETO_SELECT_H")
-}
-#-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):EN_SOFTWARE_VETO_H_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:OFF;1:ON
-	field(ZNAM,"OFF")	field(ONAM,"ON")	
-field(DESC,"if set software veto is ")
-field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_TRIG_VETO_SELECT_H")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_REMTRIG_VETO_H_RBV")
@@ -67411,7 +67309,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link E if set")
 field(INP,"@asynMask($(BOARD),0,0x00000010,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67421,7 +67319,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link F if set")
 field(INP,"@asynMask($(BOARD),0,0x00000020,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67431,7 +67329,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link G if set")
 field(INP,"@asynMask($(BOARD),0,0x00000040,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67441,7 +67339,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link H if set")
 field(INP,"@asynMask($(BOARD),0,0x00000080,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67451,7 +67349,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link L if set")
 field(INP,"@asynMask($(BOARD),0,0x00000100,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67461,7 +67359,7 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link R if set")
 field(INP,"@asynMask($(BOARD),0,0x00000200,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
@@ -67471,8 +67369,18 @@ field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 #  Source string : 0:0;1:1
 	field(ZNAM,"0")	field(ONAM,"1")	
-field(DESC,"InputLinkMask")
+field(DESC,"Masks link U if set")
 field(INP,"@asynMask($(BOARD),0,0x00000400,1)reg_INPUT_LINK_MASK")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):EN_DATA_ALWAYS_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:sync;1:TTCL
+	field(ZNAM,"sync")	field(ONAM,"TTCL")	
+field(DESC,"If set masked sends TTCL")
+field(INP,"@asynMask($(BOARD),0,0x00000800,1)reg_INPUT_LINK_MASK")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):LED4_RBV")
@@ -68382,7 +68290,7 @@ field(SCAN,"1 second")
 #  Source string : 0:on Trig:0;1:Always:1
 	field(ZNAM,"on Trig:0")	field(ONAM,"Always:1")	
 field(DESC,"control frame2 updates")
-field(INP,"@asynMask($(BOARD),0,0x00000080,1)reg_MISC_CTL2")
+field(INP,"@asynMask($(BOARD),0,0x00000100,1)reg_MISC_CTL2")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_NIM1_DELAY_RBV")
@@ -68433,16 +68341,6 @@ field(SCAN,"1 second")
 	field(ZNAM,"Norm")	field(ONAM,"DCB")	
 field(DESC,"Link U TX DC Bal Enable")
 field(INP,"@asynMask($(BOARD),0,0x00002000,1)reg_MISC_CTL2")
-}
-#-------------------------------------------------------
-record(bi,"VME$(CRATE):$(BOARD):CAPTURE_ALL_TDC_RBV")
-{
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-#  Source string : 0:Norm;1:All
-	field(ZNAM,"Norm")	field(ONAM,"All")	
-field(DESC,"Captures all TDC hits if")
-field(INP,"@asynMask($(BOARD),0,0x00004000,1)reg_MISC_CTL2")
 }
 #-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):EN_RTR_DCBAL_RBV")
@@ -69365,6 +69263,226 @@ field(DESC,"Trigger rate counter mod")
 field(INP,"@asynMask($(BOARD),0,0x00004000,1)reg_RATE_COUNTER_CTL")
 }
 #-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):ASYNC_CMD_FLAG_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"Send GRETINA frame 15 da")
+field(INP,"@asynMask($(BOARD),0,0x00000001,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RESET_SSI_MACH_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:run;1:reset
+	field(ZNAM,"run")	field(ONAM,"reset")	
+field(DESC,"Resets wheel decoder")
+field(INP,"@asynMask($(BOARD),0,0x00000002,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):SSI_MACH_GO_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:-;1:GO
+	field(ZNAM,"-")	field(ONAM,"GO")	
+field(DESC,"Start wheel decode logic")
+field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):ASYNC_CMD_FIFO_RESET_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"Clear GRETINA frame 15 F")
+field(INP,"@asynMask($(BOARD),0,0x00000008,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):MANUAL_LATCH_TIMESTAMP_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:latch
+	field(ZNAM,"off")	field(ONAM,"latch")	
+field(DESC,"latch timestamp for data")
+field(INP,"@asynMask($(BOARD),0,0x00000010,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):CLEAR_ENCODER_CNTR_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"If sync reset enabled wi")
+field(INP,"@asynMask($(BOARD),0,0x00000100,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):TRIG_MON_COLL_RESET_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"resets system monitor FI")
+field(INP,"@asynMask($(BOARD),0,0x00001000,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):CLEAR_RATE_COUNTERS_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"clears vetoable and raw ")
+field(INP,"@asynMask($(BOARD),0,0x00002000,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):CLEAR_DIAG_COUNTERS_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"Clears diagnostic counte")
+field(INP,"@asynMask($(BOARD),0,0x00004000,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):MANUAL_TRIGGER_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"Generates manual trigger")
+field(INP,"@asynMask($(BOARD),0,0x00008000,1)reg_PULSED_CTL1")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):MONITOR_TEST_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:pulse
+	field(ZNAM,"off")	field(ONAM,"pulse")	
+field(DESC,"user manual pulse for te")
+field(INP,"@asynMask($(BOARD),0,0x00000001,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_LINKR_DCBAL_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"resets dcbalance rcv mac")
+field(INP,"@asynMask($(BOARD),0,0x00000002,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_LINKU_DCBAL_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"resets dcbalance rcv mac")
+field(INP,"@asynMask($(BOARD),0,0x00000004,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_F12_COUNT_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"Resets Frame 12 command ")
+field(INP,"@asynMask($(BOARD),0,0x00000080,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):SEND_FRAME_12_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:send
+	field(ZNAM,"off")	field(ONAM,"send")	
+field(DESC,"Send local Frame 12 comm")
+field(INP,"@asynMask($(BOARD),0,0x00000100,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_F14_COUNT_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"Resets Frame 14 command ")
+field(INP,"@asynMask($(BOARD),0,0x00000200,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):SEND_FRAME_14_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:send
+	field(ZNAM,"off")	field(ONAM,"send")	
+field(DESC,"Send local Frame 14 comm")
+field(INP,"@asynMask($(BOARD),0,0x00000400,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_F16_COUNT_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"Resets Frame 16 command ")
+field(INP,"@asynMask($(BOARD),0,0x00000800,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):SEND_FRAME_16_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:send
+	field(ZNAM,"off")	field(ONAM,"send")	
+field(DESC,"Send local Frame 16 comm")
+field(INP,"@asynMask($(BOARD),0,0x00001000,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):RST_F17_COUNT_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"Resets Frame 17 command ")
+field(INP,"@asynMask($(BOARD),0,0x00002000,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):SEND_FRAME_17_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:send
+	field(ZNAM,"off")	field(ONAM,"send")	
+field(DESC,"Send local Frame 17 comm")
+field(INP,"@asynMask($(BOARD),0,0x00004000,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
+record(bi,"VME$(CRATE):$(BOARD):ALL_CHANNEL_RESET_RBV")
+{
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+#  Source string : 0:off;1:rst
+	field(ZNAM,"off")	field(ONAM,"rst")	
+field(DESC,"Resets all master trigge")
+field(INP,"@asynMask($(BOARD),0,0x00008000,1)reg_PULSED_CTL2")
+}
+#-------------------------------------------------------
 record(bi,"VME$(CRATE):$(BOARD):FIFOReset00_RBV")
 {
 field(DTYP,"asynUInt32Digital")
@@ -69629,7 +69747,7 @@ field(DESC,"number of trigger words ")
 #-------------------------------------------------------
 record(longout,"VME$(CRATE):$(BOARD):NUM_TDC_WORDS")
 {
-field(OUT,"@asynMask($(BOARD),0,0xaaaa0404,1)reg_MON7_FILL_CTL")
+field(OUT,"@asynMask($(BOARD),0,0xaaaa0604,1)reg_MON7_FILL_CTL")
 field(DTYP,"asynUInt32Digital")
 field(DESC,"number of tdc words to r")
 }
@@ -69650,9 +69768,9 @@ field(DESC,"User specified manual en")
 #-------------------------------------------------------
 record(longout,"VME$(CRATE):$(BOARD):USER_PACKAGE_DATA")
 {
-field(OUT,"@asynMask($(BOARD),0,0xaaaa0B00,1)reg_USER_PACKAGE_DATA")
+field(OUT,"@asynMask($(BOARD),0,0xaaaa0A00,1)reg_USER_PACKAGE_DATA")
 field(DTYP,"asynUInt32Digital")
-field(DESC,"package is 11 bits")
+field(DESC,"package is 10 bits")
 }
 #-------------------------------------------------------
 record(longout,"VME$(CRATE):$(BOARD):TRIG_A_PRESCALE_FACTOR")
@@ -69854,7 +69972,7 @@ field(DESC,"number of trigger words ")
 #-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):NUM_TDC_WORDS_RBV")
 {
-field(INP,"@asynMask($(BOARD),0,0xaaaa0404,1)reg_MON7_FILL_CTL")
+field(INP,"@asynMask($(BOARD),0,0xaaaa0604,1)reg_MON7_FILL_CTL")
 field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 field(DESC,"number of tdc words to r")
@@ -69878,10 +69996,10 @@ field(DESC,"User specified manual en")
 #-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):USER_PACKAGE_DATA_RBV")
 {
-field(INP,"@asynMask($(BOARD),0,0xaaaa0B00,1)reg_USER_PACKAGE_DATA")
+field(INP,"@asynMask($(BOARD),0,0xaaaa0A00,1)reg_USER_PACKAGE_DATA")
 field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
-field(DESC,"package is 11 bits")
+field(DESC,"package is 10 bits")
 }
 #-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):TRIG_A_PRESCALE_FACTOR_RBV")
@@ -70084,4 +70202,5 @@ field(SCAN,"1 second")
 field(DESC,"current multiplicity sum")
 }
 #-------------------------------------------------------
+
 

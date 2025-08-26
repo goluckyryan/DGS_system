@@ -1,60 +1,80 @@
-## This is the 'start run' script for use on the test stand (VME99, no detector,
-## hosted by machine 'slopebox')
+#!/bin/bash -l
 
+expName="haha"
+dataType=8
 
 if [ $# -lt 2 ]; then
-    arg1="$1"
-    arg2=30
-	
+  arg1="$1"
+  arg2=30	
 	echo "default run time 30 sec"
-
 else
-    arg1="$1"
-    arg2="$2"
+  arg1="$1"
+  arg2="$2"
 fi
 
+RunID=$(printf "%03d" "$arg1")
+Folder=${expName}_${RunID}
+waitTime=$arg2
 
-#!/bin/bash -l
-export TERM=vt100
-echo " terminals" 
+#source basic_settings.sh
 
-echo "EPICS ports:"   
-echo EPICS_CA_SERVER_PORT=$EPICS_CA_SERVER_PORT
-echo EPICS_CA_REPEATER_PORT=$EPICS_CA_REPEATER_PORT
+#sleep 2
 
-source basic_settings.sh
+mkdir -p ${Folder}
+rm -f pidList.txt
 
-sleep 2
+#          1     2    3      4     5     6     7     8    9     10    11   12
+IPList=("141" "142" "143" "144" "145" "177" "178" "179" "180" "183" "181" "182")
+for ((i=0; i<${#IPList[@]}; i++)); do
+  IP="192.168.203.${IPList[$i]}" 
+  name="ioc$(($i+1))-${IPList[$i]}"
 
-#rm -rf TestStand_run$1
-#xterm -T dgsReceiver -hold -geometry 157x50+0+0 -sb -sl 1000 -e "./dgsReceiver" "vme99"  "TestStand_run$1" "gtd01" "2000000000" "14" &
+  col=0
+  row=$((40 + $i*200))
+  if [ $i -gt 5 ]; then 
+    col=750
+    row=$((40 + ($i-6)*200))
+  fi
+  
+  xterm -T ${name} -hold -geometry 120x12+${col}+$row -sb -sl 1000 -e './tcp_Receiver' ${IP} '9001'  ${dataType} "$Folder/$Folder" &
 
-#rm -rf haha*
-#xterm -T haha  -geometry 130x50+0+0 -sb -sl 100000 -hold -e "./dgsReceiver_Ryan" "vme99"  "haha" "gtd01" "2000000000" "14" &
+  pID=$!
+  echo "$name - ${IP} - $pID"
+  echo ${pID} >> pidList.txt
 
-#rm -rf haha*
-#xterm -T haha  -geometry 150x50+0+0 -sb -sl 100000 -hold -e "./tcp_Receiver" "192.168.203.211" "9001" "XXXX$1" &
-gnome-terminal --title="haha" --window --geometry=150x100+0+0 -- bash -c './tcp_Receiver 192.168.203.211 9001 data/'"$arg1"'; exec bash' &
+done
 
-#gnome-terminal --title="haha" --window --geometry=150x100+0+0 -- bash -c 'gdb --args ./tcp_Receiver 192.168.203.211 9001 data/'"$arg1"' --batch -ex run' &
+#caput VME10:MTRG:IMP_SYNC S
+#caput VME10:MTRG:IMP_SYNC -
+
+caput VME10:MTRG:CS_Ena Enable
 
 
-#wait for the xterm open
 sleep 2
 
 #===== start run
-
-caput VME99:MDIG1:master_logic_enable Enable
-
+caput Online_CS_SaveData Save #Save must do before ACQ start
 caput Online_CS_StartStop Start
 
-waitTime=$arg2
-echo ">>>>>>>>>>>>>> Run for $waitTime sec"
-sleep $waitTime
+if [ $waitTime -gt 10 ]; then
+  
+  echo -e "\033[31m >>>>>>>>>>>>>> Run for $waitTime sec \033[m"
+  sleep $waitTime
 
-caput Online_CS_StartStop Stop
-#caput Online_CS_SaveData No Save
+  caput Online_CS_StartStop Stop
 
-#caput VME99:MDIG1:master_logic_enable Reset
+  sleep 2
+  caput VME10:MTRG:SOFTWARE_VETO on
+  caput Online_CS_SaveData No Save
+
+  echo -e "\033[31m run the kill_IOC.sh to kill all receiver terminals. \033[m"
+
+else
+
+  echo -e "\033[31m The set run-time is < 10 sec and the run will run FOERVER unit stop.\033[m"
+  
+fi
+
+
 
 

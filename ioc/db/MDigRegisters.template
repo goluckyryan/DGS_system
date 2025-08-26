@@ -1,0 +1,2785 @@
+###################################################################
+######################  'longin' process variables ################
+###################################################################
+record(longin,"VME$(CRATE):$(BOARD):regin_board_id_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_board_id")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Contains address and fir")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_programming_done_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_programming_done")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"Passive")
+field(DESC,"Contains FIFO status and")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_external_discriminator_src_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_external_discriminator_src")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects source of the ex")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_vme_ext_delay_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_vme_ext_delay")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"delay time of pulsed ctr")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hardware_status_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hardware_status")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Contains DCM status info")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_user_package_data_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_user_package_data")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"User defined data for he")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_win_comp_min_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_win_comp_min")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"lower bound of trig wind")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_win_comp_max_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_win_comp_max")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Sets the upper bound to ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 0 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 1 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 2 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 3 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 4 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 5 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 6 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 7 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 8 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_channel_control9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Channel 9 control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_threshold9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"LED Threshold Control 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_CFD_fraction9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"CFD Fraction 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_delay9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_raw_data_length9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"D Window Channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_k_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"K Window Channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_m_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"M Window Channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_d3_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"d3 Window Channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_disc_width9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p1_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P1 Window Channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_dac_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_dac")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"DAC configuration")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 0")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 1")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 2")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 3")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 4")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 5")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 6")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 7")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 8")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_p2_window9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"P2 Window channel 9")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_ila_config_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ila_config")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Controls the ILA mux.")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_diag_mux_control_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_diag_mux_control")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects which diagnostic")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_holdoff_control_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_holdoff_control")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Sets holdoff operation f")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_baseline_delay_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_baseline_delay")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Controls baseline delay ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_diag_channel_input_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_diag_channel_input")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Diagnostic use only.  Al")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_external_disc_mode_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_external_disc_mode")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Selects how the external")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_rj45_spare_dout_control_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_rj45_spare_dout_control")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"front panel controls")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_led_state_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_led_state")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Current state of front p")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_led_control_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_control")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"controls operation of fr")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_downsample_holdoff_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_downsample_holdoff")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"how long the downsamplin")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_lat_timestamp_lsb_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_lat_timestamp_lsb")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Lower 32 bits of the tim")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_lat_timestamp_msb_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_lat_timestamp_msb")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Upper 16 bits of the tim")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_live_timestamp_lsb_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_live_timestamp_lsb")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Lower 32 bits of the run")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_live_timestamp_msb_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_live_timestamp_msb")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Upper 16 bits of the run")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_veto_gate_width_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_veto_gate_width")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Time window in which the")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_master_logic_status_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_master_logic_status")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Contains global logic co")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_trigger_config_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_trigger_config")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Trigger configuration re")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_phase_errors_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_phase_errors")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Status of phase hunter l")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_phase_value_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_phase_value")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"ADC clock to Acq clock p")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_phase_offset_a_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_phase_offset_a")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Phase offset per-channel")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_phase_offset_b_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_phase_offset_b")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Phase offset per-channel")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_phase_offset_c_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_phase_offset_c")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Phase offset per-channel")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_serdes_phase_value_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_serdes_phase_value")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Current phase offset app")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_code_revision_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_code_revision")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Holds the code revision ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_code_date_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_code_date")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Reads back code date of ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_ts_err_count_ctrl_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ts_err_count_ctrl")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Enable/disable for times")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ts_err_count_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ts_err_count")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Count of timestamp synch")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_dropped_event_count9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_dropped_event_count9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of dropped")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_accepted_event_count9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_accepted_event_count9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of accepte")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_ahit_count9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_ahit_count9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts number of hit eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_disc_count9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_disc_count9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"Counts discriminator eve")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hihilolo_9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hihilolo_9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_0_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_0")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_1_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_1")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_2_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_2")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_3_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_3")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_4_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_4")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_5_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_5")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_6_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_6")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_7_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_7")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_8_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_8")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):regin_hilo_9_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)regin_hilo_9")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"counts when ADC exceeds ")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_sd_config_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_sd_config")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"SERDES configuration reg")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_vme_fpga_ctl_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_vme_fpga_ctl")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"VME FPGA control registe")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_vme_aux_status_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_vme_aux_status")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC," vme aux stat")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):vme_clk_ctrl_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)vme_clk_ctrl")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"VME FPGA clock control")
+}
+#-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):SERIAL_NUMBER_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)SERIAL_NUMBER")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"VME FPGA control registe")
+}
+#-------------------------------------------------------
+
+###################################################################
+######################  'longout' process variables ###############
+###################################################################
+record(longout,"VME$(CRATE):$(BOARD):reg_programming_done")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_programming_done")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Contains FIFO status and")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_external_discriminator_src")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_external_discriminator_src")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects source of the ex")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_vme_ext_delay")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_vme_ext_delay")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"delay time of pulsed ctr")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_user_package_data")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_user_package_data")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"User defined data for he")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_win_comp_min")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_win_comp_min")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"lower bound of trig wind")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_win_comp_max")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_win_comp_max")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Sets the upper bound to ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 0 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 1 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 2 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 3 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 4 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 5 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 6 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 7 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 8 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_control9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_control9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Channel 9 control")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_threshold9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_threshold9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"LED Threshold Control 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_CFD_fraction9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_CFD_fraction9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"CFD Fraction 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_delay9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_delay9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data Length Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_raw_data_length9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_raw_data_length9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Raw Data window Channel ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"D Window Channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_k_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_k_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"K Window Channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_m_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_m_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"M Window Channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_d3_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_d3_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"d3 Window Channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_disc_width9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_disc_width9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Discriminator Width Chan")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p1_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p1_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P1 Window Channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_dac")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_dac")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"DAC configuration")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window0")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window0")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 0")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window1")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window1")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 1")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window2")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window2")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 2")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window3")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window3")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 3")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window4")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window4")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 4")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window5")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window5")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 5")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window6")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window6")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 6")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window7")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window7")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 7")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window8")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window8")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 8")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_p2_window9")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_p2_window9")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"P2 Window channel 9")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_ila_config")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ila_config")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Controls the ILA mux.")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_channel_pulsed_control")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_channel_pulsed_control")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Write only (self clearin")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_diag_mux_control")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_diag_mux_control")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects which diagnostic")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_holdoff_control")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_holdoff_control")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Sets holdoff operation f")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_baseline_delay")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_baseline_delay")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Controls baseline delay ")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_diag_channel_input")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_diag_channel_input")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Diagnostic use only.  Al")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_external_disc_mode")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_external_disc_mode")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Selects how the external")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_rj45_spare_dout_control")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_rj45_spare_dout_control")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"front panel controls")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_led_control")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_led_control")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"controls operation of fr")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_downsample_holdoff")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_downsample_holdoff")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"how long the downsamplin")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_veto_gate_width")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_veto_gate_width")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Time window in which the")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_master_logic_status")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_master_logic_status")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Contains global logic co")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_trigger_config")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_trigger_config")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Trigger configuration re")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_ts_err_count_ctrl")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_ts_err_count_ctrl")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"Enable/disable for times")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_sd_config")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_sd_config")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"SERDES configuration reg")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):reg_vme_fpga_ctl")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_vme_fpga_ctl")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"VME FPGA control registe")
+}
+#-------------------------------------------------------
+record(longout,"VME$(CRATE):$(BOARD):vme_clk_ctrl")
+{
+field(OUT,"@asynMask($(BOARD),0,0xaaaa2000,1)vme_clk_ctrl")
+field(DTYP,"asynUInt32Digital")
+field(DESC,"VME FPGA clock control")
+}
+#-------------------------------------------------------
+
+

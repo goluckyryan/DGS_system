@@ -1,0 +1,226 @@
+#######################
+##  non-spreadsheet-generated PVs served by dgsSoftIOC
+#######################
+
+## last edit 20230415, JTA
+
+##	The Online_CS_StartStop PV is the main Run/Stop control for the dgs system, the
+##	big red button on the dgscommander screen.  It is referenced by the IOC state machines.
+##
+record(bo, Online_CS_StartStop) 
+	{
+	field(DOL, "0")
+	field(PINI, "YES")
+	field(ZNAM, "Stop")
+	field(ONAM, "Start")
+	}
+
+##	The Online_CS_SaveData PV is the green button immediately below Run/Stop on the 
+##	main dgscommander screen.  It is referenced by the IOC state machines.
+##
+record(bo, Online_CS_SaveData) 
+	{
+	field(DOL, "0")
+	field(PINI, "YES")
+	field(ZNAM, "No Save")
+	field(ONAM, "Save")
+	field(DESC, "Whether to save data [[")
+	}
+
+##	The Setup_Script_State PV is used to monitor the state of the setup scripts.
+##  It is set to one of a few values as the setup scripts run.
+##
+record(mbbo,"Setup_Script_State")
+	{
+	field(DOL,"0")
+	field(PINI,1)
+	field(DTYP,"Soft Channel")
+	field(DESC,"Setup State Indicator")
+
+	field(ZRVL,"0")
+	field(ZRST,"UNKNOWN")
+	field(ONVL,"1")
+	field(ONST,"TRIG OK")
+	field(TWVL,"2")
+	field(TWST,"DIG OK")
+	field(THVL,"3")
+	field(THST,"OTHER")
+	field(FRVL,"4")
+	field(FRST,"TRIG ERROR")
+	field(FVVL,"5")
+	field(FVST,"DIG ERROR")
+	field(SXVL,"6")
+	field(SXST,"OTHER ERROR")
+	field(SVVL,"7")
+	field(SVST,"SCRIPT RUNNING")
+	}
+
+##	The ScriptStage PV is a number displayed by a running script to identify which
+##	stage it is on, for long scripts that will lead to impatient users.
+record(ao,"ScriptStage")
+{
+	field(DOL,"0")
+	field(PINI,1)
+	field(DTYP,"Soft Channel")
+	field(DESC,"Setup State Indicator")
+}	
+
+
+##	The trigrate_calc PVs were developed by Mike Carpenter and are found on the 
+##	trigger screens.
+
+record(calcout,"VME10:MTRG:TIMESTAMP_RBV")
+{
+field(INPA,"VME10:MTRG:TIMESTAMP_A_RBV.VAL PP")
+field(INPB ,"VME10:MTRG:TIMESTAMP_B_RBV.VAL PP")
+field(INPC,"VME10:MTRG:TIMESTAMP_C_RBV.VAL PP")
+field(CALC,"(B<<16)+C")
+field(SCAN,".1 second")
+field(DESC,"32-Bit Timestamp")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_1_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_1_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_1_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 1")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_2_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_2_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_2_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 2")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_3_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_3_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_3_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 3")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_4_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_4_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_4_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 4")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_5_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_5_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_5_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 5")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_6_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_6_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_6_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 6")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_7_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_7_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_7_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 7")
+}
+
+record(calcout,"VME10:MTRG:TRIG_RATE_COUNTER_8_RBV")
+{
+field(INPA,"VME10:MTRG:TRIG_RATE_COUNTER_8_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:TRIG_RATE_COUNTER_8_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 8")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_1_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_1_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_1_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 1")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_2_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_2_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_2_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 2")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_3_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_3_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_3_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 3")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_4_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_4_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_4_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 4")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_5_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_5_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_5_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 5")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_6_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_6_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_6_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 6")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_7_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_7_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_7_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 7")
+}
+
+record(calcout,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_8_RBV")
+{
+field(INPA,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_8_LOW_RBV.VAL PP")
+field(CALC,"(B<<16)+A")
+field(SCAN,"1 second")
+field(INPB,"VME10:MTRG:RAW_TRIG_RATE_COUNTER_8_HIGH_RBV.VAL PP")
+field(DESC,"Trigger Rate 8")
+}
+
+

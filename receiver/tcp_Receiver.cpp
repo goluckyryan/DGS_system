@@ -15,7 +15,7 @@ int displayCount = 0;
 
 #include "constant.h" // for TRIG_DATA_SIZE and TRIG_PACKET_LENGTH
 
-// #define ENABLE_GEB_HEADER
+#define ENABLE_GEB_HEADER
 
 enum ReplyType{
   INSUFF_DATA = 5,
@@ -121,11 +121,13 @@ public:
     // printf("Writing %s | size = %zu, count = %zu | filePos : %lu (%lu)\n", outFileName, size, countToWrite, ftell(file), ftell(file)/4);
     // for( size_t i = 0; i < size/4; i++) printf("%3d     %08X \n", i, ((uint32_t*)data)[i]);
     
+    #ifndef ENABLE_GEB_HEADER
     uint32_t firstword = ((uint32_t*)data)[0];
     if( firstword != 0xAAAAAAAA && firstword != 0xAAAA0000 ){
       printf("\033[31m File Wirte ERROR. Data type is not DIG or TRIG. \033[0m\n");
       return false;
     }
+    #endif
 
     size_t written = fwrite(data, size, countToWrite, file);
     writeByte += written * size;    
@@ -307,7 +309,7 @@ void PrintData(int startIndex, int endIndex){
   }
 }
 
-DataStatus WriteData(int bytes_received, std::string runName){
+DataStatus WriteData(int bytes_received, std::string runName, int dataType){ 
 
   const int words_received = bytes_received / 4;
   int index = 0;
@@ -334,7 +336,7 @@ DataStatus WriteData(int bytes_received, std::string runName){
             if( event_type == 2) msg += " - underflow";
           }break;
         }
-        printf("\033[34mDigitizer : Type %X data encountered (%s). skip.\033[0m\n", ch_id, msg.c_str());
+        //printf("\033[34mDigitizer : Type %X data encountered (%s). skip.\033[0m\n", ch_id, msg.c_str());
         if( debug > 0 ) for( int i = 0 ; i < 4; i++) printf("%d | 0x%08X\n", index + i, ntohl(data[index+i]));
         index += 4; // Type F data is always 4 words.
 
@@ -345,16 +347,19 @@ DataStatus WriteData(int bytes_received, std::string runName){
 
       int board_id 			          = (header[0] & 0x0000FFF0) >> 4;	// Word 1: 15..4
       int packet_length_in_words	= (header[0] & 0x07FF0000) >> 16;	// Word 1: 26..16
+
+      #ifndef ENABLE_GEB_HEADER
       packet_length_in_words += 1; // include the header word
+      #endif
+      int packet_length_in_bytes	= packet_length_in_words * 4;
 
       #ifdef ENABLE_GEB_HEADER
         int timestamp_lower 		    = (header[1] & 0xFFFFFFFF) >> 0;	// Word 2: 31..0
         int timestamp_upper 		    = (header[2] & 0x0000FFFF) >> 0;	// Word 3: 15..0
         // int header_type				      = (header[2] & 0x000F0000) >> 16;	// Word 3: 19..16
-        int packet_length_in_bytes	= packet_length_in_words * 4;
-
+        
         gebData GEB_data;
-        GEB_data.type = 0;
+        GEB_data.type = dataType;
         GEB_data.length = packet_length_in_bytes;
         GEB_data.timestamp  = ((uint64_t)(timestamp_upper)) << 32;
         GEB_data.timestamp |=  (uint64_t)(timestamp_lower);
@@ -366,8 +371,7 @@ DataStatus WriteData(int bytes_received, std::string runName){
         return DIG_inComplete;
       }
       
-      int packet_length_in_bytes	= packet_length_in_words * 4; 
-      
+    
       int fileID = board_id * 100 + ch_id;
       if( outFileMap.find(fileID) == outFileMap.end() ){
         OutFile * newOutFile = new OutFile();
@@ -384,11 +388,14 @@ DataStatus WriteData(int bytes_received, std::string runName){
       }
       #ifdef ENABLE_GEB_HEADER
       outFileList[outFileMap[fileID]]->Write(&GEB_data, sizeof(gebData));
-      #endif
+      outFileList[outFileMap[fileID]]->Write(&data[index+1], packet_length_in_bytes);
+      index += packet_length_in_words + 1; 
+      #else
       outFileList[outFileMap[fileID]]->Write(&data[index], packet_length_in_bytes);
-      
       index += packet_length_in_words; 
-
+      #endif
+      
+      
     }else if(data[index] == 0xAAAA0000){ //==== TRIG data
 
       int header[TRIG_DATA_SIZE];
@@ -441,15 +448,6 @@ DataStatus WriteData(int bytes_received, std::string runName){
 
       displayCount ++;
 
-      #ifdef ENABLE_GEB_HEADER
-        gebData GEB_data;
-        GEB_data.type = 0;
-        GEB_data.length = packet_length_in_bytes;
-        GEB_data.timestamp  = ((uint64_t)(header[2])) << 32;
-        GEB_data.timestamp |= ((uint64_t)(header[3])) << 16;
-        GEB_data.timestamp |=  (uint64_t)(header[4]);
-      #endif
-
       if (TRIG_DATA_SIZE + index  > words_received){
         printf("\033[31m ERROR. TRIG DATA. Word received < packet length. \033[0m\n");
         PrintData(index, words_received-1);
@@ -470,22 +468,22 @@ DataStatus WriteData(int bytes_received, std::string runName){
         printf("\033[1;31m !!!!! ERROR. Failed to open file for board %d, channel %d | fileID : %d \033[0m\n", board_id, ch_id, fileID);
         return DIG_fileOpenError;
       }
-      #ifdef ENABLE_GEB_HEADER
-      outFileList[outFileMap[fileID]]->Write(&GEB_data, sizeof(gebData));
-      #endif
+
       outFileList[outFileMap[fileID]]->Write(payload, sizeof(payload));      
       index += TRIG_DATA_SIZE;
 
     }else{
 
-      printf("\033[31m ERROR. unknown data type. dump data. index : %d \033[0m\n", index);
+      printf("\033[31m ERROR. unknown data type. dump data. index : %d | 0x%08X \033[0m\n", index, data[index]);
+      
+      index ++;
 
       // do{
       //   printf("%-4d | 0x%08X\n", index, data[index]);
       //   index ++;
       // }while(index < words_received);
 
-      DumpData(bytes_received);
+      //DumpData(bytes_received);
       return UnknownDataType;
     }
 
@@ -499,15 +497,16 @@ DataStatus WriteData(int bytes_received, std::string runName){
 //###############################################################
 int main(int argc, char **argv) {
 
-  if( argc != 4){
+  if( argc != 5){
     printf("usage:\n");
-    printf("%s [IP] [Port] [file_prefix]\n\n", argv[0]);
+    printf("%s [IP] [Port] [dataType] [file_prefix]\n\n", argv[0]);
     return -1;
   }
 
   std::string serverIP = argv[1];
   int serverPort = atoi(argv[2]);
-  std::string runName = argv[3];
+  const int dataType = atoi(argv[3]); 
+  std::string runName = argv[4];
 
   outFileList.clear();
 
@@ -536,7 +535,7 @@ int main(int argc, char **argv) {
     // printf(" ========== Received %d Bytes = %d Words\n", bytes_received, bytes_received/4);
 
     //============ Write data to file
-    if( bytes_received >= 0 ) status = WriteData(bytes_received, runName); // it decodes the data, and save the data for each channel.
+    if( bytes_received >= 0 ) status = WriteData(bytes_received, runName, dataType); // it decodes the data, and save the data for each channel.
 
     //============ Status
     time_t now = time(NULL);

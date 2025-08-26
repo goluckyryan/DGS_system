@@ -7497,13 +7497,6 @@ field(DTYP,"asynUInt32Digital")
 field(DESC,"Delay to apply to discri")
 }
 #-------------------------------------------------------
-record(longout,"VME$(CRATE):$(BOARD):Threshold")
-{
-field(OUT,"@asynMask($(BOARD),0,0xaaaa0800,1)reg_FS_MULT_THRESH")
-field(DTYP,"asynUInt32Digital")
-field(DESC,"multiplicity threshold")
-}
-#-------------------------------------------------------
 
 record(longin,"VME$(CRATE):$(BOARD):DEN_BUS_RBV")
 {
@@ -7527,94 +7520,6 @@ field(INP,"@asynMask($(BOARD),0,0xaaaa0B00,1)reg_SYNC_BUS")
 field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 field(DESC,"LInk Sync")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Timestamp_Big_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_TIMESTAMP_A")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Timestamp_Middle_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_TIMESTAMP_B")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Timestamp_Little_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_TIMESTAMP_C")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_A_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticA")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_B_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticB")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_C_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticC")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_D_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticD")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_E_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticE")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_F_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticF")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_G_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticG")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Diag_H_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_DiagnosticH")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"None")
 }
 #-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):CODE_DATE_RBV")
@@ -7647,70 +7552,6 @@ field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_CHAN_FIFO_STATE")
 field(DTYP,"asynUInt32Digital")
 field(SCAN,"1 second")
 field(DESC,"collected Chan FIFO flag")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_A_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_A")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_B_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_B")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_C_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_C")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_D_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_D")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_E_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_E")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_F_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_F")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_G_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_G")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):LOCK_COUNT_H_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa1000,1)reg_LOCK_COUNTER_H")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"Count of locks from link")
 }
 #-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):PULSE_COUNTDOWN_RBV")
@@ -8433,20 +8274,5 @@ field(SCAN,"1 second")
 field(DESC,"Masked multiplicity sum ")
 }
 #-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Threshold_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa0800,1)reg_FS_MULT_THRESH")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"multiplicity threshold")
-}
-#-------------------------------------------------------
-record(longin,"VME$(CRATE):$(BOARD):Mult_sum_RBV")
-{
-field(INP,"@asynMask($(BOARD),0,0xaaaa0800,1)reg_CPLD_MULT")
-field(DTYP,"asynUInt32Digital")
-field(SCAN,"1 second")
-field(DESC,"current multiplicity sum")
-}
-#-------------------------------------------------------
+
 

@@ -29,9 +29,6 @@ dbLoadRecords("db/RTrigUser.template","CRATE=32,BOARD=RTR1")
 ##=============== Load Crate PVs used by inLoop, outLoop, and miniSender
 dbLoadRecords("db/daqCrate.template","CRATE=32")
 
-##=============== Load debug PVs
-dbLoadRecords("db/asynDebug.template","CRATE=32,BOARD=DBG,ADDR=0,TIMEOUT=1")
-
 ##=============== Load pre-slot readout PV
 dbLoadRecords("db/daqSegment2.template","CRATE=32,BOARD=MTRG")
 
@@ -55,7 +52,7 @@ dumpFIFO = 0
 
 setupFIFOReader()
 
-#dbpf "VME32:MTRG:USER_PACKAGE_DATA","162"
+dbpf "VME32:MTRG:USER_PACKAGE_DATA","99"
 
 seq &inLoop,"CRATE=32,B0=MTRG,B1=X,B2=X,B3=X,B4=X,B5=X,B6=X"  
 taskDelay(100)  

@@ -2237,6 +2237,14 @@ field(SCAN,"1 second")
 field(DESC,"Empty and full flags of ")
 }
 #-------------------------------------------------------
+record(longin,"VME$(CRATE):$(BOARD):reg_latched_fifo_depth_RBV")
+{
+field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_latched_fifo_depth")
+field(DTYP,"asynUInt32Digital")
+field(SCAN,"1 second")
+field(DESC,"event bound mon7 dpeth c")
+}
+#-------------------------------------------------------
 record(longin,"VME$(CRATE):$(BOARD):reg_SYSTEM_THROTTLE_MAP_RBV")
 {
 field(INP,"@asynMask($(BOARD),0,0xaaaa2000,1)reg_SYSTEM_THROTTLE_MAP")
@@ -4941,4 +4949,5 @@ field(SCAN,"1 second")
 field(DESC,"code_date_VME")
 }
 #-------------------------------------------------------
+
 

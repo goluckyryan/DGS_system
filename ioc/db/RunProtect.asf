@@ -1,0 +1,11 @@
+ASG(DEFAULT) {
+   RULE (1, READ)
+   RULE (1, WRITE)
+}
+ASG(RUNPROTECT) {
+   INPA (Online_CS_StartStop)
+   RULE (1, READ)
+   RULE (1, WRITE) {
+      CALC("A=0")
+   }
+}
