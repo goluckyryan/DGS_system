@@ -1,0 +1,4 @@
+3
+EPICS /global/edm/extensions/dgs1/src/edm/epicsPv/O.linux-x86_64/libEpics.so EPICS PV
+LOC /global/edm/extensions/dgs1/src/edm/locPv/O.linux-x86_64/libLoc.so Local PV
+CALC /global/edm/extensions/dgs1/src/edm/calcPv/O.linux-x86_64/libCalc.so Calculation PV

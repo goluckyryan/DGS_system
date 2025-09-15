@@ -1,0 +1,71 @@
+Source: edm
+Section: contrib/x11
+Priority: extra
+Maintainer: Michael Davidsaver <mdavidsaver@gmail.com>
+Uploaders: Ralph Lange <Ralph.Lange@gmx.de>
+Build-Depends: debhelper (>= 7), cdbs,
+               epics-dev (>= 3.14.11-2),
+               epics-extensions-dev (>= 20091204.1),
+               libgif-dev, libpng-dev, libz-dev, libmotif-dev,
+               libx11-dev, libxp-dev, libxmu-dev, libxtst-dev, x11proto-print-dev
+Standards-Version: 3.9.4
+Homepage: http://ics-web.sns.ornl.gov/edm/
+
+Package: edm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         netpbm, 
+         edm-color-default (= ${source:Version}) | edm-color,
+         edm-font-default (= ${source:Version}) | edm-font
+Recommends: xfonts-75dpi,
+           edm-color-default (= ${source:Version}),
+           edm-font-default (= ${source:Version})
+Suggests: cups-bsd | lpr | lprng,
+          edm-doc (= ${source:Version}),
+Description: Extensible Display Manager
+ A display manager (GUI) for the EPICS control system
+
+Package: edm-color-default
+Architecture: all
+Depends: ${misc:Depends}
+Provides: edm-color
+Replaces: edm-color
+Conflicts: edm (<< 1.12.24-1), edm-color
+Description: Extensible Display Manager
+ A display manager (GUI) for the EPICS control system
+ .
+ This is the default colors.list which is distributed with EDM.
+
+Package: edm-font-default
+Architecture: all
+Depends: ${misc:Depends}
+Provides: edm-font
+Replaces: edm-font
+Conflicts: edm (<= 1.12.85-2), edm-font
+Description: Extensible Display Manager
+ A display manager (GUI) for the EPICS control system
+ .
+ This is the default fonts.list which is distributed with EDM.
+
+Package: edm-dev
+Section: contrib/devel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         edm (= ${binary:Version}),
+         epics-dev (>= 3.14.11-2),
+         epics-extensions-dev,
+         libgif-dev, libpng-dev, libz-dev, libmotif-dev,
+         libx11-dev, libxp-dev, libxmu-dev, libxtst-dev, x11proto-print-dev
+Description: Extensible Display Manager
+ A display manager (GUI) for the EPICS control system.
+ .
+ Development libraries and headers
+
+Package: edm-doc
+Section: contrib/doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Extensible Display Manager
+ A display manager (GUI) for the EPICS control system.
+ .
+ The EDM Manual in html form.

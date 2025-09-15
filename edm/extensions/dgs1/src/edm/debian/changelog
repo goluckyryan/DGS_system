@@ -1,0 +1,183 @@
+edm (1.12.98-5) unstable; urgency=medium
+
+  * set SKIP_HARDENING=YES
+    Workaround as epics-dev >= 3.15.3-2 enables hardening flags to
+    host builds by default.
+
+ -- Michael Davidsaver <mdavidsaver@gmail.com>  Fri, 11 Mar 2016 09:37:05 -0500
+
+edm (1.12.98-4) unstable; urgency=medium
+
+  * Fix libgif linking problem w/ debian 8 (broken symlink in libgif-dev)
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Thu, 18 Jun 2015 19:03:33 -0400
+
+edm (1.12.98-3) unstable; urgency=low
+
+  * Convert to source format 3.0 (quilt)
+  * Patches to fix default search location for
+    default.scheme, calc.list, and help files.
+    Also log10 xy-plot fix
+
+ -- Michael Davidsaver <mdavidsaver@mddesk.nsls2.bnl.gov>  Fri, 13 Feb 2015 13:52:48 -0500
+
+edm (1.12.98-2) unstable; urgency=medium
+
+  * fix bug with log10 plot
+
+ -- Joachim Rahn <Joachim.Rahn@helmholtz-berlin.de>  Mon, 26 Jan 2015 12:56:18 +0100
+
+edm (1.12.98-1) unstable; urgency=medium
+
+  * initial release of imported version 1.12.98 
+
+ -- Joachim Rahn <Joachim.Rahn@helmholtz-berlin.de>  Mon, 26 Jan 2015 12:37:38 +0100
+
+edm (1.12.85-6) unstable; urgency=low
+
+  * debian/README.local-defs-setup added 
+
+ -- Joachim Rahn <Joachim.Rahn@helmholtz-berlin.de>  Tue, 20 Jan 2015 12:54:28 +0100
+
+edm (1.12.85-5) unstable; urgency=low
+
+  * Stricter dep. from edm to edm-font-default and edm-color-default
+    to help with upgrades.
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Fri, 16 Jan 2015 11:50:35 -0500
+
+edm (1.12.85-4) unstable; urgency=low
+
+  * debian/control: typo fixed
+
+ -- Joachim Rahn <Joachim.Rahn@helmholtz-berlin.de>  Thu, 15 Jan 2015 13:52:52 +0100
+
+edm (1.12.85-3) unstable; urgency=low
+
+  * debian/control: fix dependency problem for edm-font-default
+  * add package edm-font-default
+  * debian/control: enable replacement of edm-font-default and edm-color-default
+
+ -- Joachim Rahn <Joachim.Rahn@helmholtz-berlin.de>  Thu, 15 Jan 2015 12:27:41 +0100
+
+edm (1.12.85-2) unstable; urgency=low
+
+  * Apply fix for baselib/xyplot: use nan for negative log10 axis
+  * debian/copyright: switch to machine readable format
+  * debian/control: fix minor lintian warnings
+  * debian/edm.lintian-overrides: fix version string in library name
+
+ -- Ralph Lange <Ralph.Lange@gmx.de>  Mon, 27 May 2013 15:18:07 +0200
+
+edm (1.12.85-1) unstable; urgency=low
+
+  * New upstream version
+  * debian/rules: Fix EPICS_HOST_ARCH to allow 32bit build on 64 bit host
+  * debian/control: Bump standards to 3.9.4 with no updates,
+      add missing Depends: ${misc:Depends} for edm-color-default, edm-doc
+
+ -- Ralph Lange <Ralph.Lange@helmholtz-berlin.de>  Fri, 19 Apr 2013 11:38:07 +0200
+
+edm (1.12.57-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Thu, 11 Aug 2011 12:11:55 -0400
+
+edm (1.12.36-3) unstable; urgency=low
+
+  * edm-dev: remove dependency on libreadline5-dev
+      Reported by Ralph Lange
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Wed, 23 Mar 2011 09:31:06 -0400
+
+edm (1.12.36-2) unstable; urgency=low
+
+  * update dependencies
+      Remove explicit dependency on libreadline (implicit in epics-dev)
+      Demote cups/lpr from Recommends to Suggests
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Tue, 30 Nov 2010 17:32:31 -0500
+
+edm (1.12.36-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Fixes bug with scaler XY plots seen with sscanRecord
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Wed, 08 Sep 2010 15:35:30 -0400
+
+edm (1.12.33-2) unstable; urgency=low
+
+  * Install in /usr/lib/epics
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 16 Aug 2010 17:55:12 -0400
+
+edm (1.12.33-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/control: Move lpr from Depends to Reommends
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Tue, 27 Jul 2010 10:11:00 -0400
+
+edm (1.12.28-2) unstable; urgency=low
+
+  * install /etc/edm/calc.list
+  * debian/control: change dep libreadline-dev to libreadline5-dev
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Wed, 31 Mar 2010 09:49:54 -0400
+
+edm (1.12.28-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/edm.1 - add manpage for edm
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Fri, 12 Mar 2010 16:35:06 -0500
+
+edm (1.12.24-2) unstable; urgency=low
+
+  * Update dependencies
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Sun, 27 Dec 2009 17:06:58 -0500
+
+edm (1.12.24-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Fri, 04 Dec 2009 11:35:26 -0500
+
+edm (1.12.20-2) unstable; urgency=low
+
+  * Move help files from /etc to /usr/share/edm
+  * Revise fonts list for Debian
+  * Add package edm-doc w/ html version of EDM manual
+  * add package edm-color-default w/ the default colors.list.
+  * Fix SONAMES
+  * Update dependencies
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 16 Nov 2009 09:29:10 -0500
+
+edm (1.12.20-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Michael Davidsaver <mdavidsaver@controldev32.nsls2.bnl.gov>  Tue, 27 Oct 2009 10:51:41 -0400
+
+edm (1.12.4-3) unstable; urgency=low
+
+  * Give SONAMES to all plugin libraries
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Thu, 23 Jul 2009 13:37:00 -0400
+
+edm (1.12.4-2) unstable; urgency=low
+
+  * Add printer config file
+  * Build against OpenMotif instead of LessTif
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Wed, 08 Jul 2009 13:30:00 -0400
+
+edm (1.12.4-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Michael Davidsaver <mdavidsaver@bnl.gov>  Mon, 22 Jun 2009 13:24:45 -0400
+
