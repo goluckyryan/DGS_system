@@ -5,9 +5,12 @@
 #INSTALL_LOCATION_EXTENSIONS=<fullpathname>
 
 # Location of external products
-#EPICS_BASE=/usr/local/iocapps/R3.14.2/support/base/3-14-2-asd1
-#EPICS_BASE=/global/devel/base/R3.14.10
-EPICS_BASE=/global/base/base-3.14.12.8
+$(info EPICS_BASE is $(EPICS_BASE))
+EPICS_BASE ?= $(EPICS_BASE)
+ifeq ($(EPICS_BASE),)
+EPICS_BASE := $(shell echo $$EPICS_BASE)
+$(info define EPICS_BASE is $(EPICS_BASE))
+endif
 #EPICS_EXTENSIONS = /usr/local/epics/extensions
 EPICS_EXTENSIONS=$(TOP)
 

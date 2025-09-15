@@ -1,5 +1,10 @@
 #RELEASE Location of external products
-#
 
 EPICS_EXTENSIONS=$(TOP)
-EPICS_BASE=/DGS_system/base/base-3.14.12.8
+
+$(info EPICS_BASE is $(EPICS_BASE))
+EPICS_BASE ?= $(EPICS_BASE)
+ifeq ($(EPICS_BASE),)
+EPICS_BASE := $(shell echo $$EPICS_BASE)
+$(info define EPICS_BASE is $(EPICS_BASE))
+endif
